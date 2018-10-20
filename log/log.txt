@@ -1,0 +1,212 @@
+Starting server on 2018-10-19 17:14:34 -0500! Listening on HOST:0.0.0.0 at PORT:12345
+ 
+**************
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.350131seconds.
+Closing socket and ending thread.
+ 
+**************
+Request Line was null!
+Closing socket and ending thread.
+ 
+**************
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.197274seconds.
+Closing socket and ending thread.
+ 
+**************
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.268236seconds.
+Closing socket and ending thread.
+ 
+**************
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.26271seconds.
+Closing socket and ending thread.
+ 
+**************
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.280326seconds.
+Closing socket and ending thread.
+ 
+**************
+Request Line was null!
+Closing socket and ending thread.
+ 
+**************
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.192523seconds.
+Closing socket and ending thread.
+ 
+**************
+Starting server on 2018-10-19 17:22:26 -0500! Listening on HOST:0.0.0.0 at PORT:12345
+ 
+**************
+ 
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.223756seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+Request line: GET /favicon.ico HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/favicon.ico--
+Total Time: 1.075316seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.21532199999999999seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.22622seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.243759seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.131244seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.233103seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.121879seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+/home/hg/rubyStuff/Server/server.rb:198:in `join': Interrupt
+	from /home/hg/rubyStuff/Server/server.rb:198:in `execute'
+	from /home/hg/rubyStuff/Server/server.rb:67:in `run!'
+	from daemon_server.rb:41:in `<main>'
+Starting server on 2018-10-19 17:23:29 -0500! Listening on HOST:0.0.0.0 at PORT:12345
+ 
+**************
+ 
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.349484seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.20302699999999999seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.211793seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.219279seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.233078seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.229064seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.24056699999999998seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.279885seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.189791seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+Request Line was null!
+Closing socket and ending thread.
+ 
+**************
+ 
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.232282seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+Request line: GET / HTTP/1.1
+We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
+Total Time: 0.10517599999999999seconds.
+Closing socket and ending thread.
+ 
+**************
+ 
+Request Line was null!
+Closing socket and ending thread.
+ 
+**************
+ 
+Request Line was null!
+Closing socket and ending thread.
+Starting server on 2018-10-19 17:27:35 -0500! Listening on HOST:0.0.0.0 at PORT:12345
+ 
+**************
+ 
+/home/hg/rubyStuff/Server/server.rb:143:in `execute': undefined local variable or method `socket' for #<Emerald::Server:0x0000000002775cc0> (NameError)
+	from /home/hg/rubyStuff/Server/server.rb:67:in `run!'
+	from daemon_server.rb:41:in `<main>'
+Starting server on 2018-10-19 17:29:07 -0500! Listening on HOST:0.0.0.0 at PORT:12345
