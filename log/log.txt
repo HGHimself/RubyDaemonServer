@@ -307,3 +307,74 @@ An error of type Errno::ENOENT happened, message is No such file or directory @ 
 0.7999ms ... Thread_Exec
 Closing Socket and Ending Thread.
 
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/public/index.html
+0.2404ms ... Form_Request
+0.2724ms ... Send_Response
+35.8471ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET /favicon.ico HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
+0.1958ms ... Form_Request
+0.2649ms ... Send_Response
+306.4844ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/public/index.html
+0.129ms ... Form_Request
+0.2176ms ... Send_Response
+1.5026ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET /favicon.ico HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
+0.136ms ... Form_Request
+0.2725ms ... Send_Response
+130.5155ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/public/index.html
+0.1218ms ... Form_Request
+0.2612ms ... Send_Response
+1.6746ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET /favicon.ico HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
+0.1281ms ... Form_Request
+0.299ms ... Send_Response
+97.8525ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/public/index.html
+0.1641ms ... Form_Request
+0.2404ms ... Send_Response
+42.3297ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+
+RequestLine was nil
+38.078ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/public/index.html
+0.1371ms ... Form_Request
+0.2098ms ... Send_Response
+2.1536ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+
+RequestLine was nil
+4.2913ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+
+RequestLine was nil
+35.7093ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
