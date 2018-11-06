@@ -1,306 +1,77 @@
-require 'socket'
-require "uri"
-require "./CONFIG"
-require 'fileutils'
+require "./src/Server"
+require "./src/Daemon"
+require 'optparse'
 
-class Request
+daemon_options = {}
+version        = "1.0.0"
+daemonize_help = "run daemonized in the background (default: false)"
+pidfile_help   = "the pid filename"
+logfile_help   = "the log filename"
+include_help   = "an additional $LOAD_PATH"
+debug_help     = "set $DEBUG to true"
+warn_help      = "enable warnings"
 
-  def initialize()
-    @headers = Hash.new
-    @body = ""
-  end
+op = OptionParser.new
+op.banner =  "Daemonize a ruby Emerald server."
+op.separator ""
+op.separator "Usage: daemon_server [options]"
+op.separator ""
 
-  def method
-    @method
-  end
+op.separator "Process options:"
+op.on("-d", "--daemonize",   daemonize_help) {         daemon_options[:daemonize] = true  }
+op.on("-p", "--pid PIDFILE", pidfile_help)   { |value| daemon_options[:pidfile]   = value }
+op.on("-l", "--log LOGFILE", logfile_help)   { |value| daemon_options[:logfile]   = value }
+op.separator ""
 
-  def path
-    @path
-  end
+op.separator "Ruby options:"
+op.on("-I", "--include PATH", include_help) { |value| $LOAD_PATH.unshift(*value.split(":").map{|v| File.expand_path(v)}) }
+op.on(      "--debug",        debug_help)   { $DEBUG = true }
+op.on(      "--warn",         warn_help)    { $-w = true    }
+op.separator ""
 
-  def header?(key)
-    @headers[key]
-  end
+op.separator "Common options:"
+op.on("-h", "--help")    { puts op.to_s; exit }
+op.on("-v", "--version") { puts version; exit }
+op.separator ""
+op.separator "Query running processes: 'ps -ef | grep ruby'"
+op.separator ""
 
-  def body
-    @body
-  end
+op.parse!(ARGV)
 
-  def bodySize
-    @body.size
-  end
 
-  def addRequestLine(line)
-    puts @requestLine = line.chomp
-    @method = line.split(" ")[0]
+server_options = {
+  timer: true,
+  ssl: true,
+  crt: "/home/hg/nodeStuff/encryption/hgking.xyz.crt",
+  key: "/home/hg/nodeStuff/encryption/server.key",
+  host: '0.0.0.0',
+  port: 12345
+}
 
-    @path = requested_file(line)
-    @path = File.join(path, 'index.html') if File.directory?(path)
-  end
+server = Server.new server_options
 
-  def addHeader(header)
-    arr = header.split(": ")
-    key = arr[0]
-    value = arr[1]
-    @headers[key] = value
-  end
-
-  def addToBody(string)
-    @body += string
-  end
-
-  def requested_file(request)
-    uri = request.split(" ")[1]
-    path = URI.unescape(URI(uri).path)
-
-    clean = []
-
-    parts = path.split("/")
-
-    parts.each do |part|
-      next if part.empty? || part == '.'
-      part == '..' ? clean.pop : clean << part
-    end
-
-    File.join(WEB_ROOT, *clean)
-  end
-
+server.get "/" do |req, res|
+  res.send_file(req.method, req.abs_path)
 end
 
-class Response
-  def initialize(socket)
-    @socket = socket
-  end
-
-  def send(path)
-    begin
-      if File.exist?(path) && !File.directory?(path)
-        File.open(path, "rb") do |file|
-          puts "We got a file! Returning -#{path}-"
-          @socket.puts "HTTP/1.1 200 OK\r\n"
-          @socket.puts "Content-Type: #{content_type(file)}\r\n"
-          @socket.puts "Content-Length: #{file.size}\r\n"
-          @socket.puts "Connection: close\r\n"
-          IO.copy_stream(file, @socket)
-
-        end
-      else
-        puts "We dont have a file..."
-        error =  "File not found!\n"
-        # respond with a 404 error code to indicate the file does not exist
-        @socket.puts "HTTP/1.1 404 Not Found\r\n"
-        @socket.puts "Content-Type: text/plain\r\n"
-        @socket.puts "Content-Length: #{error.size}\r\n"
-        @socket.puts "Connection: close\r\n"
-        @socket.puts "\r\n"
-        @socket.puts error
-      end
-    rescue
-      puts "We have an error..."
-      error = "There has been an internal server error!\n"
-      # respond with a 404 error code to indicate the file does not exist
-      @socket.puts "HTTP/1.1 500 Internal Server Error\r\n"
-      @socket.puts "Content-Type: text/plain\r\n"
-      @socket.puts "Content-Length: #{error.size}\r\n"
-      @socket.puts "Connection: close\r\n"
-      @socket.puts "\r\n"
-      @socket.puts error
-    end
-  end
-
-  def content_type(path)
-    ext = File.extname(path).split(".").last
-    CONTENT_TYPE_MAPPING.fetch(ext, DEFAULT_CONTENT_TYPE)
-  end
-
-
+server.get "/test" do |req, res|
+  res.send_string(req.method, "This is a test!")
 end
 
-class Server
-
-  attr_reader :options, :quit
-
-  def initialize(options)
-    @options = options
-
-    # daemonization will change CWD so expand relative paths now
-    options[:logfile] = File.expand_path(logfile) if logfile?
-    options[:pidfile] = File.expand_path(pidfile) if pidfile?
-    #options[:logfile] = File.expand_path(LOG_FILE)
-    #options[:pidfile] = File.expand_path(PID_FILE)
-    options[:rootdir] = File.expand_path(WEB_ROOT)
-    #if host? then options[:host] else HOST (from config file)
-    @host = host? ? options[:host] : HOST
-    @port = port? ? options[:port] : PORT
-    @activeConnections = 0
-    @server = TCPServer.new(@host, @port)
-    puts "Listening at host: #{@host} on port: #{@port}"
-  end
-
-  def host?
-    @options[:host]
-  end
-
-  def port?
-    @options[:port]
-  end
-
-
-  def daemonize?
-    options[:daemonize]
-  end
-
-  def logfile
-    options[:logfile]
-  end
-
-  def pidfile
-    options[:pidfile]
-  end
-
-  def rootdir
-    options[:rootdir]
-  end
-
-  def logfile?
-    !logfile.nil?
-  end
-
-  def pidfile?
-    !pidfile.nil?
-  end
-
-  def run!
-    puts "Starting run..."
-    check_pid
-    daemonize if daemonize?
-    write_pid
-    trap_signals
-
-    if logfile?
-      redirect_output
-    elsif daemonize?
-      suppress_output
-    end
-
-    puts "Starting server on #{Time.now}! Listening on HOST:#{HOST} at PORT:#{PORT}"
-    while !quit
-      self.listen
-    end
-    puts "Quit has been set to true"
-
-  end
-
-  def write_pid
-    if pidfile?
-      begin
-        File.open(pidfile, ::File::CREAT | ::File::EXCL | ::File::WRONLY){|f| f.write("#{Process.pid}") }
-        at_exit { File.delete(pidfile) if File.exists?(pidfile) }
-      rescue Errno::EEXIST
-        check_pid
-        retry
-      end
-    end
-  end
-
-  def check_pid
-    if pidfile?
-      case pid_status(pidfile)
-      when :running, :not_owned
-        puts "A server is already running. Check #{pidfile}"
-        exit(1)
-      when :dead
-        File.delete(pidfile)
-      end
-    end
-  end
-
-  def pid_status(pidfile)
-    return :exited unless File.exists?(pidfile)
-    pid = ::File.read(pidfile).to_i
-    return :dead if pid == 0
-    Process.kill(0, pid)      # check process status
-    :running
-  rescue Errno::ESRCH
-    :dead
-  rescue Errno::EPERM
-    :not_owned
-  end
-
-  def daemonize
-    exit if fork
-    Process.setsid
-    exit if fork
-    Dir.chdir "/"
-  end
-
-  def redirect_output
-    FileUtils.mkdir_p(File.dirname(logfile), :mode => 0755)
-    FileUtils.touch logfile
-    File.chmod(0644, logfile)
-    $stderr.reopen(logfile, 'a')
-    $stdout.reopen($stderr)
-    $stdout.sync = $stderr.sync = true
-  end
-
-  def suppress_output
-    $stderr.reopen('/dev/null', 'a')
-    $stdout.reopen($stderr)
-  end
-
-  def trap_signals
-    trap(:QUIT) do   # graceful shutdown of run! loop
-      puts "Quit has been triggered!"
-      @quit = true
-    end
-  end
-
-  def listen
-    loop do
-      thread = Thread.start(@server.accept) do |socket|
-        req = Request.new
-        bodyFlag = 0
-        breakFlag = 0
-        line = socket.gets
-        if line != nil
-          req.addRequestLine(line.chomp)
-          while breakFlag == 0 and line = socket.gets
-
-            if bodyFlag == 0
-              req.addHeader(line.chomp)
-            else
-              req.addToBody(line)
-              if req.bodySize == req.header?("content-length").to_i
-                breakFlag = 1
-              end
-            end
-
-            if line == "\r\n"
-              if req.method == "GET"
-                breakFlag = 1
-              else
-                bodyFlag = 1
-              end
-            end
-
-          end
-
-          path = req.path
-          res = Response.new(socket)
-          res.send(path)
-        end
-        puts "Closing Socket and Ending Thread"
-        socket.close
-      end
-      thread.join
-
-    end
-  end
-
-
-
+server.get %r"\/[a-zA-Z1-9\-\/_]*[\.]?[a-z]*" do |req, res|
+  puts "In the block"
+  res.send_file(req.method, req.abs_path)
 end
 
-options = {}
-s = Server.new options
-s.listen
+server.post "/" do |req, res|
+  data = JSON.parse(req.body)
+  puts data['student']
+  res.send_file(req.method, req.abs_path)
+end
+
+daemon = Daemon.new daemon_options
+daemon.run! do
+  while server.status != "Broken" do
+    server.listen
+  end
+end

@@ -1,212 +1,309 @@
-Starting server on 2018-10-19 17:14:34 -0500! Listening on HOST:0.0.0.0 at PORT:12345
- 
-**************
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.350131seconds.
-Closing socket and ending thread.
- 
-**************
-Request Line was null!
-Closing socket and ending thread.
- 
-**************
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.197274seconds.
-Closing socket and ending thread.
- 
-**************
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.268236seconds.
-Closing socket and ending thread.
- 
-**************
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.26271seconds.
-Closing socket and ending thread.
- 
-**************
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.280326seconds.
-Closing socket and ending thread.
- 
-**************
-Request Line was null!
-Closing socket and ending thread.
- 
-**************
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.192523seconds.
-Closing socket and ending thread.
- 
-**************
-Starting server on 2018-10-19 17:22:26 -0500! Listening on HOST:0.0.0.0 at PORT:12345
- 
-**************
- 
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.223756seconds.
-Closing socket and ending thread.
- 
-**************
- 
-Request line: GET /favicon.ico HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/favicon.ico--
-Total Time: 1.075316seconds.
-Closing socket and ending thread.
- 
-**************
- 
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.21532199999999999seconds.
-Closing socket and ending thread.
- 
-**************
- 
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.22622seconds.
-Closing socket and ending thread.
- 
-**************
- 
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.243759seconds.
-Closing socket and ending thread.
- 
-**************
- 
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.131244seconds.
-Closing socket and ending thread.
- 
-**************
- 
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.233103seconds.
-Closing socket and ending thread.
- 
-**************
- 
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.121879seconds.
-Closing socket and ending thread.
- 
-**************
- 
-/home/hg/rubyStuff/Server/server.rb:198:in `join': Interrupt
-	from /home/hg/rubyStuff/Server/server.rb:198:in `execute'
-	from /home/hg/rubyStuff/Server/server.rb:67:in `run!'
-	from daemon_server.rb:41:in `<main>'
-Starting server on 2018-10-19 17:23:29 -0500! Listening on HOST:0.0.0.0 at PORT:12345
- 
-**************
- 
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.349484seconds.
-Closing socket and ending thread.
- 
-**************
- 
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.20302699999999999seconds.
-Closing socket and ending thread.
- 
-**************
- 
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.211793seconds.
-Closing socket and ending thread.
- 
-**************
- 
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.219279seconds.
-Closing socket and ending thread.
- 
-**************
- 
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.233078seconds.
-Closing socket and ending thread.
- 
-**************
- 
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.229064seconds.
-Closing socket and ending thread.
- 
-**************
- 
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.24056699999999998seconds.
-Closing socket and ending thread.
- 
-**************
- 
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.279885seconds.
-Closing socket and ending thread.
- 
-**************
- 
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.189791seconds.
-Closing socket and ending thread.
- 
-**************
- 
-Request Line was null!
-Closing socket and ending thread.
- 
-**************
- 
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.232282seconds.
-Closing socket and ending thread.
- 
-**************
- 
-Request line: GET / HTTP/1.1
-We got a file! Returning --/home/hg/rubyStuff/Server/public/index.html--
-Total Time: 0.10517599999999999seconds.
-Closing socket and ending thread.
- 
-**************
- 
-Request Line was null!
-Closing socket and ending thread.
- 
-**************
- 
-Request Line was null!
-Closing socket and ending thread.
-Starting server on 2018-10-19 17:27:35 -0500! Listening on HOST:0.0.0.0 at PORT:12345
- 
-**************
- 
-/home/hg/rubyStuff/Server/server.rb:143:in `execute': undefined local variable or method `socket' for #<Emerald::Server:0x0000000002775cc0> (NameError)
-	from /home/hg/rubyStuff/Server/server.rb:67:in `run!'
-	from daemon_server.rb:41:in `<main>'
-Starting server on 2018-10-19 17:29:07 -0500! Listening on HOST:0.0.0.0 at PORT:12345
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.2482ms ... Form_Request
+0.3152ms ... Send_Response
+36.1259ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET /favicon.ico HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
+0.199ms ... Form_Request
+0.2496ms ... Send_Response
+141.072ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.1278ms ... Form_Request
+0.2212ms ... Send_Response
+1.7498ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET /favicon.ico HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
+0.156ms ... Form_Request
+0.2447ms ... Send_Response
+97.3858ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.1216ms ... Form_Request
+0.254ms ... Send_Response
+1.6295ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET /favicon.ico HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
+0.1355ms ... Form_Request
+0.2728ms ... Send_Response
+94.2139ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.1888ms ... Form_Request
+0.2143ms ... Send_Response
+1.7611ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET /favicon.ico HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
+0.1331ms ... Form_Request
+0.2514ms ... Send_Response
+95.6925ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.1351ms ... Form_Request
+0.2238ms ... Send_Response
+2.4099ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET /favicon.ico HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
+0.1315ms ... Form_Request
+0.2867ms ... Send_Response
+140.4776ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.117ms ... Form_Request
+0.216ms ... Send_Response
+1.9297ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.1178ms ... Form_Request
+0.2342ms ... Send_Response
+1.4819ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET /favicon.ico HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
+0.1269ms ... Form_Request
+0.2582ms ... Send_Response
+96.0328ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.1508ms ... Form_Request
+0.2786ms ... Send_Response
+1.631ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET /favicon.ico HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
+0.143ms ... Form_Request
+0.2602ms ... Send_Response
+96.0719ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.1394ms ... Form_Request
+0.2237ms ... Send_Response
+37.0446ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+
+RequestLine was nil
+45.5597ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.1092ms ... Form_Request
+0.2381ms ... Send_Response
+1.669ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+
+RequestLine was nil
+35.4598ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.1098ms ... Form_Request
+0.2297ms ... Send_Response
+1.8816ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+
+RequestLine was nil
+35.4202ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.1242ms ... Form_Request
+0.2539ms ... Send_Response
+1.409ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+
+RequestLine was nil
+35.5318ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.1526ms ... Form_Request
+0.2319ms ... Send_Response
+1.9654ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+
+RequestLine was nil
+36.8896ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.141ms ... Form_Request
+0.25ms ... Send_Response
+6.526ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+
+RequestLine was nil
+8.9401ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+
+RequestLine was nil
+35.5487ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.8453ms ... Form_Request
+0.2084ms ... Send_Response
+4.2768ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET /favicon.ico HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
+0.1292ms ... Form_Request
+0.2483ms ... Send_Response
+115.4534ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.127ms ... Form_Request
+0.1948ms ... Send_Response
+1.7146ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET /favicon.ico HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
+0.2105ms ... Form_Request
+0.2353ms ... Send_Response
+95.3177ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.1112ms ... Form_Request
+0.2152ms ... Send_Response
+2.131ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+
+RequestLine was nil
+35.398ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.1179ms ... Form_Request
+0.1987ms ... Send_Response
+0.8472ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET /favicon.ico HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
+0.1692ms ... Form_Request
+0.2374ms ... Send_Response
+140.8004ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.1276ms ... Form_Request
+0.237ms ... Send_Response
+1.4758ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET /favicon.ico HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
+0.1246ms ... Form_Request
+0.235ms ... Send_Response
+156.7633ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.1123ms ... Form_Request
+0.2332ms ... Send_Response
+1.5149ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET /favicon.ico HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
+0.1803ms ... Form_Request
+0.2372ms ... Send_Response
+93.3231ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.1218ms ... Form_Request
+0.2184ms ... Send_Response
+1.2498ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+
+RequestLine was nil
+35.5867ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
+0.1116ms ... Form_Request
+0.219ms ... Send_Response
+2.1922ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+
+RequestLine was nil
+35.5069ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public
+0.1623ms ... Form_Request
+An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
+1.1705ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public
+0.1355ms ... Form_Request
+An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
+178.7899ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
+GET / HTTP/1.1
+method:GET path:/home/hg/rubyStuff/Server/emerald/public
+0.1596ms ... Form_Request
+An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
+0.7999ms ... Thread_Exec
+Closing Socket and Ending Thread.
+
