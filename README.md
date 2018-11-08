@@ -1,5 +1,5 @@
 # Emerald
-
+To run, use `ruby server.rb`. For help, use `ruby server.rb -h`. Please note that a firewall will most definitely get in the way so try to use 'localhost' if possible.
 ## Ruby Server
 Emerald is a lightweight HTTP server built using the core Ruby library.
 

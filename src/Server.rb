@@ -28,8 +28,8 @@ class Server
 
     if !options[:ssl].nil? and options[:ssl] == true
       if options[:key].nil? or options[:crt].nil?
-        puts "Server Setup Failed!"
-        puts "Must include Key and Certificate files in options if 'ssl: True'."
+        puts "Server Setup Failed!".colorize(:red)
+        puts "Must include Key and Certificate files in options if 'ssl: True'.".colorize(:red)
         @server = nil
       else
         sslContext = OpenSSL::SSL::SSLContext.new
@@ -37,11 +37,11 @@ class Server
         sslContext.key = OpenSSL::PKey::RSA.new(File.open(options[:key]))
         sslServer = OpenSSL::SSL::SSLServer.new(server, sslContext)
         @server = OpenSSL::SSL::SSLServer.new(server, sslContext)
-        puts "Listening with SSL at host: #{host} on port: #{port}"
+        puts "Listening with SSL at host: #{host} on port: #{port}".colorize(:green)
       end
     else
       @server = server
-      puts "Listening at host: #{host} on port: #{port}"
+      puts "Listening at host: #{host} on port: #{port}".colorize(:green)
       @status = "Running"
     end
     puts ""
@@ -79,7 +79,7 @@ class Server
     if @options[:timer]
       @timers[val + "_end"] = Time.now
       total = (@timers[val + "_end"] - @timers[val + "_start"]) * 1000.0
-      puts "#{total.round(4)}ms ... " + val
+      puts ("#{total.round(4)}ms ... " + val).colorize(:light_yellow)
     end
   end
 
@@ -95,11 +95,11 @@ class Server
         thread.join
         @status = "Running"
       rescue
-        puts "Ahh an error"
+        puts "Ahh an error".colorize(:red)
         @status = "Broken"
       end
     else
-      puts "Error: Could not start server!"
+      puts "Error: Could not start server!".colorize(:red)
       @status = "Broken"
     end
   end
@@ -107,12 +107,13 @@ class Server
   def server_logic(socket)
     start_timer("Thread_Exec")
     begin
-      puts line = socket.gets
-
-      #need proper request
+      line = socket.gets
+      puts line.chomp.colorize(:light_blue)
+      #need proper request line
       if line != nil and line != "\r\n"
         start_timer("Form_Request")
 
+        #create request object
         req = Request.new rootdir
         req.addRequestLine(line)
 
@@ -121,23 +122,25 @@ class Server
 
         #while there are lines to get and the break flag isnt set
         while breakFlag == 0 and line = socket.gets
-
-          #first read headers then read body
-          if bodyFlag == 0
-            req.addHeader(line)
-          else
-            req.addToBody(line)
-            #want to read in as many bytes as the header specifies
-            breakFlag = 1 if req.bodySize == req.header?("content-length").to_i
-          end
-
-          #head and body in req are split by CRLF
+          #head and body in request are split by CRLF
           if line == "\r\n"
             #if this method comes with a body
             if HAS_BODY.include?(req.method)
               bodyFlag = 1
             else
               breakFlag = 1
+            end
+          else
+            #first read headers then read body
+            if bodyFlag == 0
+              req.addHeader(line)
+            else
+              req.addToBody(line)
+              puts req.bodySize
+              #want to read in as many bytes as the header specifies
+              if req.bodySize == req.header?("content-length").to_i or line.chomp.length < 1
+                breakFlag = 1
+              end
             end
           end
         end
@@ -160,7 +163,7 @@ class Server
             if curr != nil
               @paths[req.method]["REGEXP"][curr].call(req, res)
             else
-              puts "This path has not been specified!"
+              puts "This path has not been specified!".colorize(:red)
             end
           end
         else
@@ -169,17 +172,17 @@ class Server
 
         end_timer("Send_Response")
       else
-        puts "RequestLine was nil"
+        puts "RequestLine was nil".colorize(:red)
       end
 
       socket.close
 
     rescue Exception => ex
-      puts "An error of type #{ex.class} happened, message is #{ex.message}"
+      puts "An error of type #{ex.class} happened, message is #{ex.message}".colorize(:red)
       socket.close
     end
     end_timer("Thread_Exec")
-    puts "Closing Socket and Ending Thread."
+    puts "Closing Socket and Ending Thread.".colorize(:green)
     puts ""
   end
 

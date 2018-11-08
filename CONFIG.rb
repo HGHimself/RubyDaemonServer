@@ -15,7 +15,7 @@ HAS_BODY = ["POST", "PUT", "PATCH"]
 # Files will be served from this directory
 WEB_ROOT = './public'
 LOG_FILE = './log/log.txt'
-PID_FILE = './pid.txt'
+PID_FILE = './log/pid.txt'
 
 SERVER_ERR_PAGE = 'error/50X.html'
 NOT_FOUND_PAGE = 'error/404.html'
@@ -30,6 +30,11 @@ CONTENT_TYPE_MAPPING = {
   'jpg'  => 'image/jpeg',
   'cgi'  => 'script/cgi',
   'rb'  => 'script/rb'
+}
+
+REQUEST_TYPE_MAPPING = {
+  'application/x-www-form-urlencoded' => 'form encoded',
+  'text/plain' => 'plain text'
 }
 
 # Treat as binary data if content type cannot be found

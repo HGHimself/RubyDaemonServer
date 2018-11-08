@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="HG King">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='https://www.hgking.xyz/css/deco.css' type='text/css'>
+    <script src='https://www.hgking.xyz/js/deco.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Limelight" rel="stylesheet">
+    <title>Home</title>
+    <script>
+      function ajax()  {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("landing").innerHTML =
+            this.responseText;
+          }
+        };
+        document.getElementById("landing").innerHTML = "Waiting for Server..."
+        param = document.getElementById("query").value
+        xhttp.open("GET", "/scraper/search/?query=" + param, true);
+        xhttp.send();
+      }
+    </script>
+  </head>
+  <body>
+    <div class='center _2-3rd text-center'>
+      <div id='header' class='deco'>
+        <h1 id="title" class="deco-title">Google Scholar Scraper</h1>
+        <h2 id="description" class="deco-description">Created By HG King</h2>
+      </div>
+    </div>
+    <main>
+      <div class='_half center center-text'>
+        <div class='deco card'>
+          <div class='row deco-form'>
+            <label for='query'>Query to Search:</label>
+            <input id='query' name='query' type='text' required>
+            <br>
+          </div>
+          <div class='row deco-form'>
+            <button onclick='ajax()'>Submit</button>
+          </div>
+        </div>
+        <div class='deco card'>
+          <div id='landing'></div>
+        </div>
+      </div>
+    </main>
+    <div class='center _2-3rd text-center'>
+      <div id="footer" class='deco'>
+        <footer>
+          <p class="footer-text">
+          <a href="about.php">About</a> &#124;
+          <a href="contact.php">Contact Us</a> &#124;
+          Copyright &copy;<time datetime="2018">2018</time>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
