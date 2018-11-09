@@ -11,63 +11,68 @@ class Scraper
     puts string
     begin
       doc = Nokogiri::HTML(open(string))
-      links = doc.xpath('//*[@id="gs_res_ccl_mid"]/div/div/h3/a')
-      phrases = doc.xpath('//*[@id="gs_res_ccl_mid"]/div/div/div[1]')
-      desc = doc.xpath('//*[@id="gs_res_ccl_mid"]/div/div/div[2]')
+      names = doc.xpath('//*[@id="mw-content-text"]/div/table[2]/tbody/tr/th/a')
+      hex_plural = doc.xpath('//*[@id="mw-content-text"]/div/table[2]/tbody/tr/td[1]')
 
-      if !links.nil? and links.size > 0
-        links.each_with_index do |var, i|
-          puts "-"
+      if !names.nil? and names.size > 0
+        hex_plural.size.times do |i|
           doc = {
-            :_id => var.attribute("href"),
-            :title => var.innerHTML,
-            :blurb => strip_tags(phrases[i].inner_html),
-            :link => var.attribute("href"),
-            :desc => strip_tags(desc[i].to_s),
+            :name =>  names[i + 9].inner_html,
+            :hex => hex_plural[i].inner_html,
+            :link => "https://en.wikipedia.org/" + names[i + 9].attribute("href"),
           }
 
-          client[:GoogleScholar].insert_one doc
+          client[:Colors].insert_one doc
         end
         return 1
       else
         puts "null"
         return 0
       end
-    rescue
+    rescue Exception => ex
       puts "arrgh there be an error"
+      puts ex
     end
   end
 
   def doWork(query)
+
     Mongo::Logger.logger.level = ::Logger::FATAL
-
+    inputs = ["List_of_colors:_A–F","List_of_colors:_G–M","List_of_colors:_N-Z"]
     client = Mongo::Client.new([ '127.0.0.1:27017' ], :database => 'scraper')
+    if !query.nil? and inputs.include?(query)
+      string = "https://en.wikipedia.org/wiki/" + query
+      res = scrape(string, client)
+    end
 
-    offset = 0
-    string = "https://scholar.google.com/scholar?start=#{offset}&q=#{query}&hl=en&as_sdt=0,26"
-    res = scrape(string, client)
-    #while 1 ==  do
-      offset += 10
-      string = "https://scholar.google.com/scholar?start=#{offset}&q=#{query}&hl=en&as_sdt=0,26"
-    #end
 
-    #client[:cars].insert_one doc
-    html = "<table>"
-    client[:cars].find.each_with_index do |doc, i|
+    open_table = "<table>"
+    lines = ""
+    headers = ""
+    client[:Colors].find.each_with_index do |doc, i|
+      line = ""
+      hex = ""
       if i == 0
         doc.each do |key, value|
-          html += "<th>#{key}</th>"
+          headers += "<th>#{key}</th>" if key != '_id'
         end
       end
-      html += "<tr>"
+      data = ""
       doc.each do |key, value|
-        html += "<td>#{value}</td>"
+        if key == "hex"
+          hex = value.chomp
+        end
+        # if key == "link"
+        #   value = "<a href='#{value.chomp}'>Link</a>"
+        # end
+        data += "<td>#{value.chomp}</td>" if key != "_id"
       end
-      html += "</tr>"
+      line = "<tr style='background-color: " + hex + "'>" + data + "</tr>"
+      lines += line
     end
-    html += "</table>"
+    close_table = "</table>"
 
     client.close
-    return html
+    return open_table + headers + lines + close_table
   end
 end

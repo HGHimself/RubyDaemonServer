@@ -54,8 +54,8 @@ class Request
 
   def addHeader(header)
     arr = header.chomp.split(": ")
-    puts key = arr[0].colorize(:blue)
-    puts value = arr[1].colorize(:magenta)
+    key = arr[0].colorize(:blue)
+    value = arr[1].colorize(:magenta)
     @headers[key] = value
   end
 

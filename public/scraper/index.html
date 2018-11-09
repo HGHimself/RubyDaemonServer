@@ -7,7 +7,7 @@
     <link rel='stylesheet' href='https://www.hgking.xyz/css/deco.css' type='text/css'>
     <script src='https://www.hgking.xyz/js/deco.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Limelight" rel="stylesheet">
-    <title>Home</title>
+    <title>Wiki Color Scraper</title>
     <script>
       function ajax()  {
         var xhttp = new XMLHttpRequest();
@@ -27,14 +27,25 @@
   <body>
     <div class='center _2-3rd text-center'>
       <div id='header' class='deco'>
-        <h1 id="title" class="deco-title">Google Scholar Scraper</h1>
+        <h1 id="title" class="deco-title">Wiki Color Scraper</h1>
         <h2 id="description" class="deco-description">Created By HG King</h2>
       </div>
     </div>
     <main>
-      <div class='_half center center-text'>
+      <div class='_2-3rd center'>
         <div class='deco card'>
-          <div class='row deco-form'>
+          <p>This webapp will scrape all the color names, hex codes, and wiki page links from the three pages found:
+          </p>
+          <ul>
+            <li><a href='https://en.wikipedia.org/wiki/List_of_colors:_A%E2%80%93F'>List_of_colors:_A–F</a></li>
+            <li><a href='https://en.wikipedia.org/wiki/List_of_colors:_G%E2%80%93M'>List_of_colors:_G–M</a></li>
+            <li><a href='https://en.wikipedia.org/wiki/List_of_colors:_N%E2%80%93Z'>List_of_colors:_N-Z</a></li>
+          </ul>
+          <p>To use, copy and paste the text from one of the above links into the
+            input field below. The script will go forth and scrape the code from the
+            site and then insert it into the databse. From there the script will print out
+            every entry in the database so far. Any false or empty imput will result in the display of the database.</p>
+          <div class='row deco-form  text-center'>
             <label for='query'>Query to Search:</label>
             <input id='query' name='query' type='text' required>
             <br>
@@ -43,7 +54,7 @@
             <button onclick='ajax()'>Submit</button>
           </div>
         </div>
-        <div class='deco card'>
+        <div class='deco card' style="overflow-x:auto;">
           <div id='landing'></div>
         </div>
       </div>
