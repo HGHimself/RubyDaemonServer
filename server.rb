@@ -64,7 +64,6 @@ server.get "/test" do |req, res|
 end
 
 server.get %r"\/[a-zA-Z1-9\-\/_]*[\.]?[a-z]*" do |req, res|
-  puts "In the block"
   res.send_file(req.method, req.abs_path)
 end
 

@@ -41,7 +41,7 @@ class Scraper
     inputs = ["List_of_colors:_A–F","List_of_colors:_G–M","List_of_colors:_N-Z"]
     client = Mongo::Client.new([ '127.0.0.1:27017' ], :database => 'scraper')
     if !query.nil? and inputs.include?(query)
-      string = "https://en.wikipedia.org/wiki/" + query
+      string = "https://en.wikipedia.org/wiki" + query
       res = scrape(string, client)
     end
 

@@ -52,6 +52,37 @@ class Request
     puts "method:#{method} path:#{abs_path}".colorize(:light_green)
   end
 
+  def readRequest(socket)
+
+    bodyFlag = 0
+    breakFlag = 0
+
+    #while there are lines to get and the break flag isnt set
+    while breakFlag == 0 and line = socket.gets
+      #head and body in request are split by CRLF
+      if line == "\r\n"
+        #if this method comes with a body
+        if HAS_BODY.include?(method)
+          bodyFlag = 1
+        else
+          breakFlag = 1
+        end
+      else
+        #first read headers then read body
+        if bodyFlag == 0
+          addHeader(line)
+        else
+          addToBody(line)
+          puts bodySize
+          #want to read in as many bytes as the header specifies
+          if bodySize == header?("content-length").to_i or line.chomp.length < 1
+            breakFlag = 1
+          end
+        end
+      end
+    end
+  end
+
   def addHeader(header)
     arr = header.chomp.split(": ")
     key = arr[0].colorize(:blue)

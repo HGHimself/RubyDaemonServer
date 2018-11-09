@@ -26,7 +26,7 @@ class Response
       form_response(method, path, code)
     end
 
-    code
+    return code
   end
 
   def content_type(path)
@@ -61,5 +61,7 @@ class Response
     @socket.puts "Connection: close\r\n"
     @socket.puts "\r\n"
     @socket.puts string
+
+    return code
   end
 end

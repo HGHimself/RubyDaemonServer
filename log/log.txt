@@ -1,1275 +1,203 @@
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.2482ms ... Form_Request
-0.3152ms ... Send_Response
-36.1259ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
-0.199ms ... Form_Request
-0.2496ms ... Send_Response
-141.072ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.1278ms ... Form_Request
-0.2212ms ... Send_Response
-1.7498ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
-0.156ms ... Form_Request
-0.2447ms ... Send_Response
-97.3858ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.1216ms ... Form_Request
-0.254ms ... Send_Response
-1.6295ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
-0.1355ms ... Form_Request
-0.2728ms ... Send_Response
-94.2139ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.1888ms ... Form_Request
-0.2143ms ... Send_Response
-1.7611ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
-0.1331ms ... Form_Request
-0.2514ms ... Send_Response
-95.6925ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.1351ms ... Form_Request
-0.2238ms ... Send_Response
-2.4099ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
-0.1315ms ... Form_Request
-0.2867ms ... Send_Response
-140.4776ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.117ms ... Form_Request
-0.216ms ... Send_Response
-1.9297ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.1178ms ... Form_Request
-0.2342ms ... Send_Response
-1.4819ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
-0.1269ms ... Form_Request
-0.2582ms ... Send_Response
-96.0328ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.1508ms ... Form_Request
-0.2786ms ... Send_Response
-1.631ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
-0.143ms ... Form_Request
-0.2602ms ... Send_Response
-96.0719ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.1394ms ... Form_Request
-0.2237ms ... Send_Response
-37.0446ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-45.5597ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.1092ms ... Form_Request
-0.2381ms ... Send_Response
-1.669ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-35.4598ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.1098ms ... Form_Request
-0.2297ms ... Send_Response
-1.8816ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-35.4202ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.1242ms ... Form_Request
-0.2539ms ... Send_Response
-1.409ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-35.5318ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.1526ms ... Form_Request
-0.2319ms ... Send_Response
-1.9654ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-36.8896ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.141ms ... Form_Request
-0.25ms ... Send_Response
-6.526ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-8.9401ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-35.5487ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.8453ms ... Form_Request
-0.2084ms ... Send_Response
-4.2768ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
-0.1292ms ... Form_Request
-0.2483ms ... Send_Response
-115.4534ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.127ms ... Form_Request
-0.1948ms ... Send_Response
-1.7146ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
-0.2105ms ... Form_Request
-0.2353ms ... Send_Response
-95.3177ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.1112ms ... Form_Request
-0.2152ms ... Send_Response
-2.131ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-35.398ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.1179ms ... Form_Request
-0.1987ms ... Send_Response
-0.8472ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
-0.1692ms ... Form_Request
-0.2374ms ... Send_Response
-140.8004ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.1276ms ... Form_Request
-0.237ms ... Send_Response
-1.4758ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
-0.1246ms ... Form_Request
-0.235ms ... Send_Response
-156.7633ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.1123ms ... Form_Request
-0.2332ms ... Send_Response
-1.5149ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/favicon.ico
-0.1803ms ... Form_Request
-0.2372ms ... Send_Response
-93.3231ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.1218ms ... Form_Request
-0.2184ms ... Send_Response
-1.2498ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-35.5867ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public/index.html
-0.1116ms ... Form_Request
-0.219ms ... Send_Response
-2.1922ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-35.5069ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public
-0.1623ms ... Form_Request
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-1.1705ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public
-0.1355ms ... Form_Request
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-178.7899ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/emerald/public
-0.1596ms ... Form_Request
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-0.7999ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/index.html
-0.2404ms ... Form_Request
-0.2724ms ... Send_Response
-35.8471ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1958ms ... Form_Request
-0.2649ms ... Send_Response
-306.4844ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/index.html
-0.129ms ... Form_Request
-0.2176ms ... Send_Response
-1.5026ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.136ms ... Form_Request
-0.2725ms ... Send_Response
-130.5155ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/index.html
-0.1218ms ... Form_Request
-0.2612ms ... Send_Response
-1.6746ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1281ms ... Form_Request
-0.299ms ... Send_Response
-97.8525ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/index.html
-0.1641ms ... Form_Request
-0.2404ms ... Send_Response
-42.3297ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-38.078ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/index.html
-0.1371ms ... Form_Request
-0.2098ms ... Send_Response
-2.1536ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-4.2913ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-35.7093ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/index.html
-0.1278ms ... Form_Request
-0.2324ms ... Send_Response
-1.494ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1225ms ... Form_Request
-0.2296ms ... Send_Response
-100.2679ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/index.html
-0.1212ms ... Form_Request
-0.2186ms ... Send_Response
-1.7338ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1664ms ... Form_Request
-0.2625ms ... Send_Response
-94.9957ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/index.html
-0.1294ms ... Form_Request
-0.2169ms ... Send_Response
-1.7197ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1864ms ... Form_Request
-0.2746ms ... Send_Response
-95.9147ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/index.html
-0.1182ms ... Form_Request
-0.2201ms ... Send_Response
-1.4519ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1629ms ... Form_Request
-0.266ms ... Send_Response
-89.9274ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/index.html
-0.1197ms ... Form_Request
-0.2303ms ... Send_Response
-35.7889ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1369ms ... Form_Request
-0.2605ms ... Send_Response
-138.4726ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/index.html
-0.181ms ... Form_Request
-0.2223ms ... Send_Response
-2.1854ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1711ms ... Form_Request
-0.3207ms ... Send_Response
-97.107ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/index.html
-0.2025ms ... Form_Request
-0.2712ms ... Send_Response
-97.3465ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-69.9258ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/index.html
-0.138ms ... Form_Request
-1.0495ms ... Send_Response
-43.291ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.126ms ... Form_Request
-0.2555ms ... Send_Response
-153.101ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/index.html
-0.2598ms ... Form_Request
-1.3148ms ... Send_Response
-43.5149ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.2103ms ... Form_Request
-1.8108ms ... Send_Response
-303.4849ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-14426.5961ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-51625.8806ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/index.html
-0.1626ms ... Form_Request
-0.2225ms ... Send_Response
-37.4742ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper.html
-0.1474ms ... Form_Request
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;93;49m0.6045ms ... Form_Request[0m
 In the block
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-4244.0196ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper.html
-0.1604ms ... Form_Request
-In the block
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-1.4947ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper.html
-0.1922ms ... Form_Request
-In the block
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-2.0726ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper.html
-0.1298ms ... Form_Request
-In the block
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-4048.7717ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper.html
-0.1795ms ... Form_Request
-In the block
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-0.6389ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1251ms ... Form_Request
-In the block
-0.1977ms ... Send_Response
-2.3485ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/css/normalize.css HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/css/normalize.css
-0.14ms ... Form_Request
-In the block
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-46.5154ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/css/deco.css HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/css/deco.css
-0.1612ms ... Form_Request
-In the block
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-0.887ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/css/normalize.css HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/css/normalize.css
-0.0934ms ... Form_Request
-In the block
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-1.328ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/js/deco.js HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/js/deco.js
-0.1705ms ... Form_Request
-In the block
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-1.1156ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-32357.4634ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1802ms ... Form_Request
-In the block
-0.1987ms ... Send_Response
-1128.916ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1888ms ... Form_Request
-0.2614ms ... Send_Response
-198.9916ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1212ms ... Form_Request
-In the block
-0.201ms ... Send_Response
-1.1432ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1317ms ... Form_Request
-0.2593ms ... Send_Response
-122.777ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1547ms ... Form_Request
-In the block
-0.1972ms ... Send_Response
-2.2015ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1247ms ... Form_Request
-0.2708ms ... Send_Response
-188.7709ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET / HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/index.html
-0.1409ms ... Form_Request
-0.248ms ... Send_Response
-36.8437ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-44.7107ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.133ms ... Form_Request
-In the block
-0.2176ms ... Send_Response
-45.4708ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1728ms ... Form_Request
-0.2494ms ... Send_Response
-224.0547ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /color/ HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/color
-0.1622ms ... Form_Request
-In the block
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-36.7209ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /color/ HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/color
-0.1399ms ... Form_Request
-In the block
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-252.5758ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /color/ HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/color
-0.122ms ... Form_Request
-In the block
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-1.049ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-29673.3241ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-Ahh an error
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.2538ms ... Form_Request
-In the block
-0.2809ms ... Send_Response
-36.5387ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1989ms ... Form_Request
-0.2779ms ... Send_Response
-238.1294ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1325ms ... Form_Request
-In the block
-0.2082ms ... Send_Response
-2.2657ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1365ms ... Form_Request
-0.2802ms ... Send_Response
-85.6681ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1516ms ... Form_Request
-In the block
-0.2492ms ... Send_Response
-1127.7713ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1434ms ... Form_Request
-0.2685ms ... Send_Response
-43.7699ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1674ms ... Form_Request
-In the block
-0.192ms ... Send_Response
-42.9134ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.131ms ... Form_Request
-0.262ms ... Send_Response
-69.4058ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.2133ms ... Form_Request
-In the block
-0.2576ms ... Send_Response
-1.4379ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1351ms ... Form_Request
-0.2884ms ... Send_Response
-72.3621ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1362ms ... Form_Request
-In the block
-0.2039ms ... Send_Response
-0.9231ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.124ms ... Form_Request
-0.317ms ... Send_Response
-75.7296ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1376ms ... Form_Request
-In the block
-0.1947ms ... Send_Response
-2.082ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1659ms ... Form_Request
-0.2366ms ... Send_Response
-163.1286ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1234ms ... Form_Request
-In the block
-0.1975ms ... Send_Response
-0.7574ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.2494ms ... Form_Request
-0.2971ms ... Send_Response
-135.3842ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.141ms ... Form_Request
-In the block
-0.1768ms ... Send_Response
-2.3027ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1602ms ... Form_Request
-0.2856ms ... Send_Response
-160.8098ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1503ms ... Form_Request
-In the block
-0.2179ms ... Send_Response
-1.1862ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.2129ms ... Form_Request
-0.3408ms ... Send_Response
-149.9205ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1943ms ... Form_Request
-In the block
-0.2049ms ... Send_Response
-2.5548ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1671ms ... Form_Request
-0.9028ms ... Send_Response
-168.9616ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.135ms ... Form_Request
-In the block
-0.2062ms ... Send_Response
-35.8162ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1345ms ... Form_Request
-0.2363ms ... Send_Response
-95.1321ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1679ms ... Form_Request
-In the block
-0.1958ms ... Send_Response
-3.5632ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1296ms ... Form_Request
-0.2866ms ... Send_Response
-61.6662ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.154ms ... Form_Request
-In the block
-0.1853ms ... Send_Response
-1.7715ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1775ms ... Form_Request
-0.2314ms ... Send_Response
-76.2222ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1285ms ... Form_Request
-In the block
-0.2422ms ... Send_Response
-1.6153ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1386ms ... Form_Request
-0.258ms ... Send_Response
-51.9374ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1672ms ... Form_Request
-In the block
-0.1852ms ... Send_Response
-1.827ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.2043ms ... Form_Request
-0.2352ms ... Send_Response
-100.1766ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1242ms ... Form_Request
-In the block
-0.1858ms ... Send_Response
-2.6613ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1352ms ... Form_Request
-0.2539ms ... Send_Response
-81.4199ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1726ms ... Form_Request
-In the block
-0.1779ms ... Send_Response
-2.2685ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1381ms ... Form_Request
-0.2873ms ... Send_Response
-81.8622ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1296ms ... Form_Request
-In the block
-0.1838ms ... Send_Response
-2.9603ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1303ms ... Form_Request
-0.2675ms ... Send_Response
-79.2732ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /upload/ HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/upload
-0.157ms ... Form_Request
-In the block
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-0.8959ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /upload/ HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/upload
-0.1408ms ... Form_Request
-In the block
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-187.0839ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /upload/ HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/upload
-0.1139ms ... Form_Request
-In the block
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-0.7573ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /color/ HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/color
-0.1471ms ... Form_Request
-In the block
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-4408.7758ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /color/ HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/color
-0.155ms ... Form_Request
-In the block
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-0.4005ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /color/ HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/color
-0.1373ms ... Form_Request
-In the block
-An error of type Errno::ENOENT happened, message is No such file or directory @ rb_sysopen - /public/error/50X.html
-1.051ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-
-RequestLine was nil
-161389.8979ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-Ahh an error
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.2656ms ... Form_Request
-In the block
-0.2856ms ... Send_Response
-35.5728ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.2086ms ... Form_Request
-0.2659ms ... Send_Response
-249.8454ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-POST /scraper/scraper.html HTTP/1.1
-method:POST path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-10139.3378ms ... Form_Request
-An error of type JSON::ParserError happened, message is 765: unexpected token at 'query=1234'
-10140.4579ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1928ms ... Form_Request
-In the block
-0.1991ms ... Send_Response
-1.4051ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.1358ms ... Form_Request
-0.29ms ... Send_Response
-127.4126ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /scraper/scraper.html HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/scraper/scraper.html
-0.1348ms ... Form_Request
-In the block
-0.2003ms ... Send_Response
-1.7755ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-GET /favicon.ico HTTP/1.1
-method:GET path:/home/hg/rubyStuff/Server/public/favicon.ico
-0.2277ms ... Form_Request
-0.2774ms ... Send_Response
-168.377ms ... Thread_Exec
-Closing Socket and Ending Thread.
-
-Ahh an error
-GET / HTTP/1.1
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
-[0;34;49mHost[0m
-[0;35;49mwww.hgking.xyz:12345[0m
-[0;34;49mConnection[0m
-[0;35;49mkeep-alive[0m
-[0;34;49mUpgrade-Insecure-Requests[0m
-[0;35;49m1[0m
-[0;34;49mUser-Agent[0m
-[0;35;49mMozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
-[0;34;49mAccept[0m
-[0;35;49mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
-[0;34;49mAccept-Encoding[0m
-[0;35;49mgzip, deflate, br[0m
-[0;34;49mAccept-Language[0m
-[0;35;49men-US,en;q=0.9,la;q=0.8[0m
-[0;33;49m0.7043ms ... Form_Request[0m
-[0;33;49m0.2839ms ... Send_Response[0m
-[0;33;49m56.3936ms ... Thread_Exec[0m
+[0;93;49m0.2614ms ... Send_Response[0m
+[0;93;49m44.5235ms ... Thread_Exec[0m
 [0;32;49mClosing Socket and Ending Thread.[0m
 
-
-[0;31;49mRequestLine was nil[0m
-[0;33;49m43226.6754ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-GET / HTTP/1.1
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
-[0;34;49mHost[0m
-[0;35;49mwww.hgking.xyz:12345[0m
-[0;34;49mConnection[0m
-[0;35;49mkeep-alive[0m
-[0;34;49mCache-Control[0m
-[0;35;49mmax-age=0[0m
-[0;34;49mUpgrade-Insecure-Requests[0m
-[0;35;49m1[0m
-[0;34;49mUser-Agent[0m
-[0;35;49mMozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
-[0;34;49mAccept[0m
-[0;35;49mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
-[0;34;49mAccept-Encoding[0m
-[0;35;49mgzip, deflate, br[0m
-[0;34;49mAccept-Language[0m
-[0;35;49men-US,en;q=0.9,la;q=0.8[0m
-[0;33;49m0.6908ms ... Form_Request[0m
-[0;33;49m0.2544ms ... Send_Response[0m
-[0;33;49m48.3021ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-GET /favicon.ico HTTP/1.1
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
 [0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;34;49mHost[0m
-[0;35;49mwww.hgking.xyz:12345[0m
-[0;34;49mConnection[0m
-[0;35;49mkeep-alive[0m
-[0;34;49mPragma[0m
-[0;35;49mno-cache[0m
-[0;34;49mCache-Control[0m
-[0;35;49mno-cache[0m
-[0;34;49mUser-Agent[0m
-[0;35;49mMozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
-[0;34;49mAccept[0m
-[0;35;49mimage/webp,image/apng,image/*,*/*;q=0.8[0m
-[0;34;49mReferer[0m
-[0;35;49mhttps://www.hgking.xyz:12345/[0m
-[0;34;49mAccept-Encoding[0m
-[0;35;49mgzip, deflate, br[0m
-[0;34;49mAccept-Language[0m
-[0;35;49men-US,en;q=0.9,la;q=0.8[0m
-[0;33;49m0.5586ms ... Form_Request[0m
-[0;33;49m0.2713ms ... Send_Response[0m
-[0;33;49m113.914ms ... Thread_Exec[0m
+[0;93;49m0.6814ms ... Form_Request[0m
+[0;93;49m0.3045ms ... Send_Response[0m
+[0;93;49m90.9586ms ... Thread_Exec[0m
 [0;32;49mClosing Socket and Ending Thread.[0m
 
-GET / HTTP/1.1
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
-[0;34;49mHost[0m
-[0;35;49mwww.hgking.xyz:12345[0m
-[0;34;49mAccept[0m
-[0;35;49mtext/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8[0m
-[0;34;49mAccept-Language[0m
-[0;35;49men-us[0m
-[0;34;49mConnection[0m
-[0;35;49mkeep-alive[0m
-[0;34;49mAccept-Encoding[0m
-[0;35;49mbr, gzip, deflate[0m
-[0;34;49mUser-Agent[0m
-[0;35;49mMozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/70.0.3538.75 Mobile/15E148 Safari/605.1[0m
-[0;33;49m0.4827ms ... Form_Request[0m
-[0;33;49m0.2289ms ... Send_Response[0m
-[0;33;49m50.002ms ... Thread_Exec[0m
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;93;49m0.4427ms ... Form_Request[0m
+In the block
+[0;93;49m0.2142ms ... Send_Response[0m
+[0;93;49m163.9936ms ... Thread_Exec[0m
 [0;32;49mClosing Socket and Ending Thread.[0m
 
-
-[0;31;49mRequestLine was nil[0m
-[0;33;49m59.2379ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-GET / HTTP/1.1
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
-[0;34;49mHost[0m
-[0;35;49mwww.hgking.xyz:12345[0m
-[0;34;49mAccept[0m
-[0;35;49mtext/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8[0m
-[0;34;49mAccept-Language[0m
-[0;35;49men-us[0m
-[0;34;49mConnection[0m
-[0;35;49mkeep-alive[0m
-[0;34;49mAccept-Encoding[0m
-[0;35;49mbr, gzip, deflate[0m
-[0;34;49mUser-Agent[0m
-[0;35;49mMozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/70.0.3538.75 Mobile/15E148 Safari/605.1[0m
-[0;33;49m0.4859ms ... Form_Request[0m
-[0;33;49m0.2422ms ... Send_Response[0m
-[0;33;49m67.9468ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-
-[0;31;49mRequestLine was nil[0m
-[0;33;49m110.1059ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-GET / HTTP/1.1
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
-[0;34;49mHost[0m
-[0;35;49mwww.hgking.xyz:12345[0m
-[0;34;49mAccept[0m
-[0;35;49mtext/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8[0m
-[0;34;49mAccept-Language[0m
-[0;35;49men-us[0m
-[0;34;49mConnection[0m
-[0;35;49mkeep-alive[0m
-[0;34;49mAccept-Encoding[0m
-[0;35;49mbr, gzip, deflate[0m
-[0;34;49mUser-Agent[0m
-[0;35;49mMozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/70.0.3538.75 Mobile/15E148 Safari/605.1[0m
-[0;33;49m0.503ms ... Form_Request[0m
-[0;33;49m0.2253ms ... Send_Response[0m
-[0;33;49m7.2953ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-
-[0;31;49mRequestLine was nil[0m
-[0;33;49m59.6753ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-GET / HTTP/1.1
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
-[0;34;49mHost[0m
-[0;35;49mwww.hgking.xyz:12345[0m
-[0;34;49mConnection[0m
-[0;35;49mkeep-alive[0m
-[0;34;49mPurpose[0m
-[0;35;49mprefetch[0m
-[0;34;49mUpgrade-Insecure-Requests[0m
-[0;35;49m1[0m
-[0;34;49mUser-Agent[0m
-[0;35;49mMozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
-[0;34;49mAccept[0m
-[0;35;49mtext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
-[0;34;49mAccept-Encoding[0m
-[0;35;49mgzip, deflate, br[0m
-[0;34;49mAccept-Language[0m
-[0;35;49men-US,en;q=0.9,la;q=0.8[0m
-[0;33;49m0.7317ms ... Form_Request[0m
-[0;33;49m0.2373ms ... Send_Response[0m
-[0;33;49m3065.2021ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-
-[0;31;49mRequestLine was nil[0m
-[0;33;49m82301.9573ms ... Thread_Exec[0m
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;93;49m0.5ms ... Form_Request[0m
+[0;93;49m0.2549ms ... Send_Response[0m
+[0;93;49m354.0812ms ... Thread_Exec[0m
 [0;32;49mClosing Socket and Ending Thread.[0m
 
 [0;31;49mAhh an error[0m
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;93;49m0.7771ms ... Form_Request[0m
+In the block
+[0;93;49m0.305ms ... Send_Response[0m
+[0;93;49m37.0291ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;93;49m2.7049ms ... Form_Request[0m
+[0;93;49m0.2692ms ... Send_Response[0m
+[0;93;49m252.7902ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;93;49m0.5842ms ... Form_Request[0m
+In the block
+[0;93;49m0.2476ms ... Send_Response[0m
+[0;93;49m2.2493ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;93;49m0.4996ms ... Form_Request[0m
+In the block
+[0;93;49m0.234ms ... Send_Response[0m
+[0;93;49m3.7462ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;93;49m0.5873ms ... Form_Request[0m
+[0;93;49m0.2807ms ... Send_Response[0m
+[0;93;49m71.2615ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/search/?query= HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/search[0m
+[0;93;49m0.4997ms ... Form_Request[0m
+[0;93;49m393.0268ms ... Send_Response[0m
+[0;93;49m6168.3462ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m49745.0418ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;93;49m0.9239ms ... Form_Request[0m
+In the block
+[0;93;49m0.1963ms ... Send_Response[0m
+[0;93;49m2.9875ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;93;49m1.0124ms ... Form_Request[0m
+[0;93;49m0.752ms ... Send_Response[0m
+[0;93;49m89.6018ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/search/?query= HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/search[0m
+[0;93;49m1.0226ms ... Form_Request[0m
+[0;93;49m341.1185ms ... Send_Response[0m
+[0;93;49m345.1939ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;93;49m0.366ms ... Form_Request[0m
+In the block
+[0;93;49m0.1981ms ... Send_Response[0m
+[0;93;49m2.7591ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;93;49m0.3783ms ... Form_Request[0m
+[0;93;49m0.2154ms ... Send_Response[0m
+[0;93;49m93.7106ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;93;49m0.3437ms ... Form_Request[0m
+In the block
+[0;93;49m0.1798ms ... Send_Response[0m
+[0;93;49m1.9645ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;93;49m0.3718ms ... Form_Request[0m
+[0;93;49m0.2385ms ... Send_Response[0m
+[0;93;49m80.6721ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/search/?query= HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/search[0m
+[0;93;49m0.3353ms ... Form_Request[0m
+[0;93;49m381.4257ms ... Send_Response[0m
+[0;93;49m382.9144ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;93;49m0.5492ms ... Form_Request[0m
+In the block
+[0;93;49m0.3433ms ... Send_Response[0m
+[0;93;49m3.1588ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;93;49m0.5863ms ... Form_Request[0m
+[0;93;49m0.431ms ... Send_Response[0m
+[0;93;49m82.8016ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/search/?query= HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/search[0m
+[0;93;49m0.5269ms ... Form_Request[0m
+[0;93;49m349.5116ms ... Send_Response[0m
+[0;93;49m351.6107ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/ HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;93;49m3.2782ms ... Form_Request[0m
+[0;93;49m0.2916ms ... Send_Response[0m
+[0;93;49m39.3973ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;93;49m0.6058ms ... Form_Request[0m
+[0;93;49m0.2676ms ... Send_Response[0m
+[0;93;49m88.747ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/ HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;93;49m0.4143ms ... Form_Request[0m
+[0;93;49m0.1916ms ... Send_Response[0m
+[0;93;49m1.9603ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;93;49m0.4667ms ... Form_Request[0m
+[0;93;49m0.2433ms ... Send_Response[0m
+[0;93;49m71.9177ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/ HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;93;49m0.5398ms ... Form_Request[0m
+[0;93;49m0.195ms ... Send_Response[0m
+[0;93;49m2.2282ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;93;49m0.5216ms ... Form_Request[0m
+[0;93;49m0.2709ms ... Send_Response[0m
+[0;93;49m74.8021ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+

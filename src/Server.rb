@@ -1,4 +1,5 @@
 require "./CONFIG"
+require "./src/Router"
 require "./src/Response"
 require "./src/Request"
 require 'socket'
@@ -10,7 +11,7 @@ class Server
 
   def initialize(options)
 
-    @paths = {}
+
     @options = options
     @options[:rootdir] = File.expand_path(WEB_ROOT)
 
@@ -23,6 +24,8 @@ class Server
     else
       @timers = nil
     end
+
+    @router = Router.new
 
     server = TCPServer.new(host, port)
 
@@ -108,69 +111,22 @@ class Server
     start_timer("Thread_Exec")
     begin
       line = socket.gets
-      puts line.chomp.colorize(:light_blue)
+
       #need proper request line
       if line != nil and line != "\r\n"
-        start_timer("Form_Request")
+        puts line.chomp.colorize(:light_blue)
 
-        #create request object
+        start_timer("Form_Request")
         req = Request.new rootdir
         req.addRequestLine(line)
-
-        bodyFlag = 0
-        breakFlag = 0
-
-        #while there are lines to get and the break flag isnt set
-        while breakFlag == 0 and line = socket.gets
-          #head and body in request are split by CRLF
-          if line == "\r\n"
-            #if this method comes with a body
-            if HAS_BODY.include?(req.method)
-              bodyFlag = 1
-            else
-              breakFlag = 1
-            end
-          else
-            #first read headers then read body
-            if bodyFlag == 0
-              req.addHeader(line)
-            else
-              req.addToBody(line)
-              puts req.bodySize
-              #want to read in as many bytes as the header specifies
-              if req.bodySize == req.header?("content-length").to_i or line.chomp.length < 1
-                breakFlag = 1
-              end
-            end
-          end
-        end
-
+        req.readRequest(socket)
         end_timer("Form_Request")
+
         start_timer("Send_Response")
-
         res = Response.new socket
-
-        if @paths[req.method][req.rel_path].nil?
-          if req.rel_path == "/favicon.ico"
-            res.send_file(req.rel_path, req.abs_path)
-          else
-            curr = nil
-            @paths[req.method]["REGEXP"].each do |regex, proc|
-              if regex =~ req.rel_path
-                curr = regex
-              end
-            end
-            if curr != nil
-              @paths[req.method]["REGEXP"][curr].call(req, res)
-            else
-              puts "This path has not been specified!".colorize(:red)
-            end
-          end
-        else
-          @paths[req.method][req.rel_path].call(req, res)
-        end
-
+        @router.doRoute req, res
         end_timer("Send_Response")
+
       else
         puts "RequestLine was nil".colorize(:red)
       end
@@ -187,29 +143,15 @@ class Server
   end
 
   def get(path, &code)
-    form_path("GET", path, code)
+    @router.form_path("GET", path, code)
   end
 
   def post(path, &code)
-    form_path("POST", path, code)
+    @router.form_path("POST", path, code)
   end
 
   def head(path, &code)
-    form_path("HEAD", path, code)
-  end
-
-  def form_path(method, path, code)
-    if @paths[method].nil?
-      @paths[method] = {}
-    end
-    if Regexp == path.class
-      if @paths[method]["REGEXP"].nil?
-        @paths[method]["REGEXP"] = {}
-      end
-      @paths[method]["REGEXP"][path] = code
-    else
-      @paths[method][path] = code
-    end
+    @router.form_path("HEAD", path, code)
   end
 
 end
