@@ -1,387 +1,124 @@
-[0;94;49mGET /scraper HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.6045ms ... Form_Request[0m
-In the block
-[0;93;49m0.2614ms ... Send_Response[0m
-[0;93;49m44.5235ms ... Thread_Exec[0m
+[0;94;49mGET /test.html HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/test.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.6713ms ... Form_Request[0m
+[0;93;49m0.3229ms ... Send_Response[0m
+[0;93;49m40.6805ms ... Thread_Exec[0m
 [0;32;49mClosing Socket and Ending Thread.[0m
 
 [0;94;49mGET /favicon.ico HTTP/1.1[0m
 [0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.6814ms ... Form_Request[0m
-[0;93;49m0.3045ms ... Send_Response[0m
-[0;93;49m90.9586ms ... Thread_Exec[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/test.html[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.7824ms ... Form_Request[0m
+[0;93;49m0.3589ms ... Send_Response[0m
+[0;93;49m118.0222ms ... Thread_Exec[0m
 [0;32;49mClosing Socket and Ending Thread.[0m
 
-[0;94;49mGET /scraper HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.4427ms ... Form_Request[0m
-In the block
-[0;93;49m0.2142ms ... Send_Response[0m
-[0;93;49m163.9936ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /favicon.ico HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.5ms ... Form_Request[0m
-[0;93;49m0.2549ms ... Send_Response[0m
-[0;93;49m354.0812ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;31;49mAhh an error[0m
-[0;94;49mGET /scraper HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.7771ms ... Form_Request[0m
-In the block
-[0;93;49m0.305ms ... Send_Response[0m
-[0;93;49m37.0291ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /favicon.ico HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m2.7049ms ... Form_Request[0m
-[0;93;49m0.2692ms ... Send_Response[0m
-[0;93;49m252.7902ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.5842ms ... Form_Request[0m
-In the block
-[0;93;49m0.2476ms ... Send_Response[0m
-[0;93;49m2.2493ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.4996ms ... Form_Request[0m
-In the block
-[0;93;49m0.234ms ... Send_Response[0m
-[0;93;49m3.7462ms ... Thread_Exec[0m
+[0;94;49mGET /test.html HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/test.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4212ms ... Form_Request[0m
+[0;93;49m0.2229ms ... Send_Response[0m
+[0;93;49m3.9383ms ... Thread_Exec[0m
 [0;32;49mClosing Socket and Ending Thread.[0m
 
 [0;94;49mGET /favicon.ico HTTP/1.1[0m
 [0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.5873ms ... Form_Request[0m
-[0;93;49m0.2807ms ... Send_Response[0m
-[0;93;49m71.2615ms ... Thread_Exec[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/test.html[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4604ms ... Form_Request[0m
+[0;93;49m0.2952ms ... Send_Response[0m
+[0;93;49m113.4783ms ... Thread_Exec[0m
 [0;32;49mClosing Socket and Ending Thread.[0m
 
-[0;94;49mGET /scraper/search/?query= HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/search[0m
-[0;93;49m0.4997ms ... Form_Request[0m
-[0;93;49m393.0268ms ... Send_Response[0m
-[0;93;49m6168.3462ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;31;49mRequestLine was nil[0m
-[0;93;49m49745.0418ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.9239ms ... Form_Request[0m
-In the block
-[0;93;49m0.1963ms ... Send_Response[0m
-[0;93;49m2.9875ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /favicon.ico HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m1.0124ms ... Form_Request[0m
-[0;93;49m0.752ms ... Send_Response[0m
-[0;93;49m89.6018ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper/search/?query= HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/search[0m
-[0;93;49m1.0226ms ... Form_Request[0m
-[0;93;49m341.1185ms ... Send_Response[0m
-[0;93;49m345.1939ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.366ms ... Form_Request[0m
-In the block
-[0;93;49m0.1981ms ... Send_Response[0m
-[0;93;49m2.7591ms ... Thread_Exec[0m
+[0;94;49mGET /test.html HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/test.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4644ms ... Form_Request[0m
+[0;93;49m0.2494ms ... Send_Response[0m
+[0;93;49m1.9145ms ... Thread_Exec[0m
 [0;32;49mClosing Socket and Ending Thread.[0m
 
 [0;94;49mGET /favicon.ico HTTP/1.1[0m
 [0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.3783ms ... Form_Request[0m
-[0;93;49m0.2154ms ... Send_Response[0m
-[0;93;49m93.7106ms ... Thread_Exec[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/test.html[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4472ms ... Form_Request[0m
+[0;93;49m0.24ms ... Send_Response[0m
+[0;93;49m91.1786ms ... Thread_Exec[0m
 [0;32;49mClosing Socket and Ending Thread.[0m
 
-[0;94;49mGET /scraper HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.3437ms ... Form_Request[0m
-In the block
-[0;93;49m0.1798ms ... Send_Response[0m
-[0;93;49m1.9645ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /favicon.ico HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.3718ms ... Form_Request[0m
-[0;93;49m0.2385ms ... Send_Response[0m
-[0;93;49m80.6721ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper/search/?query= HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/search[0m
-[0;93;49m0.3353ms ... Form_Request[0m
-[0;93;49m381.4257ms ... Send_Response[0m
-[0;93;49m382.9144ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.5492ms ... Form_Request[0m
-In the block
-[0;93;49m0.3433ms ... Send_Response[0m
-[0;93;49m3.1588ms ... Thread_Exec[0m
+[0;94;49mGET /test.html HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/test.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.5546ms ... Form_Request[0m
+[0;93;49m0.2562ms ... Send_Response[0m
+[0;93;49m37.4927ms ... Thread_Exec[0m
 [0;32;49mClosing Socket and Ending Thread.[0m
 
 [0;94;49mGET /favicon.ico HTTP/1.1[0m
 [0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.5863ms ... Form_Request[0m
-[0;93;49m0.431ms ... Send_Response[0m
-[0;93;49m82.8016ms ... Thread_Exec[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/test.html[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.5755ms ... Form_Request[0m
+[0;93;49m0.3051ms ... Send_Response[0m
+[0;93;49m264.8378ms ... Thread_Exec[0m
 [0;32;49mClosing Socket and Ending Thread.[0m
 
-[0;94;49mGET /scraper/search/?query= HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/search[0m
-[0;93;49m0.5269ms ... Form_Request[0m
-[0;93;49m349.5116ms ... Send_Response[0m
-[0;93;49m351.6107ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper/ HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m3.2782ms ... Form_Request[0m
-[0;93;49m0.2916ms ... Send_Response[0m
-[0;93;49m39.3973ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /favicon.ico HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.6058ms ... Form_Request[0m
-[0;93;49m0.2676ms ... Send_Response[0m
-[0;93;49m88.747ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper/ HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.4143ms ... Form_Request[0m
-[0;93;49m0.1916ms ... Send_Response[0m
-[0;93;49m1.9603ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /favicon.ico HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.4667ms ... Form_Request[0m
-[0;93;49m0.2433ms ... Send_Response[0m
-[0;93;49m71.9177ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper/ HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.5398ms ... Form_Request[0m
-[0;93;49m0.195ms ... Send_Response[0m
-[0;93;49m2.2282ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /favicon.ico HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.5216ms ... Form_Request[0m
-[0;93;49m0.2709ms ... Send_Response[0m
-[0;93;49m74.8021ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper/ HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.4119ms ... Form_Request[0m
-[0;93;49m0.1922ms ... Send_Response[0m
-[0;93;49m3.1544ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /favicon.ico HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.5079ms ... Form_Request[0m
-[0;93;49m0.2493ms ... Send_Response[0m
-[0;93;49m99.6426ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper/ HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.4734ms ... Form_Request[0m
-[0;93;49m0.1825ms ... Send_Response[0m
-[0;93;49m1.9263ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /favicon.ico HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.5408ms ... Form_Request[0m
-[0;93;49m0.2887ms ... Send_Response[0m
-[0;93;49m68.6556ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper/ HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.5154ms ... Form_Request[0m
-[0;93;49m0.1796ms ... Send_Response[0m
-[0;93;49m2.081ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /favicon.ico HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.4545ms ... Form_Request[0m
-[0;93;49m0.2413ms ... Send_Response[0m
-[0;93;49m98.246ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper/ HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.4433ms ... Form_Request[0m
-[0;93;49m0.1997ms ... Send_Response[0m
-[0;93;49m3.3667ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /favicon.ico HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.4776ms ... Form_Request[0m
-[0;93;49m0.2635ms ... Send_Response[0m
-[0;93;49m71.5809ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper/ HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.4677ms ... Form_Request[0m
-[0;93;49m0.1833ms ... Send_Response[0m
-[0;93;49m2.3984ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /favicon.ico HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.482ms ... Form_Request[0m
-[0;93;49m0.2446ms ... Send_Response[0m
-[0;93;49m78.0797ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper/ HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.4096ms ... Form_Request[0m
-[0;93;49m0.2116ms ... Send_Response[0m
-[0;93;49m75.9187ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /favicon.ico HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.4168ms ... Form_Request[0m
-[0;93;49m0.2568ms ... Send_Response[0m
-[0;93;49m641.5743ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET / HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
-[0;93;49m0.3387ms ... Form_Request[0m
-[0;93;49m0.2778ms ... Send_Response[0m
-[0;93;49m100.8208ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;31;49mRequestLine was nil[0m
-[0;93;49m132.8242ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET / HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
-[0;93;49m0.3565ms ... Form_Request[0m
-[0;93;49m0.2224ms ... Send_Response[0m
-[0;93;49m53.0342ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;31;49mRequestLine was nil[0m
-[0;93;49m51.2351ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper/ HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.4404ms ... Form_Request[0m
-[0;93;49m0.2043ms ... Send_Response[0m
-[0;93;49m102.1919ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /favicon.ico HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.3829ms ... Form_Request[0m
-[0;93;49m0.2391ms ... Send_Response[0m
-[0;93;49m2.7457ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /favicon.ico HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.3873ms ... Form_Request[0m
-[0;93;49m0.2695ms ... Send_Response[0m
-[0;93;49m2.59ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper/search/?query=https://en.wikipedia.org/wiki/List_of_colors:_A%E2%80%93F HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/search[0m
-[0;93;49m0.47ms ... Form_Request[0m
-[0;93;49m168.8629ms ... Send_Response[0m
-[0;93;49m171.4152ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper/ HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
-[0;93;49m0.3392ms ... Form_Request[0m
-[0;93;49m0.2069ms ... Send_Response[0m
-[0;93;49m126.3607ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /favicon.ico HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.3471ms ... Form_Request[0m
-[0;93;49m0.2336ms ... Send_Response[0m
-[0;93;49m2.1984ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET / HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
-[0;93;49m0.3015ms ... Form_Request[0m
-[0;93;49m0.1923ms ... Send_Response[0m
-[0;93;49m0.7472ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /favicon.ico HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.3711ms ... Form_Request[0m
-[0;93;49m0.2105ms ... Send_Response[0m
-[0;93;49m3.9212ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /favicon.ico HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
-[0;93;49m0.3051ms ... Form_Request[0m
-[0;93;49m0.1805ms ... Send_Response[0m
-[0;93;49m0.7364ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET /scraper/search/?query= HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/search[0m
-[0;93;49m0.3326ms ... Form_Request[0m
-[0;93;49m388.7848ms ... Send_Response[0m
-[0;93;49m477.1757ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;94;49mGET / HTTP/1.1[0m
-[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
-[0;93;49m0.5457ms ... Form_Request[0m
-[0;93;49m0.2131ms ... Send_Response[0m
-[0;93;49m78.7239ms ... Thread_Exec[0m
-[0;32;49mClosing Socket and Ending Thread.[0m
-
-[0;31;49mAhh an error[0m

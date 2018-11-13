@@ -11,7 +11,6 @@ class Server
 
   def initialize(options)
 
-
     @options = options
     @options[:rootdir] = File.expand_path(WEB_ROOT)
 
@@ -97,8 +96,8 @@ class Server
         }
         thread.join
         @status = "Running"
-      rescue
-        puts "Ahh an error".colorize(:red)
+      rescue Exeption => ex
+        puts "Error: Listen Block - #{ex.class}: #{ex.message}".colorize(:red)
         @status = "Broken"
       end
     else
@@ -134,7 +133,7 @@ class Server
       socket.close
 
     rescue Exception => ex
-      puts "An error of type #{ex.class} happened, message is #{ex.message}".colorize(:red)
+      puts "Error: Server Block - #{ex.class}: #{ex.message}".colorize(:red)
       socket.close
     end
     end_timer("Thread_Exec")

@@ -59,8 +59,12 @@ server.get "/" do |req, res|
   res.send_file(req.method, req.abs_path)
 end
 
-server.get "/test" do |req, res|
-  res.send_string(req.method, "This is a test!")
+server.get "/test.html" do |req, res|
+  res.send_file(req.method, req.abs_path)
+end
+
+server.post "/test.html" do |req, res|
+  res.send_file(req.method, req.abs_path)
 end
 
 server.get %r"\/[a-zA-Z1-9\-\/_]*[\.]?[a-z]*" do |req, res|
@@ -75,6 +79,10 @@ end
 
 server.get "/scraper/" do |req, res|
   res.send_file(req.method, req.abs_path)
+end
+
+server.post "/scraper/" do |req, res|
+  res.send_string(req.method, req.body)
 end
 
 server.get "/scraper/search/" do |req, res|

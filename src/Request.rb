@@ -57,42 +57,31 @@ class Request
     bodyFlag = 0
     breakFlag = 0
 
-    #while there are lines to get and the break flag isnt set
-    while breakFlag == 0 and line = socket.gets
-      #head and body in request are split by CRLF
-      if line == "\r\n"
-        #if this method comes with a body
-        if HAS_BODY.include?(method)
-          bodyFlag = 1
-        else
-          breakFlag = 1
-        end
-      else
-        #first read headers then read body
-        if bodyFlag == 0
-          addHeader(line)
-        else
-          addToBody(line)
-          puts bodySize
-          #want to read in as many bytes as the header specifies
-          if bodySize == header?("content-length").to_i or line.chomp.length < 1
-            breakFlag = 1
-          end
-        end
+    #while the socket doesnt return a CRLF
+    while "" != line = socket.gets.chomp do
+      # get every single header
+      puts line.colorize(:magenta)
+      addHeader(line.downcase)
+    end
+
+    if HAS_BODY.include?(method)
+      while bodySize < header?("content-length").to_i do
+	addToBody(socket.gets)
       end
     end
   end
 
   def addHeader(header)
     arr = header.chomp.split(": ")
-    key = arr[0].colorize(:blue)
-    value = arr[1].colorize(:magenta)
+    key = arr[0]
+    value = arr[1]
     @headers[key] = value
   end
 
   def addToBody(string)
-    puts (string.chomp + "~").colorize(:light_blue)
+    puts (string + "~" + string.size.to_s).colorize(:light_blue)
     @body += string
+    puts bodySize
   end
 
   def requested_file(request)
