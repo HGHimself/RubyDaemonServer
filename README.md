@@ -1,5 +1,6 @@
 # Majin
 To run, use `ruby server.rb`. For help, use `ruby server.rb -h`. Please note that a firewall will most definitely get in the way so try to use 'localhost' if possible.
+
 ## Ruby Server
 Majin is a lightweight HTTP server built using the core Ruby library.
 
@@ -56,3 +57,8 @@ The server has a function for each HTTP method. The parameters taken in by these
 The block receives a request and a response object. These are used to access and relevant information that may be needed. Inside the block resides the code that the developer wishes to run given a certain method and route. This allows for a basic API to quickly be built. From the `CONFIG.rb` file, certain methods are flagged to have a body. The included JSON module can be used to parse the body and act accordingly.
 ### Custom Response
 The response class is a fancy wrapper that provides methods to facilitate responding to the client. There is a send_file(method, path) function that will send a file at the given path using the specified method. Additionally, if a user wanted to just send a string using proper HTTP format, then a send_string(method, string) function is provided. The raw, bare bones method provided is puts, which is a wrapper to output directly to the socket with no format specified.
+
+# Coming Soon:
+- Web Components
+- Increased Concurrency
+- Heightened Security (maybe)
