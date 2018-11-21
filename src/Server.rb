@@ -122,7 +122,7 @@ class Server
         end_timer("Form_Request")
 
         start_timer("Send_Response")
-        res = Response.new socket
+        res = Response.new socket, rootdir
         @router.doRoute req, res
         end_timer("Send_Response")
 

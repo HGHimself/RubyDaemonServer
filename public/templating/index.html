@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Created by Professor Wergeles for CS4830 at the University of Missouri -->
+<html>
+    <head>
+        <title>Planets</title>
+    </head>
+    <body>
+        <template>
+            <style>
+                .planet {
+                    text-align: center;
+                    display: inline-block;
+                    margin: 30px 10px;
+                }
+                .planet > div {
+                    border-radius: 100%;
+                    margin: 0 auto 10px;
+                }
+                .planet > span {
+                    font-family: monospace;
+                    font-size: 1.6em;
+                }
+            </style>
+            <div class="planet">
+                <div></div>
+                <span></span>
+            </div>
+        </template>
+
+
+        <a-planet data-name="Earth" data-color="blue" data-radius="6371"></a-planet>
+        <a-planet data-name="Mars" data-color="brown" data-radius="3389.5"></a-planet>
+
+
+
+    </body>
+
+</html>
+<!-- This needs to come last! But not necessarily inside the html tag-->
+<script>
+
+    var tmpl = document.querySelector("template");
+    console.dir(tmpl);
+
+    var planetPrototype = Object.create(HTMLElement.prototype);
+    planetPrototype.createdCallback = function() {
+
+        var planet = document.importNode(tmpl.content, true);
+
+        console.dir(this);
+        planet.querySelector("span").innerHTML = this.getAttribute("data-name");
+        planet.querySelector(".planet > div").style.backgroundColor = this.getAttribute("data-color");
+        planet.querySelector(".planet > div").style.width = (this.getAttribute("data-radius") / 69911 * 300) + "px";
+        planet.querySelector(".planet > div").style.height = (this.getAttribute("data-radius") / 69911 * 300) + "px";
+
+        // var root = this.createShadowRoot();
+        var root = this.attachShadow({ mode: 'open' });
+        root.appendChild(planet);
+    };
+
+    var planetElement = document.registerElement("a-planet", {
+        prototype: planetPrototype
+    });
+
+</script>

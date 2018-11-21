@@ -7,6 +7,7 @@ class Request
     @headers = {}
     @body = ""
     @get = {}
+    @post = {}
   end
 
   def method
@@ -41,6 +42,14 @@ class Request
     end
   end
 
+  def post?(param)
+    if !@post[param].nil?
+      @post[param]
+    else
+      nil
+    end
+  end
+
   def addRequestLine(line)
     @requestLine = line.chomp
     @method = line.split(" ")[0]
@@ -60,26 +69,34 @@ class Request
     #while the socket doesnt return a CRLF
     while "" != line = socket.gets.chomp do
       # get every single header
-      puts line.colorize(:magenta)
+      #puts line.colorize(:magenta)
       addHeader(line.downcase)
     end
 
     if HAS_BODY.include?(method)
-      while bodySize < header?("content-length").to_i do
-	addToBody(socket.gets)
-      end
+      size = header?("content-length").to_i
+      addToBody(socket.read(size))
+      parseBody
     end
+
   end
 
   def addHeader(header)
     arr = header.chomp.split(": ")
     key = arr[0]
-    value = arr[1]
-    @headers[key] = value
+    if arr[1][0..9] == "multipart/"
+      arr2 = arr[1].split("; ")
+      value = arr2[0]
+      @headers[key] = value
+      @headers[arr2[1].split('=')[0]] = arr2[1].split('=')[1]
+    else
+      value = arr[1]
+      @headers[key] = value
+    end
   end
 
   def addToBody(string)
-    puts (string + "~" + string.size.to_s).colorize(:light_blue)
+    #puts (string + "~" + string.size.to_s).colorize(:light_blue)
     @body += string
     puts bodySize
   end
@@ -108,6 +125,15 @@ class Request
       parts[1].split("&").each do |var|
         vals = var.split("=")
         @get[vals[0]] = vals[1]
+      end
+    end
+  end
+
+  def parseBody
+    if header?("content-type") == "application/x-www-form-urlencoded"
+      body.split("&").each do |var|
+        vals = var.split("=")
+        @post[vals[0]] = vals[1]
       end
     end
   end

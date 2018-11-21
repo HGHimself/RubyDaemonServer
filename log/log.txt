@@ -122,3 +122,2343 @@
 [0;93;49m264.8378ms ... Thread_Exec[0m
 [0;32;49mClosing Socket and Ending Thread.[0m
 
+[0;94;49mGET /test.html HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/test.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4579ms ... Form_Request[0m
+[0;93;49m0.2042ms ... Send_Response[0m
+[0;93;49m141.601ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/test.html[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4793ms ... Form_Request[0m
+[0;93;49m0.3034ms ... Send_Response[0m
+[0;93;49m78.3033ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scre HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scre[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4013ms ... Form_Request[0m
+[0;31;49mError: Server Block - Errno::ENOENT: No such file or directory @ rb_sysopen - /public/error/50X.html[0m
+[0;93;49m1.7681ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scre HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scre[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3869ms ... Form_Request[0m
+[0;31;49mError: Server Block - Errno::ENOENT: No such file or directory @ rb_sysopen - /public/error/50X.html[0m
+[0;93;49m180.0934ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scre HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scre[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3974ms ... Form_Request[0m
+[0;31;49mError: Server Block - Errno::ENOENT: No such file or directory @ rb_sysopen - /public/error/50X.html[0m
+[0;93;49m2.3558ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPurpose: prefetch[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3853ms ... Form_Request[0m
+[0;93;49m0.2636ms ... Send_Response[0m
+[0;93;49m2.1184ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m17220.2901ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/search/?query= HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/search[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: */*[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3731ms ... Form_Request[0m
+[0;93;49m165.2594ms ... Send_Response[0m
+[0;93;49m166.7668ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper.html HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.905ms ... Form_Request[0m
+[0;31;49mError: Server Block - Errno::ENOENT: No such file or directory @ rb_sysopen - /public/error/50X.html[0m
+[0;93;49m2.6057ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper.html HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.8921ms ... Form_Request[0m
+[0;31;49mError: Server Block - Errno::ENOENT: No such file or directory @ rb_sysopen - /public/error/50X.html[0m
+[0;93;49m182.9717ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper.html HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.8945ms ... Form_Request[0m
+[0;31;49mError: Server Block - Errno::ENOENT: No such file or directory @ rb_sysopen - /public/error/50X.html[0m
+[0;93;49m1.7941ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m105119.8428ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+/home/hg/rubyStuff/Server/src/Server.rb:99:in `rescue in listen': uninitialized constant Server::Exeption (NameError)
+Did you mean?  Exception
+	from /home/hg/rubyStuff/Server/src/Server.rb:92:in `listen'
+	from server.rb:97:in `block in <main>'
+	from /home/hg/rubyStuff/Server/src/Daemon.rb:48:in `run!'
+	from server.rb:95:in `<main>'
+[0;94;49mGET /scraper/yeet HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/yeet[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.6521ms ... Form_Request[0m
+/public/error/404.html
+[0;31;49mError: Server Block - Errno::ENOENT: No such file or directory @ rb_sysopen - /public/error/50X.html[0m
+[0;93;49m162.3796ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/yeet HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/yeet[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.6711ms ... Form_Request[0m
+/public/error/404.html
+[0;31;49mError: Server Block - Errno::ENOENT: No such file or directory @ rb_sysopen - /public/error/50X.html[0m
+[0;93;49m304.5687ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/yeet HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/yeet[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m2.6911ms ... Form_Request[0m
+/public/error/404.html
+[0;31;49mError: Server Block - Errno::ENOENT: No such file or directory @ rb_sysopen - /public/error/50X.html[0m
+[0;93;49m3.3656ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+/home/hg/rubyStuff/Server/src/Server.rb:99:in `rescue in listen': uninitialized constant Server::Exeption (NameError)
+Did you mean?  Exception
+	from /home/hg/rubyStuff/Server/src/Server.rb:92:in `listen'
+	from server.rb:97:in `block in <main>'
+	from /home/hg/rubyStuff/Server/src/Daemon.rb:48:in `run!'
+	from server.rb:95:in `<main>'
+[0;94;49mGET /scraper/yeet HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/yeet[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.7062ms ... Form_Request[0m
+/home/hg/rubyStuff/Server/public/error/404.html
+[0;93;49m0.3069ms ... Send_Response[0m
+[0;93;49m36.7157ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper/yeet[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m2.8487ms ... Form_Request[0m
+[0;93;49m0.2784ms ... Send_Response[0m
+[0;93;49m234.2706ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/ HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4753ms ... Form_Request[0m
+[0;93;49m0.2411ms ... Send_Response[0m
+[0;93;49m1.7091ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m11881.5941ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/search/?query= HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/search[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: */*[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.5398ms ... Form_Request[0m
+[0;93;49m148.3634ms ... Send_Response[0m
+[0;93;49m150.138ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/ HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.9252ms ... Form_Request[0m
+[0;93;49m0.1894ms ... Send_Response[0m
+[0;93;49m1.7344ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.8412ms ... Form_Request[0m
+[0;93;49m0.7308ms ... Send_Response[0m
+[0;93;49m97.0203ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/ HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.9564ms ... Form_Request[0m
+[0;93;49m0.1746ms ... Send_Response[0m
+[0;93;49m2.5377ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.6994ms ... Form_Request[0m
+[0;93;49m0.2172ms ... Send_Response[0m
+[0;93;49m80.3518ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/ HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.8469ms ... Form_Request[0m
+[0;93;49m0.1733ms ... Send_Response[0m
+[0;93;49m2.5979ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.9257ms ... Form_Request[0m
+[0;93;49m0.2131ms ... Send_Response[0m
+[0;93;49m84.6861ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/ HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.888ms ... Form_Request[0m
+[0;93;49m0.1735ms ... Send_Response[0m
+[0;93;49m2.479ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.9285ms ... Form_Request[0m
+[0;93;49m0.1971ms ... Send_Response[0m
+[0;93;49m152.2335ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m257618.8708ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+/home/hg/rubyStuff/Server/src/Server.rb:99:in `rescue in listen': uninitialized constant Server::Exeption (NameError)
+Did you mean?  Exception
+	from /home/hg/rubyStuff/Server/src/Server.rb:92:in `listen'
+	from server.rb:97:in `block in <main>'
+	from /home/hg/rubyStuff/Server/src/Daemon.rb:48:in `run!'
+	from server.rb:95:in `<main>'
+[0;94;49mGET /scraper/ HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.608ms ... Form_Request[0m
+[0;93;49m0.3003ms ... Send_Response[0m
+[0;93;49m36.5087ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m2.7769ms ... Form_Request[0m
+[0;93;49m0.2731ms ... Send_Response[0m
+[0;93;49m248.6882ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/ HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.6225ms ... Form_Request[0m
+[0;93;49m0.2146ms ... Send_Response[0m
+[0;93;49m3.7635ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.6479ms ... Form_Request[0m
+[0;93;49m0.266ms ... Send_Response[0m
+[0;93;49m232.4759ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/ HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4487ms ... Form_Request[0m
+[0;93;49m0.1942ms ... Send_Response[0m
+[0;93;49m2.29ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.5121ms ... Form_Request[0m
+[0;93;49m0.2575ms ... Send_Response[0m
+[0;93;49m219.2917ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/ HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4767ms ... Form_Request[0m
+[0;93;49m0.2006ms ... Send_Response[0m
+[0;93;49m1.6203ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4961ms ... Form_Request[0m
+[0;93;49m0.2437ms ... Send_Response[0m
+[0;93;49m164.8817ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/ HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4874ms ... Form_Request[0m
+[0;93;49m0.1908ms ... Send_Response[0m
+[0;93;49m1.7058ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.5888ms ... Form_Request[0m
+[0;93;49m0.2424ms ... Send_Response[0m
+[0;93;49m116.5991ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/search/?query= HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/search[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: */*[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4663ms ... Form_Request[0m
+[0;93;49m144.3724ms ... Send_Response[0m
+[0;93;49m146.0728ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.8341ms ... Form_Request[0m
+[0;93;49m0.2322ms ... Send_Response[0m
+[0;93;49m1.5045ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m60409.4828ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m36624.6346ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m56606.2738ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m11109.3325ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3246ms ... Form_Request[0m
+[0;93;49m0.3882ms ... Send_Response[0m
+[0;93;49m8.5042ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.2816ms ... Form_Request[0m
+[0;93;49m0.5702ms ... Send_Response[0m
+[0;93;49m4862.3347ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/search/?query= HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/search[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: */*[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.35ms ... Form_Request[0m
+[0;93;49m131.9833ms ... Send_Response[0m
+[0;93;49m2660.7886ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3184ms ... Form_Request[0m
+[0;93;49m0.2052ms ... Send_Response[0m
+[0;93;49m36.0106ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3352ms ... Form_Request[0m
+[0;93;49m0.2427ms ... Send_Response[0m
+[0;93;49m92.0134ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3391ms ... Form_Request[0m
+[0;93;49m0.1943ms ... Send_Response[0m
+[0;93;49m3.051ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3555ms ... Form_Request[0m
+[0;93;49m0.218ms ... Send_Response[0m
+[0;93;49m88.9216ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.312ms ... Form_Request[0m
+[0;93;49m0.1945ms ... Send_Response[0m
+[0;93;49m1.7401ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3417ms ... Form_Request[0m
+[0;93;49m0.2121ms ... Send_Response[0m
+[0;93;49m80.0781ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/search/?query= HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/search[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: */*[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3205ms ... Form_Request[0m
+[0;93;49m151.4661ms ... Send_Response[0m
+[0;93;49m152.129ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3433ms ... Form_Request[0m
+[0;93;49m0.2133ms ... Send_Response[0m
+[0;93;49m3.2812ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.6641ms ... Form_Request[0m
+[0;93;49m0.2225ms ... Send_Response[0m
+[0;93;49m95.4899ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3354ms ... Form_Request[0m
+[0;93;49m0.189ms ... Send_Response[0m
+[0;93;49m1.538ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.6566ms ... Form_Request[0m
+[0;93;49m0.2176ms ... Send_Response[0m
+[0;93;49m76.8807ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.5411ms ... Form_Request[0m
+[0;93;49m0.2072ms ... Send_Response[0m
+[0;93;49m1.8616ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.6012ms ... Form_Request[0m
+[0;93;49m0.2201ms ... Send_Response[0m
+[0;93;49m84.4026ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.364ms ... Form_Request[0m
+[0;93;49m0.1949ms ... Send_Response[0m
+[0;93;49m2.4366ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.518ms ... Form_Request[0m
+[0;93;49m0.2049ms ... Send_Response[0m
+[0;93;49m80.3744ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.6788ms ... Form_Request[0m
+[0;93;49m0.2129ms ... Send_Response[0m
+[0;93;49m2.2244ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/scraper[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.6089ms ... Form_Request[0m
+[0;93;49m0.2287ms ... Send_Response[0m
+[0;93;49m155.9353ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m27498.885ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m16866.877ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.576ms ... Form_Request[0m
+[0;93;49m0.22ms ... Send_Response[0m
+[0;93;49m36.0899ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m20336.6509ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m22181.9531ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3322ms ... Form_Request[0m
+[0;93;49m0.223ms ... Send_Response[0m
+[0;93;49m1.5078ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.5464ms ... Form_Request[0m
+[0;93;49m0.2135ms ... Send_Response[0m
+[0;93;49m157.6446ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4705ms ... Form_Request[0m
+[0;93;49m0.2088ms ... Send_Response[0m
+[0;93;49m1.6948ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.5692ms ... Form_Request[0m
+[0;93;49m0.2057ms ... Send_Response[0m
+[0;93;49m147.2999ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.7808ms ... Form_Request[0m
+[0;93;49m0.2115ms ... Send_Response[0m
+[0;93;49m2.1269ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.6415ms ... Form_Request[0m
+[0;93;49m0.2183ms ... Send_Response[0m
+[0;93;49m139.6587ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3118ms ... Form_Request[0m
+[0;93;49m0.4977ms ... Send_Response[0m
+[0;93;49m7.1185ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3365ms ... Form_Request[0m
+[0;93;49m0.5134ms ... Send_Response[0m
+[0;93;49m152.817ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3152ms ... Form_Request[0m
+[0;93;49m0.2234ms ... Send_Response[0m
+[0;93;49m1.8722ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3432ms ... Form_Request[0m
+[0;93;49m0.2164ms ... Send_Response[0m
+[0;93;49m116.5226ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3149ms ... Form_Request[0m
+[0;93;49m0.2012ms ... Send_Response[0m
+[0;93;49m2.638ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.6101ms ... Form_Request[0m
+[0;93;49m0.2202ms ... Send_Response[0m
+[0;93;49m126.2123ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.6029ms ... Form_Request[0m
+[0;93;49m0.1999ms ... Send_Response[0m
+[0;93;49m36.7963ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m3.2116ms ... Form_Request[0m
+[0;93;49m0.2227ms ... Send_Response[0m
+[0;93;49m141.1569ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3807ms ... Form_Request[0m
+[0;93;49m0.2191ms ... Send_Response[0m
+[0;93;49m2.6973ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3662ms ... Form_Request[0m
+[0;93;49m0.209ms ... Send_Response[0m
+[0;93;49m111.1413ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3233ms ... Form_Request[0m
+[0;93;49m0.1948ms ... Send_Response[0m
+[0;93;49m2.4093ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4479ms ... Form_Request[0m
+[0;93;49m0.2169ms ... Send_Response[0m
+[0;93;49m105.2158ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3519ms ... Form_Request[0m
+[0;93;49m0.2573ms ... Send_Response[0m
+[0;93;49m2.6134ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3616ms ... Form_Request[0m
+[0;93;49m0.2809ms ... Send_Response[0m
+[0;93;49m116.0008ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3194ms ... Form_Request[0m
+[0;93;49m0.222ms ... Send_Response[0m
+[0;93;49m2.0916ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3819ms ... Form_Request[0m
+[0;93;49m0.2079ms ... Send_Response[0m
+[0;93;49m133.9113ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4455ms ... Form_Request[0m
+[0;93;49m0.1983ms ... Send_Response[0m
+[0;93;49m1.6801ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3417ms ... Form_Request[0m
+[0;93;49m0.2105ms ... Send_Response[0m
+[0;93;49m186.2075ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4008ms ... Form_Request[0m
+[0;93;49m0.1981ms ... Send_Response[0m
+[0;93;49m1.551ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3648ms ... Form_Request[0m
+[0;93;49m0.247ms ... Send_Response[0m
+[0;93;49m211.8097ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3737ms ... Form_Request[0m
+[0;93;49m0.2731ms ... Send_Response[0m
+[0;93;49m2.4081ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3938ms ... Form_Request[0m
+[0;93;49m0.221ms ... Send_Response[0m
+[0;93;49m187.7383ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3738ms ... Form_Request[0m
+[0;93;49m0.2264ms ... Send_Response[0m
+[0;93;49m36.1088ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3852ms ... Form_Request[0m
+[0;93;49m0.2238ms ... Send_Response[0m
+[0;93;49m159.5391ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3643ms ... Form_Request[0m
+[0;93;49m0.2163ms ... Send_Response[0m
+[0;93;49m3.0868ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3688ms ... Form_Request[0m
+[0;93;49m0.2762ms ... Send_Response[0m
+[0;93;49m134.5787ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3502ms ... Form_Request[0m
+[0;93;49m0.2003ms ... Send_Response[0m
+[0;93;49m0.7951ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3884ms ... Form_Request[0m
+[0;93;49m0.2075ms ... Send_Response[0m
+[0;93;49m152.0781ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3303ms ... Form_Request[0m
+[0;93;49m0.2175ms ... Send_Response[0m
+[0;93;49m1.044ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3798ms ... Form_Request[0m
+[0;93;49m0.2032ms ... Send_Response[0m
+[0;93;49m167.32ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.5189ms ... Form_Request[0m
+[0;93;49m0.232ms ... Send_Response[0m
+[0;93;49m1.7874ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4553ms ... Form_Request[0m
+[0;93;49m0.2014ms ... Send_Response[0m
+[0;93;49m178.9798ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3667ms ... Form_Request[0m
+[0;93;49m0.2184ms ... Send_Response[0m
+[0;93;49m3.412ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3929ms ... Form_Request[0m
+[0;93;49m0.2232ms ... Send_Response[0m
+[0;93;49m211.0961ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3244ms ... Form_Request[0m
+[0;93;49m0.2161ms ... Send_Response[0m
+[0;93;49m1.7283ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3539ms ... Form_Request[0m
+[0;93;49m0.2839ms ... Send_Response[0m
+[0;93;49m164.2869ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.382ms ... Form_Request[0m
+[0;93;49m0.2124ms ... Send_Response[0m
+[0;93;49m43.9069ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4044ms ... Form_Request[0m
+[0;93;49m0.2429ms ... Send_Response[0m
+[0;93;49m133.9291ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=dewey&volume=7&cowbell=9 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3693ms ... Form_Request[0m
+[0;93;49m0.2202ms ... Send_Response[0m
+[0;93;49m2.7111ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m129991.9678ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=dewey&volume=7&cowbell=9 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3931ms ... Form_Request[0m
+[0;93;49m0.2185ms ... Send_Response[0m
+[0;93;49m37.6232ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3977ms ... Form_Request[0m
+[0;93;49m0.2149ms ... Send_Response[0m
+[0;93;49m139.9806ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=dewey&volume=7&cowbell=9 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.421ms ... Form_Request[0m
+[0;93;49m0.22ms ... Send_Response[0m
+[0;93;49m2.9505ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3678ms ... Form_Request[0m
+[0;93;49m0.2036ms ... Send_Response[0m
+[0;93;49m190.8255ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=dewey&volume=7&cowbell=9 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4523ms ... Form_Request[0m
+[0;93;49m0.2993ms ... Send_Response[0m
+[0;93;49m36.4829ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3578ms ... Form_Request[0m
+[0;93;49m0.2922ms ... Send_Response[0m
+[0;93;49m195.762ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=dewey&volume=7&cowbell=9 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4144ms ... Form_Request[0m
+[0;93;49m0.2256ms ... Send_Response[0m
+[0;93;49m1.9466ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4054ms ... Form_Request[0m
+[0;93;49m0.2296ms ... Send_Response[0m
+[0;93;49m159.7408ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=dewey&volume=7&cowbell=9 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4261ms ... Form_Request[0m
+[0;93;49m0.2338ms ... Send_Response[0m
+[0;93;49m1.6589ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.358ms ... Form_Request[0m
+[0;93;49m0.2481ms ... Send_Response[0m
+[0;93;49m203.8237ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=dewey&volume=7&cowbell=9 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4399ms ... Form_Request[0m
+[0;93;49m0.2252ms ... Send_Response[0m
+[0;93;49m4.7588ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3798ms ... Form_Request[0m
+[0;93;49m0.2102ms ... Send_Response[0m
+[0;93;49m202.1511ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=dewey&volume=7&cowbell=9 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.405ms ... Form_Request[0m
+[0;93;49m0.2126ms ... Send_Response[0m
+[0;93;49m2.4565ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.428ms ... Form_Request[0m
+[0;93;49m0.2294ms ... Send_Response[0m
+[0;93;49m183.5465ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=dewey&volume=7&cowbell=9 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4638ms ... Form_Request[0m
+[0;93;49m0.2193ms ... Send_Response[0m
+[0;93;49m2.9652ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.38ms ... Form_Request[0m
+[0;93;49m0.2417ms ... Send_Response[0m
+[0;93;49m188.7802ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=dewey&volume=7&cowbell=9 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4815ms ... Form_Request[0m
+[0;93;49m0.2102ms ... Send_Response[0m
+[0;93;49m2.359ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.5893ms ... Form_Request[0m
+[0;93;49m0.2357ms ... Send_Response[0m
+[0;93;49m183.8834ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=dewey&volume=7&cowbell=9 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.6031ms ... Form_Request[0m
+[0;93;49m0.276ms ... Send_Response[0m
+[0;93;49m36.4679ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4221ms ... Form_Request[0m
+[0;93;49m0.2271ms ... Send_Response[0m
+[0;93;49m179.5774ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=dewey&volume=7&cowbell=9 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.5331ms ... Form_Request[0m
+[0;93;49m0.312ms ... Send_Response[0m
+[0;93;49m2.4171ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4995ms ... Form_Request[0m
+[0;93;49m0.2162ms ... Send_Response[0m
+[0;93;49m178.5581ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=dewey&volume=7&cowbell=9 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.5695ms ... Form_Request[0m
+[0;93;49m0.2172ms ... Send_Response[0m
+[0;93;49m2.4703ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.5541ms ... Form_Request[0m
+[0;93;49m0.2992ms ... Send_Response[0m
+[0;93;49m203.1859ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=dewey&volume=7&cowbell=9 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.6043ms ... Form_Request[0m
+[0;93;49m0.2348ms ... Send_Response[0m
+[0;93;49m3.0132ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.737ms ... Form_Request[0m
+[0;93;49m0.2768ms ... Send_Response[0m
+[0;93;49m185.0989ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=dewey&volume=7&cowbell=9 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4356ms ... Form_Request[0m
+[0;93;49m0.2632ms ... Send_Response[0m
+[0;93;49m2.3299ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4207ms ... Form_Request[0m
+[0;93;49m0.2203ms ... Send_Response[0m
+[0;93;49m165.278ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=dewey&volume=7&cowbell=9 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4252ms ... Form_Request[0m
+[0;93;49m0.2ms ... Send_Response[0m
+[0;93;49m2.4707ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.44ms ... Form_Request[0m
+[0;93;49m0.2046ms ... Send_Response[0m
+[0;93;49m184.0162ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=dewey&volume=7&cowbell=9 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4472ms ... Form_Request[0m
+[0;93;49m0.208ms ... Send_Response[0m
+[0;93;49m2.1406ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3906ms ... Form_Request[0m
+[0;93;49m0.2148ms ... Send_Response[0m
+[0;93;49m180.4268ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=louie&range=6 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4795ms ... Form_Request[0m
+[0;93;49m0.2004ms ... Send_Response[0m
+[0;93;49m1.8063ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m54867.1572ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=louie&range=6 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4285ms ... Form_Request[0m
+[0;93;49m0.218ms ... Send_Response[0m
+[0;93;49m3.0984ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=louie&range=6[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3807ms ... Form_Request[0m
+[0;93;49m0.2121ms ... Send_Response[0m
+[0;93;49m228.9816ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=louie&range=6 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4803ms ... Form_Request[0m
+[0;93;49m0.2318ms ... Send_Response[0m
+[0;93;49m1.9023ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=louie&range=6[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3999ms ... Form_Request[0m
+[0;93;49m0.2243ms ... Send_Response[0m
+[0;93;49m217.4654ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=louie&range=6 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.5586ms ... Form_Request[0m
+[0;93;49m0.2108ms ... Send_Response[0m
+[0;93;49m3.3979ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=louie&range=6[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.3927ms ... Form_Request[0m
+[0;93;49m0.2955ms ... Send_Response[0m
+[0;93;49m225.9578ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /?drone=huey&drone=louie&range=6 HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mCache-Control: max-age=0[0m
+[0;35;49mUpgrade-Insecure-Requests: 1[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=dewey&volume=7&cowbell=9[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.4561ms ... Form_Request[0m
+[0;93;49m0.213ms ... Send_Response[0m
+[0;93;49m1.0524ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;35;49mHost: www.hgking.xyz:12345[0m
+[0;35;49mConnection: keep-alive[0m
+[0;35;49mPragma: no-cache[0m
+[0;35;49mCache-Control: no-cache[0m
+[0;35;49mUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36[0m
+[0;35;49mAccept: image/webp,image/apng,image/*,*/*;q=0.8[0m
+[0;35;49mReferer: https://www.hgking.xyz:12345/?drone=huey&drone=louie&range=6[0m
+[0;35;49mAccept-Encoding: gzip, deflate, br[0m
+[0;35;49mAccept-Language: en-US,en;q=0.9,la;q=0.8[0m
+[0;93;49m0.405ms ... Form_Request[0m
+[0;93;49m0.2179ms ... Send_Response[0m
+[0;93;49m152.0564ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m24470.6576ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+

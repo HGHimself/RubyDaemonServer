@@ -1,5 +1,6 @@
 class Response
-  def initialize(socket)
+  def initialize(socket, rootdir)
+    @rootdir = rootdir
     @socket = socket
     @headers = Array.new
   end
@@ -13,7 +14,9 @@ class Response
     if File.exist?(path) && !File.directory?(path)
       code = 200
     else
-      path = File.expand_path(File.join(WEB_ROOT, NOT_FOUND_PAGE))
+      
+      path = File.expand_path(File.join(@rootdir, NOT_FOUND_PAGE))
+      puts path
       # respond with a 404 error code to indicate the file does not exist
       code = 404
     end
@@ -21,7 +24,7 @@ class Response
     begin
       form_response(method, path, code)
     rescue
-      path = File.expand_path(File.join(WEB_ROOT, SERVER_ERR_PAGE))
+      path = File.expand_path(File.join(@rootdir, SERVER_ERR_PAGE))
       code = 500
       form_response(method, path, code)
     end
@@ -49,7 +52,7 @@ class Response
     end
   end
 
-  def puts(line)
+  def put(line)
     @socket.puts line.chomp + "\r\n"
   end
 

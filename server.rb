@@ -64,6 +64,8 @@ server.get "/test.html" do |req, res|
 end
 
 server.post "/test.html" do |req, res|
+  puts req.post?('alpha')
+  puts req.post?('beta')
   res.send_file(req.method, req.abs_path)
 end
 
