@@ -1,0 +1,345 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="HG King">
+    <link rel="apple-touch-icon" href="../favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='https://www.hgking.xyz/css/deco.css' type='text/css'>
+    <script src='https://www.hgking.xyz/js/deco.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Limelight" rel="stylesheet">
+    <title>RSA Encryption</title>
+  </head>
+  <body>
+    <div class='center _2-3rd text-center'>
+      <div id='header' class='deco'>
+        <h1 id="title" class="deco-title">RSA Encryption</h1>
+        <h2 id="description" class="deco-description">Created By HG King</h2>
+      </div>
+    </div>
+    <main>
+      <div class='_2-3rd center'>
+        <div class='deco card'>
+          <a href='/encryption/'>Return to app!</a>
+          <p class='drop-cap'>
+            RSA (Rivest–Shamir–Adleman) is one of the first public-key
+            cryptosystems and is widely used for secure data transmission. In such
+            a cryptosystem, the encryption key is public and it is different from
+            the decryption key which is kept secret (private). In RSA, this
+            asymmetry is based on the practical difficulty of the factorization of
+             the product of two large prime numbers, the "factoring problem". The
+             acronym RSA is made of the initial letters of the surnames of Ron
+            Rivest, Adi Shamir, and Leonard Adleman, who first publicly described
+            the algorithm in 1978. Clifford Cocks, an English mathematician
+            working for the British intelligence agency Government Communications
+            Headquarters (GCHQ), had developed an equivalent system in 1973, but
+            this was not declassified until 1997.
+          </p>
+
+          <h2>Check out my code</h2>
+          <p>Note that the only operations used here are addition, subtraction, multiplication,
+            and bitwise operators. The rest have been built up using these specific four. The descriptions refers to
+          the code block beneath.</p>
+
+<p>A class is a definition of sorts that combines data and functionality. It is used to instantiate an object that holds state and can modify itself.</p>
+<pre><code>
+class Encryptor
+
+</code></pre>
+<p>A list of steps needs to be followed for the key generation. These are specified in the comments marked with a <code>#</code>.</p>
+<pre><code>
+def key_generation(p, q)
+
+  # Compute n = pq.
+  @n = p * q
+
+  # Compute λ(n) = lcm(λ(p), λ(q)) = lcm(p − 1, q − 1),
+  # where λ is Carmichael's totient function.
+  lambda_n = lambda(p, q)
+
+  # Choose an integer e such that 1 < e < λ(n) and gcd(e, λ(n)) = 1.
+  @e = 65537
+  while(gcd(@e, lambda_n) != 1 && @e < lambda_n)
+    e += 1
+  end
+
+  # Determine d as d ≡ e−1 (mod λ(n))
+  # i.e., d is the modular multiplicative inverse of e modulo λ(n).
+  @d = modular_linear_equation(@e, 1, lambda_n, 1)
+end
+
+</code></pre>
+<p>Encryption involves taking the public key and using modular exponentiation to calculate the following formula.</p>
+<pre><code>
+def encrypt(m) # c(m) = m^e mod n
+  modular_exponentiation(m, @e, @n)
+end
+
+</code></pre>
+<p>Decryption involves taking the private key and using modular exponentiation to calculate the following formula.</p>
+<pre><code>
+def decrypt(c) # m = c^d mod n
+  modular_exponentiation(c, @d, @n)
+end
+
+</code></pre>
+<p><a href='https://en.wikipedia.org/wiki/Fermat%27s_little_theorem'>Fermat's
+little theorem</a> states that for any prime p, <code>a^(p) ≡ a (mod p)</code>
+ and <code>a^(p-1) ≡ 1 (mod p)</code>.Using this knowledge, one can check the
+ primality of a number by testing values a &lt p to see if the theorem holds.</p>
+<pre><code>
+def primality_test(n, k) # true if n is pseudoprime, checks k times
+  prng = Random.new
+  k.times do |i| # Repeat k times:
+
+    # Pick a random int in the range [2, n − 2]
+    a = prng.rand(n - 4) + 2
+
+    # If a^(n-1) = 1 (mod n), then return composite
+    a = modular_exponentiation(a, n-1, n)
+    if !a.nil? and !congruence_mod(a, 1, n)
+      return false
+    end
+  end
+  # If composite is never returned: return probably prime
+  return true
+end
+
+</code></pre>
+<p>Modular linear equation solves for x in the equation <code>a(x) ≡ b (mod n)</code>. It does this <body>
+computing the extended euclide algorithm and returning the value of <code>b/d (mod n)</code></p>
+<pre><code>
+# a x == b (mod n) returns x
+def modular_linear_equation(a, b, n, x_n)
+  d, x, y = extended_euclid(a, n)
+  # if d | b
+  if(mod(b, d) == 0)
+    x_naught = x * mod(div(b, d), n)
+    x_naught += x_n * div(n, d)
+    return mod(x_naught, n)
+  else
+    return nil
+  end
+end
+
+</code></pre>
+<p><a href='https://en.wikipedia.org/wiki/Modular_exponentiation'>Modular exponentiation</a>
+ utilizes the fact that most computations can be simplified mod n. This allows for
+huge numbers raised to large powers to be calculated.</p>
+<pre><code>
+# computes a ^ b (mod n)
+def modular_exponentiation(a, b, n)
+  c = 0
+  d = 1
+  k = b.to_s(2).size # Where n is number of bits in N
+  (k).downto(0) do |i|
+    c << 1
+    d = mod((d * d), n)
+    if query_nth_bit(b, i) == 1
+      c += 1
+      d = mod((d * a), n)
+    end
+  end
+  return d
+end
+
+</code></pre>
+<p>This function I wrote is a simple evaluation of two numbers mod n.</p>
+<pre><code>
+def congruence_mod(a, b, n) # evaluates a ≡ b (mod n)
+  if a > b # due to symmetry, could be either direction
+    dif = a - b
+  elsif a < b
+    dif = b - a
+  else
+    return true
+  end
+
+  if n > dif
+    c = mod(n,dif)
+  else
+    c = mod(dif, n)
+  end
+
+  if c == 0 # n|b-a
+    return true
+  else
+    return false
+  end
+end
+
+</code></pre>
+<p>The <a href='https://en.wikipedia.org/wiki/Euclidean_algorithm'>Euclidean algorithm</a> states
+that <code>r_k-2 = q_k(r_k-1) + r_k</code>.</p>
+<pre><code>
+def extended_euclid(a, b) # d = gcd(a, b) = ax + by
+  if b == 0
+    return a, 1, 0
+  else
+    d, x, y = extended_euclid(b, mod(a,b))
+    #puts "gcd(#{a}, #{b}) = #{d} = #{a} * #{x} + #{b} * #{y}"
+    w = div(a, b)
+    return d, y, x - (w * y) # returns d, x, y
+  end
+end
+
+</code></pre>
+<p>The <a href='https://en.wikipedia.org/wiki/Carmichael_function'>Carmichael function</a>
+ divides the Euler function. This is above my pay grade, so I'm not sure how it works.</p>
+<pre><code>
+def lambda(p, q) # Carmichael's totient function
+  lcm(p - 1, q - 1) # lambda(n) = lambda(p, q) where n = pq
+end
+
+</code></pre>
+<p>The <a href='https://en.wikipedia.org/wiki/Euler%27s_totient_function'>Euler function</a>
+gives back the count of numbers &lt n that are coprime with n.</p>
+<pre><code>
+def euler_phi(n) # number of x where gcd(x, n) = 1 and x < n
+	count = 0
+	(n+1).times do |i|
+		if 1 == gcd(n, i)
+      count += 1
+    end
+	end
+	return count
+end
+
+</code></pre>
+<p><a href='https://en.wikipedia.org/wiki/Greatest_common_divisor'>Greatest common divisor</a>
+returns the largest number that divides both a and b.</p>
+<pre><code>
+def gcd(a, b) # greatest common divisor
+  d, x, y = extended_euclid(a, b)
+  return d
+end
+
+</code></pre>
+<p><a href='https://en.wikipedia.org/wiki/Least_common_multiple'>Least common multiple</a>
+returns the smallest integer that is divisible by both a and b.</p>
+<pre><code>
+def lcm(a, b) # least common multiple
+  d = gcd(a, b)
+  div((a * b),d)
+end
+
+</code></pre>
+<p><a href='https://en.wikipedia.org/wiki/Division_algorithm'>Binary long division</a>
+divides the unsigned binary representation of a and b, returning the quotient and remainder.</p>
+<pre><code>
+def bld(n, d) # binary long division
+  if d == 0
+    return nil
+  end
+  q = 0 # Initialize quotient and remainder to zero
+  r = 0
+  k = n.to_s(2).size # Where n is number of bits in N
+  (k - 1).downto(0) do |i|
+    r <<= 1 # Left-shift R by 1 bit
+    # Set the least-significant bit of R equal to bit i of the numerator
+    r = change_nth_bit(r,0, query_nth_bit(n, i))
+    if r >= d
+      r -= d
+      q = change_nth_bit(q, i, 1)
+    end
+  end
+  return q, r # returns q, r
+end
+
+</code></pre>
+<p>The <a href='https://en.wikipedia.org/wiki/Modulus_operator'>Modulus operator</a>
+uses the fact that any number a can be represented by <code>a = q(b) + r</code>. Mod returns r.</p>
+<pre><code>
+def mod(a, b) # r =  a -  q b
+  q, r = bld(abs(a), abs(b))
+  if sign(b)
+    return r
+  else
+    return -r
+  end
+end
+
+</code></pre>
+<p>Similar to mod, div returns q from <code>a = q(b) + r</code>.</p>
+<pre><code>
+def div(a, b) # signed, a / b
+  q, r = bld(abs(a), abs(b))
+  if sign(a) == sign(b)
+    return q
+  else
+    return -q
+  end
+end
+
+</code></pre>
+<p><a href='https://en.wikipedia.org/wiki/Floor_and_ceiling_functions'>Floor</a>
+returns the largest integer not exceding n.</p>
+<pre><code>
+def floor(n) # greatest integer not exceeding n
+  n - mod(n, 1) # returns floor(n) < n < n + 1
+end
+
+</code></pre>
+<p>The <a href='https://en.wikipedia.org/wiki/Absolute_value'>absolute value</a>
+returns the distance of n from 0.</p>
+<pre><code>
+def abs(n) # distance function
+  if n >= 0
+    return n
+  else
+    return -n
+  end
+end
+
+</code></pre>
+<p>This sign function returns true if n &ge; 0 and false if n &lt 0.</p>
+<pre><code>
+def sign(n)
+  if n >= 0
+    return 1 # 1 if postive or 0
+  else
+    return 0 # 0 if negative
+  end
+end
+
+</code></pre>
+<p>These following functions manipulate numbers at the bit level.</p>
+<pre><code>
+def set_nth_bit(number, n)
+  number |= 1 << n
+end
+
+def clear_nth_bit(number, n)
+  number &= ~(1 << n)
+end
+
+def toggle_nth_bit(number, n)
+  number ^= 1 << n
+end
+
+def query_nth_bit(number, n)
+  (number >> n) & 1
+end
+
+def change_nth_bit(number, n, x)
+  number ^= (-x ^ number) & (1 << n)
+end
+
+            </code>
+          </pre>
+        </div>
+      </div>
+    </main>
+    <div class='center _2-3rd text-center'>
+      <div id="footer" class='deco'>
+        <footer>
+          <p class="footer-text">
+          <a href="/about.php">About</a> &#124;
+          <a href="/contact.php">Contact Us</a> &#124;
+          Copyright &copy;<time datetime="2018">2018</time>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

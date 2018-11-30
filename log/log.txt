@@ -2678,3 +2678,99 @@ key: q ~~ val: 8675309
 [0;93;49m157.9976ms ... Thread_Exec[0m
 [0;32;49mClosing Socket and Ending Thread.[0m
 
+[0;94;49mGET /encryption/keygen/?p=10006660007&q=8675309 HTTP/1.1[0m
+key: p ~~ val: 10006660007
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/keygen[0m
+[0;93;49m0.1679ms ... Form_Request[0m
+[0;93;49m83.5336ms ... Send_Response[0m
+[0;93;49m119.9401ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/encrypt/?m=12345678910&p=10006660007&q=8675309 HTTP/1.1[0m
+key: m ~~ val: 12345678910
+key: p ~~ val: 10006660007
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/encrypt[0m
+[0;93;49m0.1692ms ... Form_Request[0m
+[0;93;49m1.3735ms ... Send_Response[0m
+[0;93;49m1.7741ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/decrypt/?m=12345678910&p=10006660007&q=8675309 HTTP/1.1[0m
+key: m ~~ val: 12345678910
+key: p ~~ val: 10006660007
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/decrypt[0m
+[0;93;49m0.182ms ... Form_Request[0m
+[0;93;49m5.2585ms ... Send_Response[0m
+[0;93;49m7.244ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/index.html[0m
+[0;93;49m0.1608ms ... Form_Request[0m
+[0;93;49m0.2103ms ... Send_Response[0m
+[0;93;49m44.3446ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;93;49m0.1619ms ... Form_Request[0m
+[0;93;49m0.2319ms ... Send_Response[0m
+[0;93;49m179.8687ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/index.html[0m
+[0;93;49m0.1557ms ... Form_Request[0m
+[0;93;49m0.1933ms ... Send_Response[0m
+[0;93;49m2.6252ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;93;49m0.1661ms ... Form_Request[0m
+[0;93;49m0.2477ms ... Send_Response[0m
+[0;93;49m150.0289ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/keygen/?p=&q= HTTP/1.1[0m
+key: p ~~ val: 
+key: q ~~ val: 
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/keygen[0m
+[0;93;49m0.1591ms ... Form_Request[0m
+[0;93;49m0.0922ms ... Send_Response[0m
+[0;93;49m1.6101ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/encrypt/?m=&p=&q= HTTP/1.1[0m
+key: m ~~ val: 
+key: p ~~ val: 
+key: q ~~ val: 
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/encrypt[0m
+[0;93;49m0.1876ms ... Form_Request[0m
+[0;93;49m0.1323ms ... Send_Response[0m
+[0;93;49m1.8704ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/decrypt/?m=&p=&q= HTTP/1.1[0m
+key: m ~~ val: 
+key: p ~~ val: 
+key: q ~~ val: 
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/decrypt[0m
+[0;93;49m0.207ms ... Form_Request[0m
+[0;93;49m0.1134ms ... Send_Response[0m
+[0;93;49m2.4071ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/keygen/?p=10006660007&q=8675309 HTTP/1.1[0m
+key: p ~~ val: 10006660007
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/keygen[0m
+[0;93;49m0.1872ms ... Form_Request[0m
+[0;93;49m83.9177ms ... Send_Response[0m
+[0;93;49m85.3406ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mError: Listen Block - OpenSSL::SSL::SSLError: SSL_accept SYSCALL returned=5 errno=0 state=SSLv2/v3 read client hello A[0m

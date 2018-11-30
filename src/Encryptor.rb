@@ -97,7 +97,7 @@ class Encryptor
     return d
   end
 
-  # evaluates a === b (mod n)
+  # evaluates a ≡ b (mod n)
   def congruence_mod(a, b, n)
     # due to symmetry, could be either direction
     if a > b
