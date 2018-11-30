@@ -34,6 +34,7 @@ class Server
         puts "Must include Key and Certificate files in options if 'ssl: True'.".colorize(:red)
         @server = nil
       else
+        OpenSSL::SSL::SSLContext::DEFAULT_PARAMS[:ciphers] += ':DES-CBC3-SHA'
         sslContext = OpenSSL::SSL::SSLContext.new
         sslContext.cert = OpenSSL::X509::Certificate.new(File.open(options[:crt]))
         sslContext.key = OpenSSL::PKey::RSA.new(File.open(options[:key]))
@@ -96,7 +97,7 @@ class Server
         }
         thread.join
         @status = "Running"
-      rescue Exeption => ex
+      rescue Exception => ex
         puts "Error: Listen Block - #{ex.class}: #{ex.message}".colorize(:red)
         @status = "Broken"
       end

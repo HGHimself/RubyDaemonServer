@@ -2462,3 +2462,219 @@ Did you mean?  Exception
 [0;93;49m24470.6576ms ... Thread_Exec[0m
 [0;32;49mClosing Socket and Ending Thread.[0m
 
+[0;94;49mGET /encryption HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/index.html[0m
+[0;93;49m0.3525ms ... Form_Request[0m
+[0;93;49m0.3742ms ... Send_Response[0m
+[0;93;49m52.076ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;93;49m0.2353ms ... Form_Request[0m
+[0;93;49m0.2689ms ... Send_Response[0m
+[0;93;49m123.5713ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/index.html[0m
+[0;93;49m0.2096ms ... Form_Request[0m
+[0;93;49m0.2013ms ... Send_Response[0m
+[0;93;49m1.911ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;93;49m0.2382ms ... Form_Request[0m
+[0;93;49m0.2572ms ... Send_Response[0m
+[0;93;49m77.4673ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/index.html[0m
+[0;93;49m0.2012ms ... Form_Request[0m
+[0;93;49m0.2314ms ... Send_Response[0m
+[0;93;49m52.8096ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;93;49m0.1786ms ... Form_Request[0m
+[0;93;49m0.2718ms ... Send_Response[0m
+[0;93;49m113.0132ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/keygen/?p=100666001&q=8675309 HTTP/1.1[0m
+key: p ~~ val: 100666001
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/keygen[0m
+[0;93;49m0.2324ms ... Form_Request[0m
+[0;93;49m0.5865ms ... Send_Response[0m
+[0;93;49m2.1212ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/encrypt/?m=12345678910&p=100666001&q=8675309 HTTP/1.1[0m
+key: m ~~ val: 12345678910
+key: p ~~ val: 100666001
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/encrypt[0m
+[0;93;49m0.2154ms ... Form_Request[0m
+[0;93;49m1.4657ms ... Send_Response[0m
+[0;93;49m3.1275ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/decrypt/?m=12345678910&p=100666001&q=8675309 HTTP/1.1[0m
+key: m ~~ val: 12345678910
+key: p ~~ val: 100666001
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/decrypt[0m
+[0;93;49m0.205ms ... Form_Request[0m
+[0;93;49m5.1719ms ... Send_Response[0m
+[0;93;49m6.7891ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/keygen/?p=100666007&q=8675309 HTTP/1.1[0m
+key: p ~~ val: 100666007
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/keygen[0m
+[0;93;49m0.185ms ... Form_Request[0m
+[0;93;49m0.5383ms ... Send_Response[0m
+[0;93;49m2.6915ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/encrypt/?m=12345678910&p=100666007&q=8675309 HTTP/1.1[0m
+key: m ~~ val: 12345678910
+key: p ~~ val: 100666007
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/encrypt[0m
+[0;93;49m0.2074ms ... Form_Request[0m
+[0;93;49m1.2221ms ... Send_Response[0m
+[0;93;49m2.3433ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/decrypt/?m=12345678910&p=100666007&q=8675309 HTTP/1.1[0m
+key: m ~~ val: 12345678910
+key: p ~~ val: 100666007
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/decrypt[0m
+[0;93;49m0.1875ms ... Form_Request[0m
+[0;93;49m3.9794ms ... Send_Response[0m
+[0;93;49m5.4796ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/keygen/?p=10006660007&q=8675309 HTTP/1.1[0m
+key: p ~~ val: 10006660007
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/keygen[0m
+[0;93;49m0.1683ms ... Form_Request[0m
+[0;93;49m0.5688ms ... Send_Response[0m
+[0;93;49m2.1074ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/encrypt/?m=12345678910&p=10006660007&q=8675309 HTTP/1.1[0m
+key: m ~~ val: 12345678910
+key: p ~~ val: 10006660007
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/encrypt[0m
+[0;93;49m0.1825ms ... Form_Request[0m
+[0;93;49m1.3806ms ... Send_Response[0m
+[0;93;49m2.6586ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/decrypt/?m=12345678910&p=10006660007&q=8675309 HTTP/1.1[0m
+key: m ~~ val: 12345678910
+key: p ~~ val: 10006660007
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/decrypt[0m
+[0;93;49m0.1878ms ... Form_Request[0m
+[0;93;49m5.5227ms ... Send_Response[0m
+[0;93;49m8.3337ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/index.html[0m
+[0;93;49m0.1627ms ... Form_Request[0m
+[0;93;49m0.2103ms ... Send_Response[0m
+[0;93;49m52.3064ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;93;49m0.1497ms ... Form_Request[0m
+[0;93;49m0.2395ms ... Send_Response[0m
+[0;93;49m97.6754ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/index.html[0m
+[0;93;49m0.1538ms ... Form_Request[0m
+[0;93;49m0.2012ms ... Send_Response[0m
+[0;93;49m54.7297ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mError: Listen Block - Errno::ETIMEDOUT: Connection timed out - SSL_accept[0m
+[0;94;49mGET /encryption HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/index.html[0m
+[0;93;49m0.2075ms ... Form_Request[0m
+[0;93;49m0.2546ms ... Send_Response[0m
+[0;93;49m129.4375ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m132.9193ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m112.6463ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/keygen/?p=10006660007&q=8675309 HTTP/1.1[0m
+key: p ~~ val: 10006660007
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/keygen[0m
+[0;93;49m0.1889ms ... Form_Request[0m
+[0;93;49m88.5732ms ... Send_Response[0m
+[0;93;49m96.1733ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/encrypt/?m=12345678910&p=10006660007&q=8675309 HTTP/1.1[0m
+key: m ~~ val: 12345678910
+key: p ~~ val: 10006660007
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/encrypt[0m
+[0;93;49m0.1883ms ... Form_Request[0m
+[0;93;49m1.3435ms ... Send_Response[0m
+[0;93;49m9.1935ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/decrypt/?m=12345678910&p=10006660007&q=8675309 HTTP/1.1[0m
+key: m ~~ val: 12345678910
+key: p ~~ val: 10006660007
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/decrypt[0m
+[0;93;49m0.1681ms ... Form_Request[0m
+[0;93;49m5.379ms ... Send_Response[0m
+[0;93;49m15.2497ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/index.html[0m
+[0;93;49m0.1605ms ... Form_Request[0m
+[0;93;49m0.226ms ... Send_Response[0m
+[0;93;49m47.5003ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/index.html[0m
+[0;93;49m0.1513ms ... Form_Request[0m
+[0;93;49m0.2089ms ... Send_Response[0m
+[0;93;49m267.5377ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;93;49m0.1558ms ... Form_Request[0m
+[0;93;49m0.2767ms ... Send_Response[0m
+[0;93;49m157.9976ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+

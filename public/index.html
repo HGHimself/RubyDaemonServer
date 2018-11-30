@@ -2,90 +2,17 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-    <script src="https://www.hgking.xyz/js/deco.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://www.hgking.xyz/css/deco.css">
-    <link href="https://fonts.googleapis.com/css?family=Limelight|Open+Sans" rel="stylesheet">
-    <script>
-
-      var x, i, j, selElmnt, a, b, c;
-      /*look for any elements with the class "custom-select":*/
-      x = document.getElementsByClassName("custom-select");
-      for (i = 0; i < x.length; i++) {
-        selElmnt = x[i].getElementsByTagName("select")[0];
-        /*for each element, create a new DIV that will act as the selected item:*/
-        a = document.createElement("DIV");
-        a.setAttribute("class", "select-selected");
-        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-        x[i].appendChild(a);
-        /*for each element, create a new DIV that will contain the option list:*/
-        b = document.createElement("DIV");
-        b.setAttribute("class", "select-items select-hide");
-        for (j = 1; j < selElmnt.length; j++) {
-          /*for each option in the original select element,
-          create a new DIV that will act as an option item:*/
-          c = document.createElement("DIV");
-          c.innerHTML = selElmnt.options[j].innerHTML;
-          c.addEventListener("click", function(e) {
-              /*when an item is clicked, update the original select box,
-              and the selected item:*/
-              var y, i, k, s, h;
-              s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-              h = this.parentNode.previousSibling;
-              for (i = 0; i < s.length; i++) {
-                if (s.options[i].innerHTML == this.innerHTML) {
-                  s.selectedIndex = i;
-                  h.innerHTML = this.innerHTML;
-                  y = this.parentNode.getElementsByClassName("same-as-selected");
-                  for (k = 0; k < y.length; k++) {
-                    y[k].removeAttribute("class");
-                  }
-                  this.setAttribute("class", "same-as-selected");
-                  break;
-                }
-              }
-              h.click();
-          });
-          b.appendChild(c);
-        }
-        x[i].appendChild(b);
-        a.addEventListener("click", function(e) {
-            /*when the select box is clicked, close any other select boxes,
-            and open/close the current select box:*/
-            e.stopPropagation();
-            closeAllSelect(this);
-            this.nextSibling.classList.toggle("select-hide");
-            this.classList.toggle("select-arrow-active");
-        });
-      }
-      function closeAllSelect(elmnt) {
-        /*a function that will close all select boxes in the document,
-        except the current select box:*/
-        var x, y, i, arrNo = [];
-        x = document.getElementsByClassName("select-items");
-        y = document.getElementsByClassName("select-selected");
-        for (i = 0; i < y.length; i++) {
-          if (elmnt == y[i]) {
-            arrNo.push(i)
-          } else {
-            y[i].classList.remove("select-arrow-active");
-          }
-        }
-        for (i = 0; i < x.length; i++) {
-          if (arrNo.indexOf(i)) {
-            x[i].classList.add("select-hide");
-          }
-        }
-      }
-      /*if the user clicks anywhere outside the select box,
-      then close all select boxes:*/
-      document.addEventListener("click", closeAllSelect);
-
+    <title>Deco</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js">
     </script>
+    <script src="https://www.hgking.xyz/js/deco.js">
+    </script>
+    <link rel="stylesheet" type="text/css"
+    href="https://www.hgking.xyz/css/deco.css">
+    <link href="https://fonts.googleapis.com/css?family=Limelight|Open+Sans"
+    rel="stylesheet">
   </head>
   <body>
-
     <div class='center _2-3rd text-center'>
       <div id='header' class='deco'>
         <h1 id='title' class='deco-title'>Deco CSS Framework</h1>
@@ -93,79 +20,145 @@
       </div>
     </div>
     <div class='center _2-3rd text-left'>
-      <div class='deco card'>
-        <p class='drop-cap'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          eget tortor tempus, euismod sapien quis, egestas nisi. Mauris
-          ultrices massa ante, et gravida est volutpat et. Nullam accumsan ac
-          magna ut finibus. Quisque mauris tellus, dictum a convallis non,
-          bibendum nec ipsum. Suspendisse vel dictum tellus. Cras sed ipsum
-          sit amet mi posuere pretium nec accumsan urna. Donec in tempus
-          mauris. Maecenas tincidunt non nulla vel viverra. Nam eu eleifend
-          lorem. Nunc ut commodo lorem. Pellentesque lectus ex, commodo non
-          viverra vel, aliquam id lorem. Sed fringilla velit vitae ex aliquam consequat. Sed in lacinia felis.
-          Nullam lobortis urna leo, in viverra nibh pellentesque quis.
-          Aliquam aliquam fringilla tortor, nec tincidunt diam. Phasellus
-          fringilla ex a tellus ullamcorper luctus. Pellentesque commodo et
-          turpis et molestie. Maecenas sodales vulputate ultrices. Orci
-          varius natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Sed sit amet ipsum dignissim, volutpat mi at,
-          ultricies dolor. Aenean vitae auctor nibh. Cras fermentum elit
-          id tortor dapibus faucibus.
-        </p>
+      <div class='deco'>
+        <div class='card'>
+          <h1>Making CSS Easier</h1>
+          <p>Deco is a collection of CSS classes that facilitates the styling of
+            your web pages. From everything to layout to aesthetic, Deco
+            provides users with just about everything that they would need.
+          </p>
+          <h2>Aesthetic Features:</h2>
+          <h3>Deco</h3>
+          <p>
+            Deco draws inspiration from the 1920's
+            <a href="https://en.wikipedia.org/wiki/Art_Deco">Art Deco</a> design
+            style. The aesthetic emphasises bold geometric forms, bright colors,
+            and exotic styles. To quote the linked wiki page: "Art Deco
+            represented luxury, glamour, exuberance, and faith in social and
+            technological progress." To tap into the art deco style, I made it a
+            point to express these principles. A striking, glimmering gold
+            border envelops every element. Colors like pearl, emerald, and ruby
+            adorn the display giving off a luxurious appearance.
+          </p>
+          <h3 id='title'>Drop Caps</h3>
+          <p class='drop-cap'>
+            The drop-cap class can be used on any paragraph tag. The result is
+            gives the initial letter of the text a printing press styling. This
+            works best when the paragraph is over three lines long when rendered
+            in the page. A way to make sure this happens is to break the text
+            into multiple columns, like in a newspaper layout. One should note,
+            that due to the way CSS works, the font of this initial letter must
+            be explicitly set in the stylesheet. It is recommended that the
+            header/main font is used to add more emphasis.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            eget tortor tempus, euismod sapien quis, egestas nisi. Mauris
+            ultrices massa ante, et gravida est volutpat et. Nullam accumsan ac
+            magna ut finibus. Quisque mauris tellus, dictum a convallis non,
+            bibendum nec ipsum. Suspendisse vel dictum tellus. Cras sed ipsum
+            sit amet mi posuere pretium nec accumsan urna. Donec in tempus
+            mauris. Maecenas tincidunt non nulla vel viverra. Nam eu eleifend
+            lorem. Nunc ut commodo lorem. Pellentesque lectus ex, commodo non
+            viverra vel, aliquam id lorem. Sed fringilla velit vitae ex aliquam consequat. Sed in lacinia felis.
+            Nullam lobortis urna leo, in viverra nibh pellentesque quis.
+            Aliquam aliquam fringilla tortor, nec tincidunt diam. Phasellus
+            fringilla ex a tellus ullamcorper luctus. Pellentesque commodo et
+            turpis et molestie. Maecenas sodales vulputate ultrices. Orci
+            varius natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Sed sit amet ipsum dignissim, volutpat mi at,
+            ultricies dolor. Aenean vitae auctor nibh. Cras fermentum elit
+            id tortor dapibus faucibus.
+          </p>
 
-        <p>
-          Curabitur posuere finibus velit, eget efficitur lorem consectetur
-          vitae. Cras et cursus nisl. Integer mattis, nulla eu congue scelerisque,
-          nibh diam iaculis turpis, ac tempus eros justo a libero. Duis eu
-          justo eget arcu hendrerit pellentesque sit amet id leo.
-          Donec blandit erat sed porta consequat. Curabitur a porttitor arcu,
-          sit amet efficitur est. Nam tristique congue mauris, vel rutrum felis.
-          Vestibulum malesuada at massa eu facilisis. Integer tincidunt enim
-          venenatis lacus pharetra, vel sagittis leo lobortis. Phasellus non
-          aliquet quam, id semper risus. Etiam vitae pellentesque metus.
-          Integer tristique massa ac felis dapibus pretium. Aenean bibendum
-          eros ac fermentum imperdiet. Quisque sed mi et nisi egestas placerat.
-          In quis accumsan enim. Donec suscipit posuere euismod. Etiam id
-          semper lorem. Donec ac dignissim ipsum, ut cursus dui. Suspendisse
-          potenti. Donec rhoncus ullamcorper neque. Nam nec vestibulum metus.
-        </p>
-
-        <p>
-          Suspendisse vitae nibh quis nibh pretium interdum eu sed libero.
-          Vestibulum scelerisque magna in turpis volutpat auctor. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Proin congue semper
-          sem vel aliquam. Sed lobortis tortor ut ex imperdiet elementum sed
-          a arcu. Donec hendrerit libero risus, at ultrices tortor tincidunt
-          in. Nunc in lacus ut lorem tincidunt suscipit. Fusce molestie
-          scelerisque hendrerit. Aliquam nunc libero, cursus non condimentum
-          eget, sodales vel ligula. Integer venenatis eleifend dolor. Mauris
-          scelerisque euismod ante. Nullam dictum orci vel ante mattis,
-          imperdiet condimentum neque porta. In scelerisque rutrum odio ut
-          luctus. Vestibulum sodales pretium augue egestas consequat. Donec
-          sit amet lacus laoreet, ultricies erat non, lacinia orci. Nullam
-          blandit et felis ac eleifend.
-        </p>
+          <h3>Take a look at some elements!</h3>
+          <ul>
+            <li><a href="#">This is a link</a></li>
+            <li><a href="#a">This is another link</a></li>
+            <li><a href="#b">This is a third link</a></li>
+          </ul>
+          <button>Hello I'm Button!</button>
+          <div class='row'>
+            <div class='column _half'>
+              <div class="center _4-5ths">
+                <div class='polaroid'>
+                  <img src='/img/roshie_n_goku.png' alt='roshie and goku'>
+                  <div class="caption">
+                    <p>Here be a polaroid class</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='column _half'>
+              <div class="center _4-5ths">
+                <div class='polaroid'>
+                  <img src='/img/man_on_the_moon.jpg' alt='roshie and goku'>
+                  <div class="caption">
+                    <p>Here be another</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>This is a table</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Number</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Last Week</td>
+                <td>Noon</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Last Tuesday</td>
+                <td>Midnight</td>
+                <td>47</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Yesterday</td>
+                <td>4 o'clock</td>
+                <td>42</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Today</td>
+                <td>Now</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
     <div class='_1-3rd center'>
       <div class='deco card'>
         <form class='deco-form'>
+          <h3>This is a sample form!</h3>
           <div class='row'>
             <label>Text:</label>
-            <input type="text">
+            <input type="text" name='text'>
           </div>
           <div class='row'>
             <label>Password:</label>
-            <input type="password">
+            <input type="password" name='pass'>
           </div>
           <div class='row'>
             <label>Number:</label>
-            <input type='number'>
+            <input type='number' name='num'>
           </div>
           <div class='row'>
             <label>Select:</label>
-            <div class="custom-select" style="width:200px;">
+            <div class="select">
               <select>
                 <option value="0">Select car:</option>
                 <option value="1">Audi</option>
@@ -183,35 +176,55 @@
               </select>
             </div>
           </div>
+          <br>
           <div class='row'>
-            <label>Checkbox:</label>
+            <label class="cb_container">One:
+              <input type="checkbox" name='one' checked="checked">
+              <span class="checkmark"></span>
+            </label>
           </div>
           <div class='row'>
-            <label for="huey" class='small-input'>Huey</label>
-            <input type="checkbox" id="huey" name="drone" value="huey"checked>
+            <label class="cb_container">Two:
+              <input type="checkbox" name='two'>
+              <span class="checkmark"></span>
+            </label>
           </div>
           <div class='row'>
-            <label for="dewey" class='small-input'>Dewey</label>
-            <input type="checkbox" id="dewey" name="drone" value="dewey">
+            <label class="cb_container">Three:
+              <input type="checkbox" name='three'>
+              <span class="checkmark"></span>
+            </label>
           </div>
           <div class='row'>
-            <label for="louie" class='small-input'>Louie</label>
-            <input type="checkbox" id="louie" name="drone" value="louie">
+            <label class="cb_container">Four:
+              <input type="checkbox" name='four'>
+              <span class=" checkmark"></span>
+            </label>
+          </div>
+          <br>
+          <div class='row'>
+            <label class="rb_container" for='r_1'>One:
+              <input type="radio" checked="checked" name="radio" value='one'>
+              <span class="radio"></span>
+            </label>
           </div>
           <div class='row'>
-            <label>Radio:</label>
+            <label class="rb_container" for='r_2'>Two:
+              <input type="radio" name="radio" value='two'>
+              <span class="radio"></span>
+            </label>
           </div>
           <div class='row'>
-            <label for="huey" class='small-input'>Huey</label>
-            <input type="radio" id="h" name="drone" value="huey">
+            <label class="rb_container" for='r_3'>Three:
+              <input type="radio" name="radio" value='three'>
+              <span class="radio"></span>
+            </label>
           </div>
           <div class='row'>
-            <label for="dewey" class='small-input'>Dewey</label>
-            <input type="radio" id="d" name="drone" value="dewey">
-          </div>
-          <div class='row'>
-            <label for="louie" class='small-input'>Louie</label>
-            <input type="radio" id="l" name="drone" value="louie" checked>
+            <label class="rb_container" for='r_4'>Four:
+              <input type="radio" name="radio" value='four'>
+              <span class="radio"></span>
+            </label>
           </div>
           <div class='row'>
             <label for="range">Range:</label>
@@ -229,7 +242,6 @@
         <div class='center'>
           <div class='deco card'>
             <h3>It's best to put all divs inside of a row container to prevent any funky float action going on.</h3>
-
             <div class='_1-3rd left text-left'>
               <div class='deco'>
                 <p>This is a left and left aligned div</p>
@@ -369,7 +381,7 @@
         </div>
         <div id='sidebar' class='column _1-3rd'>
           <div class='deco card'>
-            <p id='active'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices, sem eu maximus varius, diam tortor imperdiet metus, ac euismod tellus turpis et magna. Nam efficitur orci id justo feugiat, quis volutpat dui semper. Integer scelerisque ex tempus nibh suscipit, ac vestibulum diam finibus. Quisque lacinia mauris vel ultrices ultricies. Pellentesque purus massa, pharetra ut lacus ac, pharetra maximus leo. Mauris laoreet ex a nisi rhoncus laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices, sem eu maximus varius, diam tortor imperdiet metus, ac euismod tellus turpis et magna. Nam efficitur orci id justo feugiat, quis volutpat dui semper. Integer scelerisque ex tempus nibh suscipit, ac vestibulum diam finibus. Quisque lacinia mauris vel ultrices ultricies. Pellentesque purus massa, pharetra ut lacus ac, pharetra maximus leo. Mauris laoreet ex a nisi rhoncus laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
             <p>Pellentesque lacinia lectus elit, vitae ultricies est blandit lacinia. Aenean in finibus dui, ac pharetra massa. Nullam tempus magna ut varius rutrum. Maecenas congue urna et augue lobortis suscipit. Suspendisse eget metus tortor. Cras vitae nisi ut elit scelerisque consectetur. Morbi varius nibh vel purus tempor commodo. Praesent non ante non leo euismod condimentum. Donec et blandit nunc.</p>
             <p>Sed sagittis dui tempus ipsum commodo finibus. Aenean diam lectus, porttitor sit amet tristique nec, convallis et arcu. In eu rhoncus risus, ut sodales ipsum. Aliquam vel diam sit amet eros varius ullamcorper vel at dui. Vivamus vel suscipit augue. Mauris facilisis semper magna, ut venenatis elit luctus sed. Integer cursus velit et libero pellentesque sagittis ac sit amet lacus. Nam neque libero, placerat nec nisl ac, ornare pretium metus.</p>
             <p>Cras interdum cursus nunc. In et arcu mollis odio luctus laoreet sed facilisis mi. Donec blandit malesuada nisi vitae euismod. Quisque porta erat ut lectus ultricies vulputate. Suspendisse fringilla auctor ultrices. Proin vitae ornare tellus, vitae scelerisque tortor. Ut velit est, pellentesque sed quam vel, cursus facilisis nisi. Ut in lectus tincidunt, mollis quam at, lacinia est.</p>

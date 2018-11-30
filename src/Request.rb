@@ -96,7 +96,7 @@ class Request
   end
 
   def addToBody(string)
-    #puts (string + "~" + string.size.to_s).colorize(:light_blue)
+    puts (string + "~" + string.size.to_s).colorize(:light_blue)
     @body += string
     puts bodySize
   end
@@ -125,6 +125,9 @@ class Request
       parts[1].split("&").each do |var|
         vals = var.split("=")
         @get[vals[0]] = vals[1]
+      end
+      @get.each do |key, val|
+        puts "key: #{key} ~~ val: #{val}"
       end
     end
   end
