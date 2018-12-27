@@ -2,6 +2,7 @@ require "./src/Server"
 require "./src/Daemon"
 require "./src/Scraper"
 require "./src/Encryptor"
+require "./src/TicTacToe"
 require 'optparse'
 require 'colorize'
 
@@ -150,6 +151,22 @@ server.get "/encryption/decrypt/" do |req, res|
     html = "<h2>Error!</h2><p>You must provide an input for P, Q, and M</p>"
   end
   res.send_string(req.method, html)
+end
+
+server.get "/tictactoe/move/" do |req, res|
+  if !req.get?("string").nil? and !req.get?("player").nil? and !req.get?("depth").nil?
+    t = TicTacToe.new
+    string = req.get?("string")
+    player = req.get?("player").to_i
+    depth = req.get?("depth").to_i
+    board = t.parse_board(string)
+
+    board = t.move(board, player, depth)
+    # puts "-" * 10
+    # t.print_board(board)
+    # puts "-" * 10
+    res.send_string(req.method, t.stringify_board(board))
+  end
 end
 
 daemon = Daemon.new daemon_options
