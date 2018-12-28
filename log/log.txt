@@ -5999,3 +5999,356 @@ key: depth ~~ val: 2
 [0;93;49m6.0351ms ... Thread_Exec[0m
 [0;32;49mClosing Socket and Ending Thread.[0m
 
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;93;49m0.1591ms ... Form_Request[0m
+[0;93;49m0.3008ms ... Send_Response[0m
+[0;93;49m5869.5215ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /img/roshie_n_goku.png HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/img/roshie_n_goku.png[0m
+[0;93;49m0.1442ms ... Form_Request[0m
+[0;93;49m156.3192ms ... Send_Response[0m
+[0;93;49m652.0205ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /img/man_on_the_moon.jpg HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/img/man_on_the_moon.jpg[0m
+[0;93;49m0.1371ms ... Form_Request[0m
+[0;93;49m0.345ms ... Send_Response[0m
+[0;93;49m2.5962ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/index.html[0m
+[0;93;49m0.1448ms ... Form_Request[0m
+[0;93;49m0.2027ms ... Send_Response[0m
+[0;93;49m3.2674ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m12268.1131ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/keygen/?p=10006660007&q=8675309 HTTP/1.1[0m
+key: p ~~ val: 10006660007
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/keygen[0m
+[0;93;49m0.1886ms ... Form_Request[0m
+[0;93;49m84.33ms ... Send_Response[0m
+[0;93;49m154.32ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/encrypt/?m=1234567890&p=10006660007&q=8675309 HTTP/1.1[0m
+key: m ~~ val: 1234567890
+key: p ~~ val: 10006660007
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/encrypt[0m
+[0;93;49m0.1834ms ... Form_Request[0m
+[0;93;49m1.3343ms ... Send_Response[0m
+[0;93;49m4.3758ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /encryption/decrypt/?m=1234567890&p=10006660007&q=8675309 HTTP/1.1[0m
+key: m ~~ val: 1234567890
+key: p ~~ val: 10006660007
+key: q ~~ val: 8675309
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/encryption/decrypt[0m
+[0;93;49m0.1878ms ... Form_Request[0m
+[0;93;49m5.5843ms ... Send_Response[0m
+[0;93;49m7.8784ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/ HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/index.html[0m
+[0;93;49m0.1527ms ... Form_Request[0m
+[0;93;49m0.2077ms ... Send_Response[0m
+[0;93;49m2.9237ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m11472.1715ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=000000000000000100000000000000000000&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 000000000000000100000000000000000000
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.1853ms ... Form_Request[0m
+[0;93;49m0.2669ms ... Send_Response[0m
+[0;93;49m7505.248ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=000000000000002100000100000000000000&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 000000000000002100000100000000000000
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.1858ms ... Form_Request[0m
+[0;93;49m320.8825ms ... Send_Response[0m
+[0;93;49m325.0838ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=000000002000002100001100000000000000&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 000000002000002100001100000000000000
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.1913ms ... Form_Request[0m
+[0;93;49m327.5502ms ... Send_Response[0m
+[0;93;49m330.4026ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=000000022000002100011100000000000000&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 000000022000002100011100000000000000
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.2042ms ... Form_Request[0m
+[0;93;49m252.3475ms ... Send_Response[0m
+[0;93;49m254.0332ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=000000222100002100011100000000000000&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 000000222100002100011100000000000000
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.1671ms ... Form_Request[0m
+[0;93;49m218.3852ms ... Send_Response[0m
+[0;93;49m221.5335ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=000000222100002100011100000100000002&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 000000222100002100011100000100000002
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.2304ms ... Form_Request[0m
+[0;93;49m2.4376ms ... Send_Response[0m
+[0;93;49m5.2986ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=000000222100002100011110000100000022&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 000000222100002100011110000100000022
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.2003ms ... Form_Request[0m
+[0;93;49m2.3024ms ... Send_Response[0m
+[0;93;49m5.1338ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=000000000000001000000000000000000000&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 000000000000001000000000000000000000
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.1996ms ... Form_Request[0m
+[0;93;49m0.2619ms ... Send_Response[0m
+[0;93;49m3.3932ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=000000000000001200001000000000000000&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 000000000000001200001000000000000000
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.1997ms ... Form_Request[0m
+[0;93;49m300.6852ms ... Send_Response[0m
+[0;93;49m303.3482ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=000000002000001200001000001000000000&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 000000002000001200001000001000000000
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.1897ms ... Form_Request[0m
+[0;93;49m320.422ms ... Send_Response[0m
+[0;93;49m323.1013ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=020000002000001200001000001000001000&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 020000002000001200001000001000001000
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.197ms ... Form_Request[0m
+[0;93;49m2.7362ms ... Send_Response[0m
+[0;93;49m5.8597ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=000000000000001000000000000000000000&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 000000000000001000000000000000000000
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.205ms ... Form_Request[0m
+[0;93;49m0.2757ms ... Send_Response[0m
+[0;93;49m3.6571ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=000000000000001100000200000000000000&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 000000000000001100000200000000000000
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.1897ms ... Form_Request[0m
+[0;93;49m290.5848ms ... Send_Response[0m
+[0;93;49m292.9956ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=000000000000001120000200001000000000&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 000000000000001120000200001000000000
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.2055ms ... Form_Request[0m
+[0;93;49m357.8476ms ... Send_Response[0m
+[0;93;49m360.7562ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=000000000000001120001220001000000000&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 000000000000001120001220001000000000
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.1787ms ... Form_Request[0m
+[0;93;49m271.39ms ... Send_Response[0m
+[0;93;49m274.2029ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=000020000010001120001220001000000000&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 000020000010001120001220001000000000
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.1583ms ... Form_Request[0m
+[0;93;49m240.6671ms ... Send_Response[0m
+[0;93;49m244.0443ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=000020000010001120001220001020000010&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 000020000010001120001220001020000010
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.1833ms ... Form_Request[0m
+[0;93;49m207.1101ms ... Send_Response[0m
+[0;93;49m210.2726ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=000020000010001120001220001120000012&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 000020000010001120001220001120000012
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.2013ms ... Form_Request[0m
+[0;93;49m184.7092ms ... Send_Response[0m
+[0;93;49m187.5862ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /tictactoe/move/?string=000020000010011120001220001120000212&player=2&depth=2 HTTP/1.1[0m
+key: string ~~ val: 000020000010011120001220001120000212
+key: player ~~ val: 2
+key: depth ~~ val: 2
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/tictactoe/move[0m
+[0;93;49m0.1967ms ... Form_Request[0m
+[0;93;49m1.8369ms ... Send_Response[0m
+[0;93;49m4.702ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;93;49m0.1726ms ... Form_Request[0m
+[0;93;49m1.5577ms ... Send_Response[0m
+[0;93;49m4.2057ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m13246.7664ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/search/?query= HTTP/1.1[0m
+key: query ~~ val: 
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/search[0m
+[0;93;49m0.1736ms ... Form_Request[0m
+[0;93;49m322.1227ms ... Send_Response[0m
+[0;93;49m457.6099ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/index.html[0m
+[0;93;49m0.1528ms ... Form_Request[0m
+[0;93;49m0.1908ms ... Send_Response[0m
+[0;93;49m3.0597ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /favicon.ico HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/favicon.ico[0m
+[0;93;49m0.1524ms ... Form_Request[0m
+[0;93;49m0.216ms ... Send_Response[0m
+[0;93;49m94.3287ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /scraper/search/?query= HTTP/1.1[0m
+key: query ~~ val: 
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/scraper/search[0m
+[0;93;49m0.1597ms ... Form_Request[0m
+[0;93;49m210.6724ms ... Send_Response[0m
+[0;93;49m213.3696ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m12615.8321ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;93;49m0.1542ms ... Form_Request[0m
+[0;93;49m0.2421ms ... Send_Response[0m
+[0;93;49m49.3879ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /img/roshie_n_goku.png HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/img/roshie_n_goku.png[0m
+[0;93;49m0.1503ms ... Form_Request[0m
+[0;93;49m150.0001ms ... Send_Response[0m
+[0;93;49m222.3922ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /img/man_on_the_moon.jpg HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/img/man_on_the_moon.jpg[0m
+[0;93;49m0.1438ms ... Form_Request[0m
+[0;93;49m0.2481ms ... Send_Response[0m
+[0;93;49m3.3014ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;31;49mRequestLine was nil[0m
+[0;93;49m13053.7742ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET / HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/index.html[0m
+[0;93;49m0.173ms ... Form_Request[0m
+[0;93;49m4.0974ms ... Send_Response[0m
+[0;93;49m3179.3242ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /img/roshie_n_goku.png HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/img/roshie_n_goku.png[0m
+[0;93;49m0.6078ms ... Form_Request[0m
+[0;93;49m206.561ms ... Send_Response[0m
+[0;93;49m474.8059ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+
+[0;94;49mGET /img/man_on_the_moon.jpg HTTP/1.1[0m
+[0;92;49mmethod:GET path:/home/hg/rubyStuff/Server/public/img/man_on_the_moon.jpg[0m
+[0;93;49m0.1491ms ... Form_Request[0m
+[0;93;49m1.4306ms ... Send_Response[0m
+[0;93;49m4.9252ms ... Thread_Exec[0m
+[0;32;49mClosing Socket and Ending Thread.[0m
+

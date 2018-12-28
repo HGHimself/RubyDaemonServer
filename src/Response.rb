@@ -5,16 +5,18 @@ class Response
     @headers = Array.new
   end
 
+  # queue up headers for reponse
+  # best used outside server object, before sending data
   def addHeader(header)
     @headers.push(header)
   end
 
+  # tool to send a certain file
   def send_file(method, path)
-
     if File.exist?(path) && !File.directory?(path)
       code = 200
     else
-      
+
       path = File.expand_path(File.join(@rootdir, NOT_FOUND_PAGE))
       puts path
       # respond with a 404 error code to indicate the file does not exist
@@ -24,6 +26,7 @@ class Response
     begin
       form_response(method, path, code)
     rescue
+      # any error needs a 500:server error response
       path = File.expand_path(File.join(@rootdir, SERVER_ERR_PAGE))
       code = 500
       form_response(method, path, code)
@@ -37,6 +40,7 @@ class Response
     CONTENT_TYPE_MAPPING.fetch(ext, DEFAULT_CONTENT_TYPE)
   end
 
+  # sends properly formatted response over socket
   def form_response(method, path, code)
     File.open(path, "rb") do |file|
       @socket.puts "HTTP/1.1 #{code} #{STATUS_CODES[code]}\r\n"
@@ -52,10 +56,12 @@ class Response
     end
   end
 
+  # used like regular IO puts, good for custom response
   def put(line)
     @socket.puts line.chomp + "\r\n"
   end
 
+  # sends valid response with given string as body
   def send_string(method, string)
     code = 200
     @socket.puts "HTTP/1.1 #{code} #{STATUS_CODES[code]}\r\n"
