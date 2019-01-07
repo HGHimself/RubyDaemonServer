@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Deco</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js">
+    </script>
+    <script src="https://www.hgking.xyz/js/deco.js">
+    </script>
+    <link rel="stylesheet" type="text/css"
+    href="https://www.hgking.xyz/css/deco.css">
+    <link href="https://fonts.googleapis.com/css?family=Limelight|Open+Sans"
+    rel="stylesheet">
+  </head>
+  <body>
+    <div class='center _2-3rd text-center'>
+      <div id='header' class='deco'>
+        <h1 id='title' class='deco-title'>Deco CSS Framework</h1>
+        <h2 id='description' class='deco-description'>made by HG King</h2>
+      </div>
+    </div>
+    <div class='center _2-3rd text-left'>
+      <div class='deco'>
+        <div class='card'>
+          <h1>Making CSS Easier</h1>
+          <p>Deco is a collection of CSS classes that facilitates the styling of
+            your web pages. From everything to layout to aesthetic, Deco
+            provides users with just about everything that they would need.
+          </p>
+          <h2>Aesthetic Features:</h2>
+          <h3>Deco</h3>
+          <p>
+            Deco draws inspiration from the 1920's
+            <a href="https://en.wikipedia.org/wiki/Art_Deco">Art Deco</a> design
+            style. The aesthetic emphasises bold geometric forms, bright colors,
+            and exotic styles. To quote the linked wiki page: "Art Deco
+            represented luxury, glamour, exuberance, and faith in social and
+            technological progress." To tap into the art deco style, I made it a
+            point to express these principles. A striking, glimmering gold
+            border envelops every element. Colors like pearl, emerald, and ruby
+            adorn the display giving off a luxurious appearance.
+          </p>
+          <h3 id='title'>Drop Caps</h3>
+          <p class='drop-cap'>
+            The drop-cap class can be used on any paragraph tag. The result is
+            gives the initial letter of the text a printing press styling. This
+            works best when the paragraph is over three lines long when rendered
+            in the page. A way to make sure this happens is to break the text
+            into multiple columns, like in a newspaper layout. One should note,
+            that due to the way CSS works, the font of this initial letter must
+            be explicitly set in the stylesheet. It is recommended that the
+            header/main font is used to add more emphasis.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            eget tortor tempus, euismod sapien quis, egestas nisi. Mauris
+            ultrices massa ante, et gravida est volutpat et. Nullam accumsan ac
+            magna ut finibus. Quisque mauris tellus, dictum a convallis non,
+            bibendum nec ipsum. Suspendisse vel dictum tellus. Cras sed ipsum
+            sit amet mi posuere pretium nec accumsan urna. Donec in tempus
+            mauris. Maecenas tincidunt non nulla vel viverra. Nam eu eleifend
+            lorem. Nunc ut commodo lorem. Pellentesque lectus ex, commodo non
+            viverra vel, aliquam id lorem. Sed fringilla velit vitae ex aliquam consequat. Sed in lacinia felis.
+            Nullam lobortis urna leo, in viverra nibh pellentesque quis.
+            Aliquam aliquam fringilla tortor, nec tincidunt diam. Phasellus
+            fringilla ex a tellus ullamcorper luctus. Pellentesque commodo et
+            turpis et molestie. Maecenas sodales vulputate ultrices. Orci
+            varius natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Sed sit amet ipsum dignissim, volutpat mi at,
+            ultricies dolor. Aenean vitae auctor nibh. Cras fermentum elit
+            id tortor dapibus faucibus.
+          </p>
+
+          <h3>Take a look at some elements!</h3>
+          <ul>
+            <li><a href="#">This is a link</a></li>
+            <li><a href="#a">This is another link</a></li>
+            <li><a href="#b">This is a third link</a></li>
+          </ul>
+          <button>Hello I'm Button!</button>
+          <div class='row'>
+            <div class='column _half'>
+              <div class="center _4-5ths">
+                <div class='polaroid'>
+                  <img src='/img/roshie_n_goku.png' alt='roshie and goku'>
+                  <div class="caption">
+                    <p>Here be a polaroid class</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='column _half'>
+              <div class="center _4-5ths">
+                <div class='polaroid'>
+                  <img src='/img/man_on_the_moon.jpg' alt='roshie and goku'>
+                  <div class="caption">
+                    <p>Here be another</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>This is a table</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Number</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Last Week</td>
+                <td>Noon</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Last Tuesday</td>
+                <td>Midnight</td>
+                <td>47</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Yesterday</td>
+                <td>4 o'clock</td>
+                <td>42</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Today</td>
+                <td>Now</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class='_1-3rd center'>
+      <div class='deco card'>
+        <form class='deco-form'>
+          <h3>This is a sample form!</h3>
+          <div class='row'>
+            <label>Text:</label>
+            <input type="text" name='text'>
+          </div>
+          <div class='row'>
+            <label>Password:</label>
+            <input type="password" name='pass'>
+          </div>
+          <div class='row'>
+            <label>Number:</label>
+            <input type='number' name='num'>
+          </div>
+          <div class='row'>
+            <label>Select:</label>
+            <div class="select">
+              <select>
+                <option value="0">Select car:</option>
+                <option value="1">Audi</option>
+                <option value="2">BMW</option>
+                <option value="3">Citroen</option>
+                <option value="4">Ford</option>
+                <option value="5">Honda</option>
+                <option value="6">Jaguar</option>
+                <option value="7">Land Rover</option>
+                <option value="8">Mercedes</option>
+                <option value="9">Mini</option>
+                <option value="10">Nissan</option>
+                <option value="11">Toyota</option>
+                <option value="12">Volvo</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <div class='row'>
+            <label class="input-container">One:
+              <input type="checkbox" name='one' checked="checked">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class='row'>
+            <label class="input-container">Two:
+              <input type="checkbox" name='two'>
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class='row'>
+            <label class="input-container">Three:
+              <input type="checkbox" name='three'>
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class='row'>
+            <label class="input-container">Four:
+              <input type="checkbox" name='four'>
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <br>
+          <div class='row'>
+            <label class="input-container" for='r_1'>One:
+              <input type="radio" checked="checked" name="radio" value='one'>
+              <span class="radio-button"></span>
+            </label>
+          </div>
+          <div class='row'>
+            <label class="input-container" for='r_2'>Two:
+              <input type="radio" name="radio" value='two'>
+              <span class="radio-button"></span>
+            </label>
+          </div>
+          <div class='row'>
+            <label class="input-container" for='r_3'>Three:
+              <input type="radio" name="radio" value='three'>
+              <span class="radio-button"></span>
+            </label>
+          </div>
+          <div class='row'>
+            <label class="input-container" for='r_4'>Four:
+              <input type="radio" name="radio" value='four'>
+              <span class="radio-button"></span>
+            </label>
+          </div>
+          <div class='row'>
+            <label for="range">Range:</label>
+            <input type="range" id="start" name="range" min="0" max="11">
+          </div>
+          <div class='row'>
+            <input type='submit' value='Submit'>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id='main' class='center _4-5th'>
+      <div class='row'>
+        <div class='center'>
+          <div class='deco card'>
+            <h3>It's best to put all divs inside of a row container to prevent any funky float action going on.</h3>
+            <div class='_1-3rd left text-left'>
+              <div class='deco'>
+                <p>This is a left and left aligned div</p>
+              </div>
+            </div>
+            <div class='_1-3rd right text-right'>
+              <div class='deco'>
+                <p>This is a right and right aligned div</p>
+              </div>
+            </div>
+            <div class='_1-3rd center text-center'>
+              <div class='deco'>
+                <p>This is a center and center aligned div</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='center _2-3rd'>
+          <div class='card deco'>
+            <h3>Using the 'column' class makes it easy to divide a row up into columns.</h3>
+            <p>You can use most fractions along with this class to designate a width percentage. Also remember to not use any styling classes on the same element that has a 'column-n' class.
+              This will mess up the percentages calculation.</p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='whole text-center'>
+            <div class='deco center'>whole: 1</div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='column _half text-left'><div class='deco a-column'>column _half text-left: 1</div></div>
+          <div class='column _half text-left'><div class='deco a-column'>column _half text-left: 2</div></div>
+        </div>
+        <div class='row'>
+          <div class='column _1-3rd text-right'><div class='deco a-column'>column _1-3rd text-right: 1</div></div>
+          <div class='column _1-3rd text-right'><div class='deco a-column'>column _1-3rd text-right: 2</div></div>
+          <div class='column _1-3rd text-right'><div class='deco a-column'>column _1-3rd text-right: 3</div></div>
+        </div>
+        <div class='row'>
+          <div class='column _1-4th'><div class='deco center a-column'>column _1-4th: 1</div></div>
+          <div class='column _1-4th'><div class='deco center a-column'>column _1-4th: 2</div></div>
+          <div class='column _1-4th'><div class='deco center a-column'>column _1-4th: 3</div></div>
+          <div class='column _1-4th'><div class='deco center a-column'>column _1-4th: 4</div></div>
+        </div>
+        <div class='row'>
+          <div class='column _1-6th'><div class='deco center a-column'>column _1-6th: 1</div></div>
+          <div class='column _1-6th'><div class='deco center a-column'>column _1-6th: 2</div></div>
+          <div class='column _1-6th'><div class='deco center a-column'>column _1-6th: 3</div></div>
+          <div class='column _1-6th'><div class='deco center a-column'>column _1-6th: 4</div></div>
+          <div class='column _1-6th'><div class='deco center a-column'>column _1-6th: 5</div></div>
+          <div class='column _1-6th'><div class='deco center a-column'>column _1-6th: 6</div></div>
+        </div>
+        <div class='row'>
+          <div class='column _1-10th'><div class='deco center a-column'>column _1-10th: 1</div></div>
+          <div class='column _1-10th'><div class='deco center a-column'>column _1-10th: 2</div></div>
+          <div class='column _1-10th'><div class='deco center a-column'>column _1-10th: 3</div></div>
+          <div class='column _1-10th'><div class='deco center a-column'>column _1-10th: 4</div></div>
+          <div class='column _1-10th'><div class='deco center a-column'>column _1-10th: 5</div></div>
+          <div class='column _1-10th'><div class='deco center a-column'>column _1-10th: 6</div></div>
+          <div class='column _1-10th'><div class='deco center a-column'>column _1-10th: 7</div></div>
+          <div class='column _1-10th'><div class='deco center a-column'>column _1-10th: 8</div></div>
+          <div class='column _1-10th'><div class='deco center a-column'>column _1-10th: 9</div></div>
+          <div class='column _1-10th'><div class='deco center a-column'>column _1-10th: 10</div></div>
+        </div>
+        <div class='center _2-3rd'>
+          <div class='card deco'>
+            <h3>You can mix and match columns inside of a row. Just make sure the percentages add up to 100</h3>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='column _3-5th'><div class='deco center a-column'>column _3-5th</div></div>
+          <div class='column _2-5th'><div class='deco center a-column'>column _2-5th</div></div>
+        </div>
+        <div class='row'>
+          <div class='column _3-4th'><div class='deco center a-column'>column _3-4th</div></div>
+          <div class='column _1-4th'><div class='deco center a-column'>column _1-4th</div></div>
+        </div>
+        <div class='row'>
+          <div class='column _2-3rd'><div class='deco center a-column'>column _2-3rd</div></div>
+          <div class='column _1-3rd'><div class='deco center a-column'>column _1-3rd</div></div>
+        </div>
+        <div class='row'>
+          <div class='column _4-5th'><div class='deco center a-column'>column _4-5th</div></div>
+          <div class='column _1-5th'><div class='deco center a-column'>column _1-5th</div></div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='column _2-3rd'>
+          <div class='deco card'>
+            <h4>Header</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices, sem eu maximus varius, diam tortor imperdiet metus, ac euismod tellus turpis et magna. Nam efficitur orci id justo feugiat, quis volutpat dui semper. Integer scelerisque ex tempus nibh suscipit, ac vestibulum diam finibus. Quisque lacinia mauris vel ultrices ultricies. Pellentesque purus massa, pharetra ut lacus ac, pharetra maximus leo. Mauris laoreet ex a nisi rhoncus laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+            <h4>Header</h4>
+            <p>Pellentesque lacinia lectus elit, vitae ultricies est blandit lacinia. Aenean in finibus dui, ac pharetra massa. Nullam tempus magna ut varius rutrum. Maecenas congue urna et augue lobortis suscipit. Suspendisse eget metus tortor. Cras vitae nisi ut elit scelerisque consectetur. Morbi varius nibh vel purus tempor commodo. Praesent non ante non leo euismod condimentum. Donec et blandit nunc.</p>
+            <h4>Header</h4>
+            <p>Sed sagittis dui tempus ipsum commodo finibus. Aenean diam lectus, porttitor sit amet tristique nec, convallis et arcu. In eu rhoncus risus, ut sodales ipsum. Aliquam vel diam sit amet eros varius ullamcorper vel at dui. Vivamus vel suscipit augue. Mauris facilisis semper magna, ut venenatis elit luctus sed. Integer cursus velit et libero pellentesque sagittis ac sit amet lacus. Nam neque libero, placerat nec nisl ac, ornare pretium metus.</p>
+          </div>
+          <div class='row card deco'>
+            <div class='column _half'>
+              <div class="center _4-5ths">
+                <div class='polaroid'>
+                  <div class='fakeimg'></div>
+                  <div class="caption">
+                    <p>Here be a polaroid class</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='column _half'>
+              <div class="center _4-5ths">
+                <div class='polaroid'>
+                  <div class='fakeimg'></div>
+                  <div class="caption">
+                    <p>Here be another polaroid class</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='column _half'>
+              <div class='deco card'>
+                <h3>You can use the card class</h3>
+                <p>These are best for putting divs in a visible container image, such as this. It will give them a margin on the right, making sure they do not sit too close. Just don't put a card inside another card!</p>
+                <p>Ut sed neque consectetur, fringilla nibh ac, convallis sapien. Mauris tincidunt ullamcorper odio, aliquet vehicula urna tristique nec. Integer tempus sapien id urna pellentesque, at ultrices est rutrum. Duis condimentum tortor scelerisque purus bibendum tincidunt. Praesent sodales tellus a libero facilisis, id tempus mi vulputate. Nam interdum, tortor id tristique aliquam, diam ligula sollicitudin nisl, et vulputate justo velit sit amet ante. Suspendisse lacinia erat in eros pulvinar, quis malesuada massa maximus. Aliquam ut vestibulum neque. Aliquam venenatis eu urna in sagittis. Nunc in vulputate libero. In consectetur felis eu pulvinar ornare. Proin orci urna, interdum et massa a, dapibus fermentum odio. Integer at neque at ex mattis auctor facilisis sit amet mauris.</p>
+              </div>
+            </div>
+            <div class='column _half'>
+              <div class='deco card'>
+                <h3>You can use the card class</h3>
+                <p>These are best for putting divs in a visible container image, such as this. It will give them a margin on the right, making sure they do not sit too close.</p>
+                <p>Ut sed neque consectetur, fringilla nibh ac, convallis sapien. Mauris tincidunt ullamcorper odio, aliquet vehicula urna tristique nec. Integer tempus sapien id urna pellentesque, at ultrices est rutrum. Duis condimentum tortor scelerisque purus bibendum tincidunt. Praesent sodales tellus a libero facilisis, id tempus mi vulputate. Nam interdum, tortor id tristique aliquam, diam ligula sollicitudin nisl, et vulputate justo velit sit amet ante. Suspendisse lacinia erat in eros pulvinar, quis malesuada massa maximus. Aliquam ut vestibulum neque. Aliquam venenatis eu urna in sagittis. Nunc in vulputate libero. In consectetur felis eu pulvinar ornare. Proin orci urna, interdum et massa a, dapibus fermentum odio. Integer at neque at ex mattis auctor facilisis sit amet mauris.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id='sidebar' class='column _1-3rd'>
+          <div class='deco card'>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices, sem eu maximus varius, diam tortor imperdiet metus, ac euismod tellus turpis et magna. Nam efficitur orci id justo feugiat, quis volutpat dui semper. Integer scelerisque ex tempus nibh suscipit, ac vestibulum diam finibus. Quisque lacinia mauris vel ultrices ultricies. Pellentesque purus massa, pharetra ut lacus ac, pharetra maximus leo. Mauris laoreet ex a nisi rhoncus laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+            <p>Pellentesque lacinia lectus elit, vitae ultricies est blandit lacinia. Aenean in finibus dui, ac pharetra massa. Nullam tempus magna ut varius rutrum. Maecenas congue urna et augue lobortis suscipit. Suspendisse eget metus tortor. Cras vitae nisi ut elit scelerisque consectetur. Morbi varius nibh vel purus tempor commodo. Praesent non ante non leo euismod condimentum. Donec et blandit nunc.</p>
+            <p>Sed sagittis dui tempus ipsum commodo finibus. Aenean diam lectus, porttitor sit amet tristique nec, convallis et arcu. In eu rhoncus risus, ut sodales ipsum. Aliquam vel diam sit amet eros varius ullamcorper vel at dui. Vivamus vel suscipit augue. Mauris facilisis semper magna, ut venenatis elit luctus sed. Integer cursus velit et libero pellentesque sagittis ac sit amet lacus. Nam neque libero, placerat nec nisl ac, ornare pretium metus.</p>
+            <p>Cras interdum cursus nunc. In et arcu mollis odio luctus laoreet sed facilisis mi. Donec blandit malesuada nisi vitae euismod. Quisque porta erat ut lectus ultricies vulputate. Suspendisse fringilla auctor ultrices. Proin vitae ornare tellus, vitae scelerisque tortor. Ut velit est, pellentesque sed quam vel, cursus facilisis nisi. Ut in lectus tincidunt, mollis quam at, lacinia est.</p>
+            <p>Ut sed neque consectetur, fringilla nibh ac, convallis sapien. Mauris tincidunt ullamcorper odio, aliquet vehicula urna tristique nec. Integer tempus sapien id urna pellentesque, at ultrices est rutrum. Duis condimentum tortor scelerisque purus bibendum tincidunt. Praesent sodales tellus a libero facilisis, id tempus mi vulputate. Nam interdum, tortor id tristique aliquam, diam ligula sollicitudin nisl, et vulputate justo velit sit amet ante. Suspendisse lacinia erat in eros pulvinar, quis malesuada massa maximus. Aliquam ut vestibulum neque. Aliquam venenatis eu urna in sagittis. Nunc in vulputate libero. In consectetur felis eu pulvinar ornare. Proin orci urna, interdum et massa a, dapibus fermentum odio. Integer at neque at ex mattis auctor facilisis sit amet mauris.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

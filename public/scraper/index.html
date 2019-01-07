@@ -31,29 +31,38 @@
         <h2 id="description" class="deco-description">Created By HG King</h2>
       </div>
     </div>
+    <div class='center 3-4th'>
+      <div class="topnav deco">
+        <nav>
+          <a class='left navLink' href='https://www.hgking.xyz/'>Home</a>
+          <a id='' class=' left navLink' href='../'>Ruby Server</a>
+          <a id='active' class='active left navLink' href='../scraper/'>Scraper</a>
+          <a id='' class=' left navLink' href='../encryption/'>Encryption</a>
+          <a id='' class=' left navLink' href='../tictactoe/'>TicTacToe</a>
+        </nav>
+      </div>
+    </div>
     <main>
       <div class='_2-3rd center'>
-        <div class='deco'>
-          <div class='card'>
-            <p>This webapp will scrape all the color names, hex codes, and wiki page links from the three pages found:
-            </p>
-            <ul>
-              <li><a href='https://en.wikipedia.org/wiki/List_of_colors:_A%E2%80%93F'>List_of_colors:_A–F</a></li>
-              <li><a href='https://en.wikipedia.org/wiki/List_of_colors:_G%E2%80%93M'>List_of_colors:_G–M</a></li>
-              <li><a href='https://en.wikipedia.org/wiki/List_of_colors:_N%E2%80%93Z'>List_of_colors:_N-Z</a></li>
-            </ul>
-            <p class='drop-cap'>To use, copy and paste the text from one of the above links into the
-              input field below. The script will go forth and scrape the code from the
-              site and then insert it into the databse. From there the script will print out
-              every entry in the database so far. Any false or empty imput will result in the display of the database.</p>
-            <div class='row deco-form  text-center'>
-              <label for='query'>Query to Search:</label>
-              <input id='query' name='query' type='text' required>
-              <br>
-            </div>
-            <div class='row deco-form'>
-              <button onclick='ajax()'>Submit</button>
-            </div>
+        <div class='deco card'>
+          <p>This webapp will scrape all the color names, hex codes, and wiki page links from the three pages found:
+          </p>
+          <ul>
+            <li><a href='https://en.wikipedia.org/wiki/List_of_colors:_A%E2%80%93F'>List_of_colors:_A–F</a></li>
+            <li><a href='https://en.wikipedia.org/wiki/List_of_colors:_G%E2%80%93M'>List_of_colors:_G–M</a></li>
+            <li><a href='https://en.wikipedia.org/wiki/List_of_colors:_N%E2%80%93Z'>List_of_colors:_N-Z</a></li>
+          </ul>
+          <p class='drop-cap'>To use, copy and paste the text from one of the above links into the
+            input field below. The script will go forth and scrape the code from the
+            site and then insert it into the databse. From there the script will print out
+            every entry in the database so far. Any false or empty imput will result in the display of the database.</p>
+          <div class='row deco-form  text-center'>
+            <label for='query'>Query to Search:</label>
+            <input id='query' name='query' type='text' required>
+            <br>
+          </div>
+          <div class='row deco-form'>
+            <button onclick='ajax()'>Submit</button>
           </div>
         </div>
         <br>
