@@ -63,14 +63,19 @@ class Response
 
   # sends valid response with given string as body
   def send_string(method, string)
-    code = 200
-    @socket.puts "HTTP/1.1 #{code} #{STATUS_CODES[code]}\r\n"
-    @socket.puts "Content-Type: #{CONTENT_TYPE_MAPPING['txt']}\r\n"
-    @socket.puts "Content-Length: #{string.size}\r\n"
-    @socket.puts "Connection: close\r\n"
-    @socket.puts "\r\n"
-    @socket.puts string
-
-    return code
+    if string.length
+      code = 200
+      @socket.puts "HTTP/1.1 #{code} #{STATUS_CODES[code]}\r\n"
+      @socket.puts "Content-Type: #{CONTENT_TYPE_MAPPING['txt']}\r\n"
+      @socket.puts "Content-Length: #{string.size}\r\n"
+      @socket.puts "Connection: close\r\n"
+      @socket.puts "\r\n"
+      @socket.puts string
+      return code
+    else
+      path = File.expand_path(File.join(@rootdir, SERVER_ERR_PAGE))
+      code = 500
+      form_response(method, path, code)
+    end
   end
 end

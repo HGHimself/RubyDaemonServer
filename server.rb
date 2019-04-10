@@ -1,7 +1,8 @@
-require "./src/Server"
 require "./src/Daemon"
-require "./src/Scraper"
 require "./src/Encryptor"
+require "./src/Scraper"
+require "./src/Server"
+require "./src/Templator"
 require "./src/TicTacToe"
 require 'optparse'
 require 'colorize'
@@ -69,6 +70,12 @@ server.post "/test.html" do |req, res|
   puts req.post?('alpha')
   puts req.post?('beta')
   res.send_file(req.method, req.abs_path)
+end
+
+server.get %r"\/[a-zA-Z1-9\-\/_]*\.majin" do |req, res|
+  t = Templator.new
+  t.translate(req.abs_path)
+  res.send_string(req.method, t.string)
 end
 
 server.get %r"\/[a-zA-Z1-9\-\/_]*[\.]?[a-z]*" do |req, res|

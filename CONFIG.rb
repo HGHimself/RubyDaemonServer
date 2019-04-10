@@ -29,7 +29,8 @@ CONTENT_TYPE_MAPPING = {
   'png'  => 'image/png',
   'jpg'  => 'image/jpeg',
   'cgi'  => 'script/cgi',
-  'rb'  => 'script/rb'
+  'rb'  => 'script/rb',
+  'majin' => 'text/html',
 }
 
 REQUEST_TYPE_MAPPING = {

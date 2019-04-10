@@ -121,6 +121,8 @@ class Server
   def server_logic(socket)
     start_timer("Thread_Exec")
     begin
+      #puts socket.peeraddr[2].colorize(:light_blue)
+
       line = socket.gets
 
       # need proper request line

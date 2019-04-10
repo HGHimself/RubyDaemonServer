@@ -10,6 +10,7 @@ class Request
     @body = ""
     @get = {}
     @post = {}
+    @addr = ""
   end
 
   def method
@@ -36,6 +37,9 @@ class Request
     @body.size
   end
 
+  def addr
+    @addr
+  end
   # access the GET param
   def get?(param)
     if !@get[param].nil?
@@ -70,8 +74,10 @@ class Request
 
   # parses request message from socket
   def readRequest(socket)
+    # this returns the IP address of the request
+    @addr = socket.peeraddr[2]
 
-    #while the socket doesnt return a CRLF
+    # while the socket doesnt return a CRLF
     while "" != line = socket.gets.chomp do
       # get every single header
       #puts line.colorize(:magenta)
