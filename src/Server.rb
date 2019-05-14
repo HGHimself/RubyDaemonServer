@@ -88,7 +88,8 @@ class Server
       @timers[val + "_end"] = Time.now
       # quick maths
       total = (@timers[val + "_end"] - @timers[val + "_start"]) * 1000.0
-      puts ("#{total.round(4)}ms ... " + val).colorize(:light_yellow)
+      #puts ("#{total.round(4)}ms ... " + val).colorize(:light_yellow)
+      print (",#{total.round(4)}").colorize(:light_yellow)
     end
   end
 
@@ -102,13 +103,13 @@ class Server
         thread = Thread.new {
           server_logic(socket)
         }
-
         #prevents main thread from terminating before all threads are done
         thread.join
+
         @status = "Running"
       rescue Exception => ex    # cant let the server crash!
-        puts "Error: Listen Block - #{ex.class}: #{ex.message}".colorize(:red)
-        @status = "Broken"
+        puts "Error: Listen Block - #{ex.class}: #{ex.message},".colorize(:red)
+        @status = "Not Good"
       end
     else
       puts "Error: Could not start server!".colorize(:red)
@@ -121,14 +122,14 @@ class Server
   def server_logic(socket)
     start_timer("Thread_Exec")
     begin
-      #puts socket.peeraddr[2].colorize(:light_blue)
 
       line = socket.gets
 
       # need proper request line
       # (prevents any errors from getting too far)
-      if line != nil and line != "\r\n"
-        puts line.chomp.colorize(:light_blue)
+      if line != nil and line != "\r\n" and (r_line = line.chomp.split(' ')).size == 3
+        #puts line.chomp.colorize(:light_blue)
+        print r_line[1]
 
         start_timer("Form_Request")
         req = Request.new rootdir
@@ -138,7 +139,6 @@ class Server
         req.readRequest(socket)
         end_timer("Form_Request")
 
-
         start_timer("Send_Response")
         # set up response params
         res = Response.new socket, rootdir
@@ -146,20 +146,18 @@ class Server
         # provided from outside the object
         @router.doRoute req, res
         end_timer("Send_Response")
-
-      else
-        puts "RequestLine was nil".colorize(:red)
+        print ",#{res.bytes}"
       end
 
       socket.close  # gotta clean up
 
     rescue Exception => ex
-      puts "Error: Server Block - #{ex.class}: #{ex.message}".colorize(:red)
+      puts "\nError: Server Block - #{ex.class}: #{ex.message}".colorize(:red)
       socket.close  # gotta clean up
     end
     end_timer("Thread_Exec")
-    puts "Closing Socket and Ending Thread.".colorize(:green)
-    puts ""
+    #puts "Closing Socket and Ending Thread.".colorize(:green)
+    print "\n"
   end
 
 
@@ -180,39 +178,3 @@ class Server
   end
 
 end
-
-#
-# options = {
-#   timer: true,
-#   ssl: true,
-#   crt: "/home/hg/nodeStuff/encryption/hgking.xyz.crt",
-#   key: "/home/hg/nodeStuff/encryption/server.key",
-#   host: '0.0.0.0',
-#   port: 12345
-# }
-#
-# server = Server.new options
-#
-# server.get "/" do |req, res|
-#   res.send_file(req.method, req.abs_path)
-# end
-#
-# server.get "/test" do |req, res|
-#   res.send_string(req.method, "This is a test!")
-# end
-#
-# server.get %r"\/[a-zA-Z1-9\-\/_]*[\.]?[a-z]*" do |req, res|
-#   puts "In the block"
-#   res.send_file(req.method, req.abs_path)
-# end
-#
-# server.post "/" do |req, res|
-#   data = JSON.parse(req.body)
-#   puts data['student']
-#   res.send_file(req.method, req.abs_path)
-# end
-#
-#
-# while server.status != "Broken" do
-#   server.listen
-# end

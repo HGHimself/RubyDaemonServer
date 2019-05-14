@@ -21,22 +21,30 @@ SERVER_ERR_PAGE = 'error/50X.html'
 NOT_FOUND_PAGE = 'error/404.html'
 
 
+# Treat as binary data if content type cannot be found
+DEFAULT_CONTENT_TYPE = 'application/octet-stream'
+
 # Map extensions to their content type
 CONTENT_TYPE_MAPPING = {
-  'html' => 'text/html',
-  'txt'  => 'text/plain',
-  'zip'  => 'applicaiton/zip',
-  'png'  => 'image/png',
-  'jpg'  => 'image/jpeg',
-  'cgi'  => 'script/cgi',
-  'rb'  => 'script/rb',
+  'bin'   => DEFAULT_CONTENT_TYPE,
+  'json'  => 'application/json',
+  'zip'   => 'applicaiton/zip',
+  'midi'  => 'audio/midi',
+  'gif'   => 'image/gif',
+  'jpg'   => 'image/jpeg',
+  'jpeg'  => 'image/jpeg',
+  'png'   => 'image/png',
+  'cgi'   => 'script/cgi',
+  'rb'    => 'script/rb',
+  'css'   => 'text/css',
+  'csv'   => 'text/csv',
+  'html'  => 'text/html',
   'majin' => 'text/html',
+  'js'    => 'text/javascript',
+  'txt'   => 'text/plain'
 }
 
 REQUEST_TYPE_MAPPING = {
   'application/x-www-form-urlencoded' => 'form encoded',
   'text/plain' => 'plain text'
 }
-
-# Treat as binary data if content type cannot be found
-DEFAULT_CONTENT_TYPE = 'application/octet-stream'

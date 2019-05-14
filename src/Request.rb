@@ -69,14 +69,14 @@ class Request
     # convert relative path to absolute
     @abs_path = requested_file(line)
     @abs_path = File.join(abs_path, 'index.html') if File.directory?(abs_path)
-    puts "method:#{method} path:#{abs_path}".colorize(:light_green)
+    #puts "method:#{method} path:#{abs_path}".colorize(:light_green)
   end
 
   # parses request message from socket
   def readRequest(socket)
     # this returns the IP address of the request
     @addr = socket.peeraddr[2]
-
+    print ",#{@addr}"
     # while the socket doesnt return a CRLF
     while "" != line = socket.gets.chomp do
       # get every single header
@@ -112,9 +112,9 @@ class Request
 
   # concat data onto the body string
   def addToBody(string)
-    puts (string + "~" + string.size.to_s).colorize(:light_blue)
+    #puts (string + "~" + string.size.to_s).colorize(:light_blue)
     @body += string
-    puts bodySize
+    #puts bodySize
   end
 
   # figure out which file
@@ -144,9 +144,9 @@ class Request
         vals = var.split("=")
         @get[vals[0]] = vals[1]
       end
-      @get.each do |key, val|
-        puts "key: #{key} ~~ val: #{val}"
-      end
+      # @get.each do |key, val|
+      #   puts "key: #{key} ~~ val: #{val}"
+      # end
     end
   end
 

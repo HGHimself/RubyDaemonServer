@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>General Server Performance</title>
+    </head>
+    <body>
+        <select id='graph-type' onchange="doGraph('graph-type')">
+          <option value='req-res' selected>Response vs Request Scatter</option>
+          <option value='ip-bar'>IP Address Bar</option>
+          <option value='byte-res'>Bytes vs Response Scatter</option>
+        </select>
+        <button onclick='clearGraph()'>Clear!</button>
+        <button onclick='doGraph()'>Reset!</button>
+        <div id="data-usage" style="height: 600px;"></div>
+        <script src='/assets/plugins/jquery/jquery-3.4.0.min.js'></script>
+        <script src='/assets/plugins/echarts/echarts.min.js'></script>
+        <script src='/performance/graph.js'></script>
+    </body>
+</html>

@@ -1,5 +1,8 @@
+#!/usr/bin/env ruby
+
 require "./src/Daemon"
 require "./src/Encryptor"
+require "./src/Measure"
 require "./src/Scraper"
 require "./src/Server"
 require "./src/Templator"
@@ -8,7 +11,7 @@ require 'optparse'
 require 'colorize'
 
 
-String.disable_colorization false   # enable colorization
+String.disable_colorization true   # enable colorization => set false
 
 daemon_options = {}
 version        = "1.0.0"
@@ -56,6 +59,8 @@ server_options = {
   port: 12345
 }
 
+t = Templator.new
+
 server = Server.new server_options
 
 server.get "/" do |req, res|
@@ -73,7 +78,6 @@ server.post "/test.html" do |req, res|
 end
 
 server.get %r"\/[a-zA-Z1-9\-\/_]*\.majin" do |req, res|
-  t = Templator.new
   t.translate(req.abs_path)
   res.send_string(req.method, t.string)
 end
@@ -173,6 +177,19 @@ server.get "/tictactoe/move/" do |req, res|
     # t.print_board(board)
     # puts "-" * 10
     res.send_string(req.method, t.stringify_board(board))
+  else
+    res.error()
+  end
+end
+
+server.get "/performance/data.json" do |req, res|
+  param = req.get?("param")
+  if(!param.nil?)
+    m = Measure.new
+    log_file = '/home/hg/rubyStuff/Server/log/log.txt'
+    res.send_string(req.method, m.measure_server_performace(log_file, param.to_i))
+  else
+    res.error()
   end
 end
 
