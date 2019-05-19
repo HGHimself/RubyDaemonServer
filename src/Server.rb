@@ -32,7 +32,7 @@ class Server
     if !options[:ssl].nil? and options[:ssl] == true
       if options[:key].nil? or options[:crt].nil?
         puts "Server Setup Failed!".colorize(:red)
-        puts "Must include Key and Certificate files in options if 'ssl: True'.".colorize(:red)
+        puts "Must include Key and Certificate files in options if 'ssl: True'."
         @server = nil
       else
         # create ssl context and use with server
@@ -42,11 +42,11 @@ class Server
         sslContext.key = OpenSSL::PKey::RSA.new(File.open(options[:key]))
         sslServer = OpenSSL::SSL::SSLServer.new(server, sslContext)
         @server = OpenSSL::SSL::SSLServer.new(server, sslContext)
-        puts "Listening with SSL at host: #{host} on port: #{port}".colorize(:green)
+        puts "Listening with SSL at host: #{host} on port: #{port}"
       end
     else
       @server = server
-      puts "Listening at host: #{host} on port: #{port}".colorize(:green)
+      puts "Listening at host: #{host} on port: #{port}"
       @status = "Running"
     end
     puts ""
@@ -89,7 +89,7 @@ class Server
       # quick maths
       total = (@timers[val + "_end"] - @timers[val + "_start"]) * 1000.0
       #puts ("#{total.round(4)}ms ... " + val).colorize(:light_yellow)
-      print (",#{total.round(4)}").colorize(:light_yellow)
+      print (",#{total.round(4)}")
     end
   end
 
@@ -108,11 +108,11 @@ class Server
 
         @status = "Running"
       rescue Exception => ex    # cant let the server crash!
-        puts "Error: Listen Block - #{ex.class}: #{ex.message},".colorize(:red)
+        puts "Error: Listen Block - #{ex.class}: #{ex.message},"
         @status = "Not Good"
       end
     else
-      puts "Error: Could not start server!".colorize(:red)
+      puts "Error: Could not start server!"
       @status = "Broken"
     end
   end
@@ -152,7 +152,7 @@ class Server
       socket.close  # gotta clean up
 
     rescue Exception => ex
-      puts "\nError: Server Block - #{ex.class}: #{ex.message}".colorize(:red)
+      puts "\nError: Server Block - #{ex.class}: #{ex.message}"
       socket.close  # gotta clean up
     end
     end_timer("Thread_Exec")

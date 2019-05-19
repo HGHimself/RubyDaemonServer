@@ -1,17 +1,14 @@
 #!/usr/bin/env ruby
 
 require "./src/Daemon"
-require "./src/Encryptor"
-require "./src/Measure"
-require "./src/Scraper"
+# require "./src/Encryptor"
+# require "./src/Measure"
+# require "./src/Scraper"
 require "./src/Server"
-require "./src/Templator"
-require "./src/TicTacToe"
+# require "./src/Templator"
+# require "./src/TicTacToe"
 require 'optparse'
-require 'colorize'
-
-
-String.disable_colorization true   # enable colorization => set false
+# require 'colorize'
 
 daemon_options = {}
 version        = "1.0.0"
@@ -52,14 +49,12 @@ op.parse!(ARGV)
 
 server_options = {
   timer: true,
-  ssl: true,
-  crt: "/home/hg/nodeStuff/encryption/hgking.xyz.crt",
-  key: "/home/hg/nodeStuff/encryption/server.key",
-  host: '0.0.0.0',
+  # ssl: true,
+  # crt: "/home/hg/nodeStuff/encryption/hgking.xyz.crt",
+  # key: "/home/hg/nodeStuff/encryption/server.key",
+  host: 'localhost',
   port: 12345
 }
-
-t = Templator.new
 
 server = Server.new server_options
 
@@ -76,122 +71,122 @@ server.post "/test.html" do |req, res|
   puts req.post?('beta')
   res.send_file(req.method, req.abs_path)
 end
-
-server.get %r"\/[a-zA-Z1-9\-\/_]*\.majin" do |req, res|
-  t.translate(req.abs_path)
-  res.send_string(req.method, t.string)
-end
+#
+# server.get %r"\/[a-zA-Z1-9\-\/_]*\.majin" do |req, res|
+#   t.translate(req.abs_path)
+#   res.send_string(req.method, t.string)
+# end
 
 server.get %r"\/[a-zA-Z1-9\-\/_]*[\.]?[a-z]*" do |req, res|
   res.send_file(req.method, req.abs_path)
 end
-
-server.post "/" do |req, res|
-  data = JSON.parse(req.body)
-  puts data['student']
-  res.send_file(req.method, req.abs_path)
-end
-
-server.get "/scraper/" do |req, res|
-  res.send_file(req.method, req.abs_path)
-end
-
-server.post "/scraper/" do |req, res|
-  res.send_string(req.method, req.body)
-end
-
-server.get "/scraper/search/" do |req, res|
-  scraper = Scraper.new
-  html = scraper.doWork(req.get?("query"))
-  res.send_string(req.method, html)
-end
-
-server.get "/encryption/keygen/" do |req, res|
-  e = Encryptor.new
-  if !req.get?("p").nil? and !req.get?("q").nil?
-    p = req.get?("p").to_i
-    q = req.get?("q").to_i
-    if e.primality_test(p, 50)
-      if e.primality_test(q, 50)
-        e.key_generation(p, q)
-        html = "<h2>Done!</h2>"
-        html += "<h3>Public Key:</h3><p>e = #{e.e} and n = #{e.n}</p>"
-        html += "<h3>Private Key:</h3><p>d = #{e.d} and n = #{e.n}</p>"
-      else
-        html = "<h2>Error!</h2><p>Q must be a prime number.</p>"
-      end
-    else
-      html = "<h2>Error!</h2><p>P must be a prime number.</p>"
-    end
-  else
-    html = "<h2>Error!</h2><p>You must provide an input for P and Q</p>"
-  end
-  res.send_string(req.method, html)
-end
-
-server.get "/encryption/encrypt/" do |req, res|
-  e = Encryptor.new
-  if !req.get?("p").nil? and !req.get?("q").nil? and !req.get?("m").nil?
-    p = req.get?("p").to_i
-    q = req.get?("q").to_i
-    m = req.get?("m").to_i
-    e.key_generation(p, q)
-    c = e.encrypt(m)
-    html = "<h2>Done!</h2>"
-    html += "<h3>Original message:</h3><p>m = #{req.get?("m")}</p>"
-    html += "<h3>Encrypted message:</h3><p>c = #{c}</p>"
-  else
-    html = "<h2>Error!</h2><p>You must provide an input for P, Q, and M</p>"
-  end
-  res.send_string(req.method, html)
-end
-
-server.get "/encryption/decrypt/" do |req, res|
-  e = Encryptor.new
-  if !req.get?("p").nil? and !req.get?("q").nil? and !req.get?("m").nil?
-    p = req.get?("p").to_i
-    q = req.get?("q").to_i
-    m = req.get?("m").to_i
-    e.key_generation(p, q)
-    c = e.encrypt(m)
-    t = e.decrypt(c)
-    html = "<h2>Done!</h2>"
-    html += "<h3>Encrypted message:</h3><p>c = #{c}</p>"
-    html += "<h3>Original message:</h3><p>m = #{t}</p>"
-  else
-    html = "<h2>Error!</h2><p>You must provide an input for P, Q, and M</p>"
-  end
-  res.send_string(req.method, html)
-end
-
-server.get "/tictactoe/move/" do |req, res|
-  if !req.get?("string").nil? and !req.get?("player").nil? and !req.get?("depth").nil?
-    t = TicTacToe.new
-    string = req.get?("string")
-    player = req.get?("player").to_i
-    depth = req.get?("depth").to_i
-    board = t.parse_board(string)
-
-    board = t.move(board, player, depth)
-    # puts "-" * 10
-    # t.print_board(board)
-    # puts "-" * 10
-    res.send_string(req.method, t.stringify_board(board))
-  else
-    res.error()
-  end
-end
-
-server.get "/performance/data.json" do |req, res|
-  param = req.get?("param")
-  if(!param.nil?)
-    m = Measure.new
-    log_file = '/home/hg/rubyStuff/Server/log/log.txt'
-    res.send_string(req.method, m.measure_server_performace(log_file, param.to_i))
-  else
-    res.error()
-  end
-end
+#
+# server.post "/" do |req, res|
+#   data = JSON.parse(req.body)
+#   puts data['student']
+#   res.send_file(req.method, req.abs_path)
+# end
+#
+# server.get "/scraper/" do |req, res|
+#   res.send_file(req.method, req.abs_path)
+# end
+#
+# server.post "/scraper/" do |req, res|
+#   res.send_string(req.method, req.body)
+# end
+#
+# server.get "/scraper/search/" do |req, res|
+#   scraper = Scraper.new
+#   html = scraper.doWork(req.get?("query"))
+#   res.send_string(req.method, html)
+# end
+#
+# server.get "/encryption/keygen/" do |req, res|
+#   e = Encryptor.new
+#   if !req.get?("p").nil? and !req.get?("q").nil?
+#     p = req.get?("p").to_i
+#     q = req.get?("q").to_i
+#     if e.primality_test(p, 50)
+#       if e.primality_test(q, 50)
+#         e.key_generation(p, q)
+#         html = "<h2>Done!</h2>"
+#         html += "<h3>Public Key:</h3><p>e = #{e.e} and n = #{e.n}</p>"
+#         html += "<h3>Private Key:</h3><p>d = #{e.d} and n = #{e.n}</p>"
+#       else
+#         html = "<h2>Error!</h2><p>Q must be a prime number.</p>"
+#       end
+#     else
+#       html = "<h2>Error!</h2><p>P must be a prime number.</p>"
+#     end
+#   else
+#     html = "<h2>Error!</h2><p>You must provide an input for P and Q</p>"
+#   end
+#   res.send_string(req.method, html)
+# end
+#
+# server.get "/encryption/encrypt/" do |req, res|
+#   e = Encryptor.new
+#   if !req.get?("p").nil? and !req.get?("q").nil? and !req.get?("m").nil?
+#     p = req.get?("p").to_i
+#     q = req.get?("q").to_i
+#     m = req.get?("m").to_i
+#     e.key_generation(p, q)
+#     c = e.encrypt(m)
+#     html = "<h2>Done!</h2>"
+#     html += "<h3>Original message:</h3><p>m = #{req.get?("m")}</p>"
+#     html += "<h3>Encrypted message:</h3><p>c = #{c}</p>"
+#   else
+#     html = "<h2>Error!</h2><p>You must provide an input for P, Q, and M</p>"
+#   end
+#   res.send_string(req.method, html)
+# end
+#
+# server.get "/encryption/decrypt/" do |req, res|
+#   e = Encryptor.new
+#   if !req.get?("p").nil? and !req.get?("q").nil? and !req.get?("m").nil?
+#     p = req.get?("p").to_i
+#     q = req.get?("q").to_i
+#     m = req.get?("m").to_i
+#     e.key_generation(p, q)
+#     c = e.encrypt(m)
+#     t = e.decrypt(c)
+#     html = "<h2>Done!</h2>"
+#     html += "<h3>Encrypted message:</h3><p>c = #{c}</p>"
+#     html += "<h3>Original message:</h3><p>m = #{t}</p>"
+#   else
+#     html = "<h2>Error!</h2><p>You must provide an input for P, Q, and M</p>"
+#   end
+#   res.send_string(req.method, html)
+# end
+#
+# server.get "/tictactoe/move/" do |req, res|
+#   if !req.get?("string").nil? and !req.get?("player").nil? and !req.get?("depth").nil?
+#     t = TicTacToe.new
+#     string = req.get?("string")
+#     player = req.get?("player").to_i
+#     depth = req.get?("depth").to_i
+#     board = t.parse_board(string)
+#
+#     board = t.move(board, player, depth)
+#     # puts "-" * 10
+#     # t.print_board(board)
+#     # puts "-" * 10
+#     res.send_string(req.method, t.stringify_board(board))
+#   else
+#     res.error()
+#   end
+# end
+#
+# server.get "/performance/data.json" do |req, res|
+#   param = req.get?("param")
+#   if(!param.nil?)
+#     m = Measure.new
+#     log_file = '/home/hg/rubyStuff/Server/log/log.txt'
+#     res.send_string(req.method, m.measure_server_performace(log_file, param.to_i))
+#   else
+#     res.error()
+#   end
+# end
 
 daemon = Daemon.new daemon_options
 daemon.run! do
