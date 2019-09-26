@@ -1,6 +1,6 @@
 #-Do your configuring here boys-#
 
-PORT       = 12345
+PORT       = 443
 
 HOST       = "0.0.0.0"
 

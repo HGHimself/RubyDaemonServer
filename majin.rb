@@ -11,4 +11,4 @@ if(File.exist?(pid_path) and !File.directory?(pid_path))
   end
 end
 
-exec("./server.rb -d -p #{pid_path} -l #{log_path}")
+exec("/usr/share/rvm/rubies/ruby-2.6.3/bin/ruby server.rb -d -p #{pid_path} -l #{log_path}")

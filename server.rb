@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
 
 require "./src/Daemon"
-# require "./src/Encryptor"
-# require "./src/Measure"
+require "./src/Encryptor"
+require "./src/Measure"
 # require "./src/Scraper"
 require "./src/Server"
-# require "./src/Templator"
+require "./src/Templator"
 # require "./src/TicTacToe"
 require 'optparse'
 # require 'colorize'
@@ -46,14 +46,13 @@ op.separator ""
 
 op.parse!(ARGV)
 
-
 server_options = {
   timer: true,
-  # ssl: true,
-  # crt: "/home/hg/nodeStuff/encryption/hgking.xyz.crt",
-  # key: "/home/hg/nodeStuff/encryption/server.key",
-  host: 'localhost',
-  port: 12345
+  ssl: true,
+  key: "/etc/letsencrypt/live/kingtech.dev/privkey.pem",
+  crt: "/etc/letsencrypt/live/kingtech.dev/fullchain.pem",
+  host: '0.0.0.0',
+  port: 443
 }
 
 server = Server.new server_options
@@ -77,9 +76,6 @@ end
 #   res.send_string(req.method, t.string)
 # end
 
-server.get %r"\/[a-zA-Z1-9\-\/_]*[\.]?[a-z]*" do |req, res|
-  res.send_file(req.method, req.abs_path)
-end
 #
 # server.post "/" do |req, res|
 #   data = JSON.parse(req.body)
@@ -101,63 +97,63 @@ end
 #   res.send_string(req.method, html)
 # end
 #
-# server.get "/encryption/keygen/" do |req, res|
-#   e = Encryptor.new
-#   if !req.get?("p").nil? and !req.get?("q").nil?
-#     p = req.get?("p").to_i
-#     q = req.get?("q").to_i
-#     if e.primality_test(p, 50)
-#       if e.primality_test(q, 50)
-#         e.key_generation(p, q)
-#         html = "<h2>Done!</h2>"
-#         html += "<h3>Public Key:</h3><p>e = #{e.e} and n = #{e.n}</p>"
-#         html += "<h3>Private Key:</h3><p>d = #{e.d} and n = #{e.n}</p>"
-#       else
-#         html = "<h2>Error!</h2><p>Q must be a prime number.</p>"
-#       end
-#     else
-#       html = "<h2>Error!</h2><p>P must be a prime number.</p>"
-#     end
-#   else
-#     html = "<h2>Error!</h2><p>You must provide an input for P and Q</p>"
-#   end
-#   res.send_string(req.method, html)
-# end
-#
-# server.get "/encryption/encrypt/" do |req, res|
-#   e = Encryptor.new
-#   if !req.get?("p").nil? and !req.get?("q").nil? and !req.get?("m").nil?
-#     p = req.get?("p").to_i
-#     q = req.get?("q").to_i
-#     m = req.get?("m").to_i
-#     e.key_generation(p, q)
-#     c = e.encrypt(m)
-#     html = "<h2>Done!</h2>"
-#     html += "<h3>Original message:</h3><p>m = #{req.get?("m")}</p>"
-#     html += "<h3>Encrypted message:</h3><p>c = #{c}</p>"
-#   else
-#     html = "<h2>Error!</h2><p>You must provide an input for P, Q, and M</p>"
-#   end
-#   res.send_string(req.method, html)
-# end
-#
-# server.get "/encryption/decrypt/" do |req, res|
-#   e = Encryptor.new
-#   if !req.get?("p").nil? and !req.get?("q").nil? and !req.get?("m").nil?
-#     p = req.get?("p").to_i
-#     q = req.get?("q").to_i
-#     m = req.get?("m").to_i
-#     e.key_generation(p, q)
-#     c = e.encrypt(m)
-#     t = e.decrypt(c)
-#     html = "<h2>Done!</h2>"
-#     html += "<h3>Encrypted message:</h3><p>c = #{c}</p>"
-#     html += "<h3>Original message:</h3><p>m = #{t}</p>"
-#   else
-#     html = "<h2>Error!</h2><p>You must provide an input for P, Q, and M</p>"
-#   end
-#   res.send_string(req.method, html)
-# end
+server.get "/encryption/keygen/" do |req, res|
+  e = Encryptor.new
+  if !req.get?("p").nil? and !req.get?("q").nil?
+    p = req.get?("p").to_i
+    q = req.get?("q").to_i
+    if e.primality_test(p, 50)
+      if e.primality_test(q, 50)
+        e.key_generation(p, q)
+        html = "<h2>Done!</h2>"
+        html += "<h3>Public Key:</h3><p>e = #{e.e} and n = #{e.n}</p>"
+        html += "<h3>Private Key:</h3><p>d = #{e.d} and n = #{e.n}</p>"
+      else
+        html = "<h2>Error!</h2><p>Q must be a prime number.</p>"
+      end
+    else
+      html = "<h2>Error!</h2><p>P must be a prime number.</p>"
+    end
+  else
+    html = "<h2>Error!</h2><p>You must provide an input for P and Q</p>"
+  end
+  res.send_string(req.method, html)
+end
+
+server.get "/encryption/encrypt/" do |req, res|
+  e = Encryptor.new
+  if !req.get?("p").nil? and !req.get?("q").nil? and !req.get?("m").nil?
+    p = req.get?("p").to_i
+    q = req.get?("q").to_i
+    m = req.get?("m").to_i
+    e.key_generation(p, q)
+    c = e.encrypt(m)
+    html = "<h2>Done!</h2>"
+    html += "<h3>Original message:</h3><p>m = #{req.get?("m")}</p>"
+    html += "<h3>Encrypted message:</h3><p>c = #{c}</p>"
+  else
+    html = "<h2>Error!</h2><p>You must provide an input for P, Q, and M</p>"
+  end
+  res.send_string(req.method, html)
+end
+
+server.get "/encryption/decrypt/" do |req, res|
+  e = Encryptor.new
+  if !req.get?("p").nil? and !req.get?("q").nil? and !req.get?("m").nil?
+    p = req.get?("p").to_i
+    q = req.get?("q").to_i
+    m = req.get?("m").to_i
+    e.key_generation(p, q)
+    c = e.encrypt(m)
+    t = e.decrypt(c)
+    html = "<h2>Done!</h2>"
+    html += "<h3>Encrypted message:</h3><p>c = #{c}</p>"
+    html += "<h3>Original message:</h3><p>m = #{t}</p>"
+  else
+    html = "<h2>Error!</h2><p>You must provide an input for P, Q, and M</p>"
+  end
+  res.send_string(req.method, html)
+end
 #
 # server.get "/tictactoe/move/" do |req, res|
 #   if !req.get?("string").nil? and !req.get?("player").nil? and !req.get?("depth").nil?
@@ -177,16 +173,20 @@ end
 #   end
 # end
 #
-# server.get "/performance/data.json" do |req, res|
-#   param = req.get?("param")
-#   if(!param.nil?)
-#     m = Measure.new
-#     log_file = '/home/hg/rubyStuff/Server/log/log.txt'
-#     res.send_string(req.method, m.measure_server_performace(log_file, param.to_i))
-#   else
-#     res.error()
-#   end
-# end
+server.get "/performance/data.json" do |req, res|
+  param = req.get?("param")
+  if(!param.nil?)
+    m = Measure.new
+    log_file = '/home/hg/ruby/RubyDaemonServer/log/log.txt'
+    res.send_string(req.method, m.measure_server_performace(log_file, param.to_i))
+  else
+    res.error()
+  end
+end
+
+server.get %r"\/[a-zA-Z1-9\-\/_]*[\.]?[a-z]*" do |req, res|
+  res.send_file(req.method, req.abs_path)
+end
 
 daemon = Daemon.new daemon_options
 daemon.run! do

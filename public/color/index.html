@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>King T&D</title>
+    <link rel="stylesheet" href="./assets/plugins/bootstrap-4.1.3/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans|DM+Serif+Display&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class='container'>
+      <div class='header row align-items-center m-0 text-center'>
+        <div class='col-lg-2'>
+          <img src='./assets/img/logoo.png'>
+        </div>
+        <div class='col-lg-3'>
+          <h3 class='title'>King Tech &amp; Dev Co.</h3>
+        </div>
+        <div class='col-lg-7'>
+          <div class='seafoam bars'></div>
+          <div class='teal bars'></div>
+          <div class='green bars'></div>
+          <div class='pink bars'></div>
+          <div class='purple bars'></div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="/animation">Sorter</a>
+            <a class="nav-item nav-link" href="/encryption">Encryptor</a>
+            <a class="nav-item nav-link" href="/performance">Server Performance</a>
+            <a class="nav-item nav-link active" href="/color">Colors</a>
+            <a class="nav-item nav-link float-right" href="https://github.com/HGHimself/" target="_blank">Github</a>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class='card card-body mb-2'>
+          <h3>Color Study</h3>
+          <h5>Monday September 23, 2019</h5>
+          <br>
+          <p>&emsp;Cheers all, I wanted to do a write up about some ongoing work of mine related to color systems
+            and a few math functions I came up with. In order to cycle through the RGB colors, you need to use three
+            offset sine waves. With these, any number as an input will result in the output of a primary color.
+            Due to the nature of sine and circles, there are quite a few properties of these functions. I have a couple
+            web apps below in order to explore these properties. The first circles this color wheel, plotting colors onto
+            cells in a square. It does a great job at illustrating the fundemental differences between squares and circles,
+            and how some interesting things happen when you mix them. The second is a deeper look into these functions and
+            how a couple small changes in constants can bring up a huge change in the output of colors. Maybe I will link
+            these two apps together in order to expand the expirimentation possibilities.
+          </p>
+          <p>&emsp;Changing the muliplier makes the circle intervals bigger or smaller. This means the 'space' between
+            two colors can either get bigger or smaller. With the right amount of space, you can make the adjacent colors
+            far apart or close together on the spectrum, resulting in many different color combinations. I have found that
+            any multiples of pi always give great results. Specifically <code>31.4159265</code> looks great with more than
+            25 elements. Have a play around and see what cool things you can find. Towards the bottom are some things I found.
+          </p>
+          <div class='row align-items-center text-center'>
+            <div class='col'>
+              <button class='btn btn-lg btn-success' onclick="draw()">DRAW</button>
+            </div>
+            <div class='col'>
+              <label class='text-left'>Color Multiplier</label>
+              <input class="form-control" type="number" id="colors" value='1'>
+            </div>
+            <div class='col'>
+              <label>Color Offset</label>
+              <input class="form-control" type="number" id="offset" value='0'>
+            </div>
+            <div class='col'>
+              <label>Elements</label>
+              <select class="form-control" id='lengths'></select>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <canvas id="myCanvas" width="800" height="700"></canvas>
+          </div>
+          <br>
+          <br>
+          <h6>Intro</h6>
+          <p>&emsp;I wanted to do a write up about these three functions I came up with back in 2015.
+            This was when I was making up space invaders type game using C and SDL2. The idea was to make the
+            game as colorful as possible so I had thought it would be cool to have the colors cycle through
+            the spectrum based on where the player is. Here are a few images:
+          </p>
+          <br>
+          <div class='row'>
+            <div class='col'>
+              <img src="/img/celestia.png" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class='col'>
+              <img src="/img/celestia1.png" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class='col'>
+              <img src="/img/celestia2.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div>
+          <br>
+          <br>
+          <p>&emsp;As you may be able to tell, the colors are dependant upon where on the x axis your player lies.
+            To achieve this functionality, I needed to write some sort of function that takes in a number and
+            spits out a color. As any good millenial, I took to the internet to do some research on the topic.
+            I found a lot of discussion about cycling through the color spectrum but I could not see any answers.
+            The closest I could get was this article about manipulating LEDs<a href='https://www.instructables.com/id/How-to-Make-Proper-Rainbow-and-Random-Colors-With-/' target=”_blank” rel=”noopener noreferrer”>[1]</a>.
+            This was enough to get me started though. The image linked below(if it still exists)
+            a lot of inspiration.
+          </p>
+          <br>
+          <h6>Research</h6>
+          <div class='row'>
+            <div class='col-6'>
+              <img src="https://cdn.instructables.com/FTI/O536/IIG9YHKA/FTIO536IIG9YHKA.LARGE.jpg?auto=webp&frame=1&width=987&height=1024&fit=bounds" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class='col-6'>
+              <p>&emsp;If you're into maths, you will recognize that these squigglies look exactly like sine waves.
+                At this point, I was especially glad I payed attention to my physics lecture back in college. I
+                went back to google to look up Simple Harmonic Motion, which I will give a quick description of here.
+              </p>
+              <p>&emsp;Wikipedia opens the SHM page with: "In mechanics and physics, simple harmonic motion is a special
+                type of periodic motion or oscillation where the restoring force is directly proportional to the displacement
+                and acts in the direction opposite to that of displacement."<a href='https://en.wikipedia.org/wiki/Simple_harmonic_motion'>[2]</a>.
+                This complicated description pretty much means that it is a way to define simplified motion that sways back and forth similarly to waves.
+                For our sine waves, this is exactly what we need.
+              </p>
+            </div>
+          </div>
+          <p>&emsp;
+          <br>
+          <br>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="/assets/plugins/jquery/jquery.min.js"></script>
+  <script src="/assets/plugins/bootstrap-4.1.3/js/bootstrap.min.js"></script>
+  <script src="/color/color.js"></script>
+</html>

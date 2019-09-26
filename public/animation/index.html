@@ -2,20 +2,98 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Animation</title>
-    <style>
-      .container  {
-        text-align: center;
-      }
-    </style>
+    <title>King T&D</title>
+    <link rel="stylesheet" href="./assets/plugins/bootstrap-4.1.3/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans|DM+Serif+Display&display=swap" rel="stylesheet">
   </head>
   <body>
-    <button onclick="doSort()">Do The Sort</button>
-    <button onclick="stopSort()">Stop The Sort</button>
-    <div class="container">
-      <canvas id="myCanvas" width="100" height="100"></canvas>
+    <div class='container'>
+      <div class='header row align-items-center m-0 text-center'>
+        <div class='col-lg-2'>
+          <img src='./assets/img/logoo.png'>
+        </div>
+        <div class='col-lg-3'>
+          <h3 class='title'>King Tech &amp; Dev Co.</h3>
+        </div>
+        <div class='col-lg-7'>
+          <div class='seafoam bars'></div>
+          <div class='teal bars'></div>
+          <div class='green bars'></div>
+          <div class='pink bars'></div>
+          <div class='purple bars'></div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="/animation">Sorter</a>
+            <a class="nav-item nav-link" href="/encryption">Encryptor</a>
+            <a class="nav-item nav-link" href="/performance">Server Performance</a>
+            <a class="nav-item nav-link" href="/color">Colors</a>
+            <a class="nav-item nav-link float-right" href="https://github.com/HGHimself/" target="_blank">Github</a>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class='card card-body mb-2'>
+          <h3>Loading Slug</h3>
+          <h5>Wednesday September 18, 2019</h5>
+          <p>&emsp;Hello, check out this sweet animation that I made using pure Javascript, sorting algorithms, and sweet math.
+            I call it the Loading Slug because it was originally made for a loading animation in a project of mine. The slug
+            part can be figured out with a little imagination.
+          </p>
+          <p>&emsp;The sorts are nice to look at but I like to mess around with the color offset and multiplier. The method I use
+            to set the colors of the bars in a spectrum is a custom function I wrote up a long time ago. Baiscally it uses
+            three Simple Harmonic Motion functions to make each Red, Green, and Blue color values go from 0 - 255 at the proper
+            times in respect to eachother in order to hit all of the primary colors. Any Multiplier that is close to pi or a
+            multiple of pi will do some funky stuff (cus circles ya' know). Check out the colors tab at the top for more color fun.
+          </p>
+          <div class='row align-items-center text-center'>
+            <div class='col'>
+              <button class='btn btn-lg btn-success' onclick="doSort()">START</button>
+            </div>
+            <div class='col'>
+              <label>Color Multiplier</label>
+              <input class="form-control" type="number" id="multiplier" value='1'>
+            </div>
+            <div class='col'>
+              <label>Color Offset</label>
+              <input class="form-control" type="number" id="offset" value='0'>
+            </div>
+            <div class='col'>
+              <label>Interval</label>
+              <input class="form-control" type="number" id="interval" value='25'>
+            </div>
+            <div class='col'>
+              <label>Algorithm</label>
+              <select class="form-control" id='sorts'></select>
+            </div>
+            <div class='col'>
+              <label>Elements</label>
+              <select class="form-control" id='lengths'></select>
+            </div>
+            <div class='col'>
+              <button class='btn btn-lg btn-danger' onclick="stopSort()">STOP</button>
+            </div>
+          </div>
+          <p id='steps' class='text-center'>- steps</p>
+          <div id='canvasContainer' class="text-center mt-4">
+            <canvas id="myCanvas" width="800" height="700">Your browser doesn't support canvas :(</canvas>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
-  <script src="/assets/plugins/jquery/jquery-3.4.0.min.js"></script>
+  <script src="/assets/plugins/jquery/jquery.min.js"></script>
+  <script src="/assets/plugins/bootstrap-4.1.3/js/bootstrap.min.js"></script>
+  <script src="/jsModules/chromata.js"></script>
+  <script src="/jsModules/canvas.js"></script>
+  <script src="/jsModules/slug.js"></script>
   <script src="/animation/sorting.js"></script>
 </html>

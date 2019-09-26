@@ -36,7 +36,7 @@ class Server
         @server = nil
       else
         # create ssl context and use with server
-        OpenSSL::SSL::SSLContext::DEFAULT_PARAMS[:ciphers] += ':DES-CBC3-SHA'
+        # OpenSSL::SSL::SSLContext::DEFAULT_PARAMS[:ciphers] += ':DES-CBC3-SHA'
         sslContext = OpenSSL::SSL::SSLContext.new
         sslContext.cert = OpenSSL::X509::Certificate.new(File.open(options[:crt]))
         sslContext.key = OpenSSL::PKey::RSA.new(File.open(options[:key]))

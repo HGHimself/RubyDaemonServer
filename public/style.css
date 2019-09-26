@@ -1,0 +1,123 @@
+.header  {
+  min-height: 10rem;
+}
+
+.bars  {
+  min-height: 1rem;
+  margin: 0.5rem;
+}
+
+.seafoam  {
+  background-color: #3DCCC9;
+}
+.teal  {
+  background-color: #4B9998;
+}
+.green  {
+  background-color: #66FFA6;
+}
+.pink  {
+  background-color: #FFA6BE;
+}
+.purple  {
+  background-color: #C71C9F;
+}
+
+
+.block  {
+
+}
+
+pre  {
+  font-size: 100%;
+  color: #4B9998;
+  word-break: break-word;
+  background-color: #eee;
+  border-radius: 5px;
+  padding-top: 20px;
+}
+
+body  {
+  background-color: #d5d5d5;
+}
+
+
+.float-right  {
+  float: right;
+}
+
+.float-left  {
+  float: left;
+}
+
+h1 {
+  letter-spacing: -1.5px;
+  font-size: 6rem;
+}
+
+h2 {
+  letter-spacing: -0.5px;
+  font-size: 3.75rem;
+}
+
+h3 {
+  letter-spacing: 0px;
+  font-size: 3rem;
+}
+
+h4 {
+  letter-spacing: 0.25px;
+  font-size: 2.125rem;
+}
+
+h5 {
+  letter-spacing: 0px;
+  font-size: 1.5rem;
+}
+
+h6 {
+  letter-spacing: 0.15px;
+  font-size: 1.25rem;
+}
+
+p  {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.subtitle1  {
+  font-size: 1rem;
+  letter-spacing: 0.15px;
+}
+
+.subtitle2  {
+  font-size: 0.75rem;
+  letter-spacing: 0.1px;
+}
+
+.btn {
+  font-size: 0.875rem;
+  letter-spacing: 1.25px;
+}
+
+h1, h2, h3, h4, h5, h6, p, .subtitle1, .subtitle2  {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.title  {
+  font-family: 'DM Serif Display', serif;
+}
+
+h1, h2  {
+  font-weight: 100;
+}
+
+h3, h4, h5, .subtitle1, p {
+  font-weight: 500;
+}
+
+.btn, h6  {
+  font-weight: 700;
+}
