@@ -30,8 +30,9 @@ var Grapher = (function ()  {
     if(type == 'req-res')  {
       data = getData('/performance/data.json?param=0');
       for (let key in data) {
-        let newData = []
+        let newData = [];
         data[key].forEach(function(val)  {
+          console.log([val[2],val[3],val[0],val[4],val[1]]);
           newData.push([val[2],val[3],val[0],val[4],val[1]]);
         });
         option.series.push({
@@ -60,8 +61,10 @@ var Grapher = (function ()  {
       }
       option.series.push(newData);
     } else if(type == 'byte-res')  {
+
       data = getData('/performance/data.json?param=0');
       for (let key in data) {
+
         let newData = []
         data[key].forEach(function(val)  {
           newData.push([Math.log(val[4]) * 2,val[2],val[0],val[4],val[1]]);
@@ -446,8 +449,8 @@ function doGraph(select_id)  {
       tooltip : {
          trigger: 'item',
          formatter : function (params) {
-             data = 'Filename: '+params.value[3]+'<br/>';
-             data+= 'Bytes: '+params.value[5]+'<br/>';
+             data = 'Filename: '+params.value[2]+'<br/>';
+             data+= 'Bytes: '+params.value[3]+'<br/>';
              data+= 'IP: '+params.value[4]+'<br/>';
              data+= 'Response, Request: '+params.value[0]+', '+params.value[1];
              return data;
@@ -516,13 +519,13 @@ function doGraph(select_id)  {
       },
       tooltip : {
          trigger: 'item',
-         formatter : function (params) {
-             data = 'Filename: '+params.value[3]+'<br/>';
-             data+= 'Bytes: '+params.value[5]+'<br/>';
-             data+= 'IP: '+params.value[4]+'<br/>';
-             data+= 'Response, Request: '+params.value[0]+', '+params.value[1];
-             return data;
-         }
+         // formatter : function (params) {
+         //     data = 'Filename: '+params.value[3]+'<br/>';
+         //     data+= 'Bytes: '+params.value[5]+'<br/>';
+         //     data+= 'IP: '+params.value[4]+'<br/>';
+         //     data+= 'Response, Request: '+params.value[0]+', '+params.value[1];
+         //     return data;
+         // }
       },
       yAxis: {
           data: [],
@@ -548,8 +551,8 @@ function doGraph(select_id)  {
       tooltip : {
          trigger: 'item',
          formatter : function (params) {
-             data = 'Filename: '+params.value[3]+'<br/>';
-             data+= 'Bytes: '+params.value[5]+'<br/>';
+             data = 'Filename: '+params.value[2]+'<br/>';
+             data+= 'Bytes: '+params.value[3]+'<br/>';
              data+= 'IP: '+params.value[4]+'<br/>';
              data+= 'Response, Request: '+params.value[0]+', '+params.value[1];
              return data;

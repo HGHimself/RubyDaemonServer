@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>King T&D</title>
+    <link rel="stylesheet" href="./assets/plugins/bootstrap-4.1.3/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans|DM+Serif+Display&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class='container'>
+      <div class='header row align-items-center m-0 text-center'>
+        <div class='col-lg-2'>
+          <img class='logo' src='./assets/img/logoo.png'>
+        </div>
+        <div class='col-lg-3'>
+          <h3 class='title'>King Tech &amp; Dev Co.</h3>
+        </div>
+        <div class='col-lg-7'>
+          <div class='seafoam bars'></div>
+          <div class='teal bars'></div>
+          <div class='green bars'></div>
+          <div class='pink bars'></div>
+          <div class='purple bars'></div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="/animation">Sorter</a>
+            <a class="nav-item nav-link" href="/encryption">Encryptor</a>
+            <a class="nav-item nav-link" href="/performance">Server Performance</a>
+            <a class="nav-item nav-link" href="/color">Colors</a>
+            <a class="nav-item nav-link float-right" href="https://github.com/HGHimself/" target="_blank">Github</a>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class='card card-body mb-2'>
+          <h3>Polling Study</h3>
+          <h5>Saturday August 31, 2019</h5>
+          <p>
+            &emsp;From my experience, I have learned that I/O is typically the chokepoint
+            for most systems. This is coming from the fact that processors are lightning
+            fast, and the internet and disks are comparatively slow. In a web app which
+            I have been building for my work; it is pretty much a glorified database
+            accessor where many many calls to the DB are made per second. I do not
+            think something like this is uncommon either. When doing my usual
+            optimizations upon the code I write, the first step is to immediately
+            try to speed up the database queries. In Perl, which is the language my
+            company uses, these I/O calls are typically blocking. This means that once
+            a call is made to the database, the program will halt execution, pass control
+            onto the kernel, and then wait. This wait is done in a relatively efficient manner;
+            sitting still until the kernel comes back with the needed resources.
+            Unfortunately for the developer, while the computer
+            gets a well deserved break, nothing useful is being done during that time.
+            "But what if we make our system calls non-blocking?" you probably are asking
+            if this info is far too easy for you. Well in that case you would be totally
+            right. We are going to learn how to use certain methods and tactics to allow
+            your machine to do these calls asynchronously in order to waste as little time
+            waiting as possible. C will be our language to use today because of the low level
+            control and system commands it makes available to us.
+          </p>
+          <p>Here are some sources that I used in order to get a grasp on this idea:</p>
+          <ol>
+            <li><a href="http://man7.org/linux/man-pages/man2/poll.2.html">poll(2)</a></li>
+            <li><a href="https://www.ibm.com/support/knowledgecenter/en/SSB23S_1.1.0.14/gtpc2/cpp_poll.html">poll–Monitor activity on file descriptors</a></li>
+            <li><a href="https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_74/rzab6/poll.htm">Using poll() instead of select()</a></li>
+            <li><a href="https://www.geeksforgeeks.org/named-pipe-fifo-example-c-program/">Named Pipe or FIFO with example C program</a> (not necessary)</li>
+          </ol>
+          <p>
+            &emsp;By looking at these links, you will see that the commonality between them is 'poll'.
+            That is the system call we are going to be looking into to achieve our asynchronous
+            responses. If you plan to really get a grasp on this concept, you must read the entirety of
+            each article listed above. You also need to try and execute each code example found in
+            said articles. If your are not comfortable with a lot of these system calls, the 'Named Pipe...' (4)
+            one is nice to start with. If you can understand and explain every line in the two example
+            programs then you'll be in good shape. Let's get into things.
+          </p>
+          <p>
+            &emsp;Starting with the man page (1), the poll system call that "waits for one of a
+            set of file descriptors to become ready to perform I/O." This sounds like what already
+            happens, which is kind of true, but you'll see in a little bit where the magic comes in.
+            In the header file, the call is defined as:
+          </p>
+          <code>
+            <pre>
+              int poll(struct pollfd *fds, nfds_t nfds, int timeout);
+            </pre>
+          </code>
+          <p>
+            Here is an associated data structure that it uses:
+          </p>
+          <code>
+            <pre>
+              struct pollfd {
+                int   fd;         /* file descriptor */
+                short events;     /* requested events */
+                short revents;    /* returned events */
+              };
+            </pre>
+          </code>
+          <p>
+            &emsp;The idea here is that the poll function is given an array of the above
+            structures, and poll will populate the returned events for you. You hand
+            the function all the file descriptors  with a bitmask of events you want
+            monitored. There is a list of these events on the website. I have been
+            using the following to poll for readable and writable fd's:
+          </p>
+          <code>
+            <pre>
+              ds[i].events = POLLIN | POLLOUT;
+            </pre>
+          </code>
+          <p>
+            &emsp;Notice how I use the pipe between the two? For those who may not know,
+            the single pipe is an OR operator. You will need to know how those work
+            to understand bitmasks. After you intialize your file descriptors with
+            the desired events, you call the poll function. Make sure to error check
+            the return value for any issues or timeouts. Afterwards, you check the
+            revents to see which event has been set.
+          </p>
+          <p>
+            Here is a small example snippet of code for you to try and digest:
+          </p>
+          <code>
+            <pre>
+              /* Note this wont compile, but you should try and fix it     */
+              int rc, nfds = 1;
+              struct pollfd fds[200];
+
+              /* Initialize the pollfd structure                           */
+              memset(fds, 0 , sizeof(fds));
+
+              /* Set up the initial listening socket                       */
+              fds[0].fd = listen_sd;
+              fds[0].events = POLLIN;
+              /* Initialize the timeout to 3 minutes.                      */
+              timeout = (3 * 60 * 1000);
+
+              rc = poll(fds, nfds, timeout);
+
+              /* Check to see if the poll call failed.                   */
+              if (rc < 0)
+              {
+                perror("  poll() failed");
+                break;
+              }
+
+              /* Check to see if the 3 minute time out expired.          */
+              if (rc == 0)
+              {
+                printf("  poll() timed out.  End program.\n");
+                break;
+              }
+
+              /* Right now this will only execute once, unless you add   */
+              /* on more file descriptor. Also note this one is a socket */
+              current_size = nfds;
+              for (i = 0; i < current_size; i++)
+              {
+                /* Loop through to find the descriptors that returned    */
+                /* POLLIN and determine whether it's the listening       */
+                /* or the active connection.                             */
+                if(fds[i].revents == 0)
+                  continue;
+
+                /* If revents is not POLLIN, it's an unexpected result,  */
+                /* log and end the server.                               */
+                if( !(fds[i].revents & POLLIN) )
+                {
+                  printf("  Error! revents = %d\n", fds[i].revents);
+                  end_server = TRUE;
+                  break;
+                }
+                if ( fds[i].fd == listen_sd )
+                {
+                  // READ YOUR FILE DESCRIPTOR HERE
+                }
+              }
+            </pre>
+          </code>
+          <p>
+            &emsp;As you can see, there is a quite a bit that goes into all of this.
+            The structure and psuedocode here is the important part. If you want to
+            add more file descriptors, which you undoubtedly will, you need to intialize
+            the pollfd structure as the example does above. This means you can decide if
+            you want a POLLIN or POLLOUT or both for each individual fd.
+          </p>
+          <p>
+            &emsp;The magic is that the poll call will check at once to see if a lot of file
+            descriptors are ready. This is significantly better than waiting for once to get
+            ready. I wrote a basic HTTP server with only using the typical read and accept calls
+            that ended up maxing out at 39 requests processed per second. Once upgraded to the
+            polling server, it maxed out at 2,000 req/s. An unbelieveable boost in performance.
+            Hopefully, it is possible to make a server reach up into the hundreds of thousands
+            requests per second.
+          </p>
+          <p>
+            &emsp;The thing is, though, that this method of reading files asynchronously
+            is pretty slow. You loop through each one and see if it's ready to do stuff
+            to. This means that you have to check every single one of the file descriptors.
+            This makes it a linear time a.k.a. O(n) operation, which slows down under a
+            heavy load. Because of this, I won't spend much longer explaining this topic
+            since I wanted this to be a small introduction to point someone in the right
+            direction. For the next part of this write-up, I will explore a bit of research
+            I am doing in order expand upon the polling functionality. Thanks for reading,
+            stay tuned for more!
+          </p>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="./assets/plugins/jquery/jquery.min.js"></script>
+  <script src="./assets/plugins/bootstrap-4.1.3/js/bootstrap.min.js"></script>
+</html>

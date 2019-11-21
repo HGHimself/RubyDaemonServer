@@ -1,104 +1,57 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="author" content="HG King">
-    <link rel="apple-touch-icon" href="../favicon.ico"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel='stylesheet' href='https://www.hgking.xyz/css/deco.css' type='text/css'>
-    <script src='https://www.hgking.xyz/js/deco.js'></script>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Limelight" rel="stylesheet">
-    <title>RSA Encryption</title>
-    <script>
-
-      var state = "initial"
-
-      function keygen()  {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("keys_landing").innerHTML = this.responseText;
-          }
-        };
-        document.getElementById("keys_landing").innerHTML = "Generating keys..."
-        p = document.getElementById("p").value
-        q = document.getElementById("q").value
-        xhttp.open("GET", "/encryption/keygen/?p=" + p + "&q=" + q, true);
-        xhttp.send();
-        state = "keys"
-      }
-
-      function encrypt()  {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("encrypt_landing").innerHTML = this.responseText;
-          }
-        };
-        document.getElementById("encrypt_landing").innerHTML = "Encrypting..."
-        p = document.getElementById("p").value
-        q = document.getElementById("q").value
-        m = document.getElementById("m").value
-        xhttp.open("GET", "/encryption/encrypt/?m=" + m + "&p=" + p + "&q=" + q, true);
-        xhttp.send();
-        state = "encrypted"
-      }
-
-      function decrypt()  {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("decrypt_landing").innerHTML = this.responseText;
-          }
-        };
-        document.getElementById("decrypt_landing").innerHTML = "Decrypting..."
-        p = document.getElementById("p").value
-        q = document.getElementById("q").value
-        m = document.getElementById("m").value
-        xhttp.open("GET", "/encryption/decrypt/?m=" + m + "&p=" + p + "&q=" + q, true);
-        xhttp.send();
-        state = "decrypted"
-      }
-    </script>
+    <title>King T&D</title>
+    <link rel="stylesheet" href="/assets/plugins/bootstrap-4.1.3/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans|DM+Serif+Display&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class='center _2-3rd text-center'>
-      <div id='header' class='deco'>
-        <h1 id="title" class="deco-title">RSA Encryption</h1>
-        <h2 id="description" class="deco-description">Created By HG King</h2>
+    <div class='container'>
+      <div class='header row align-items-center m-0 text-center'>
+        <div class='col-lg-2'>
+          <img class='logo' src='/assets/img/logoo.png'>
+        </div>
+        <div class='col-lg-3'>
+          <h3 class='title'>King Tech &amp; Dev Co.</h3>
+        </div>
+        <div class='col-lg-7'>
+          <div class='seafoam bars'></div>
+          <div class='teal bars'></div>
+          <div class='green bars'></div>
+          <div class='pink bars'></div>
+          <div class='purple bars'></div>
+        </div>
       </div>
-    </div>
-    <div class='center 3-4th'>
-      <div class="topnav deco">
-        <nav>
-          <a class='left navLink' href='https://www.hgking.xyz/'>Home</a>
-          <a id='' class=' left navLink' href='../'>Ruby Server</a>
-          <a id='' class=' left navLink' href='../scraper/'>Scraper</a>
-          <a id='active' class='active left navLink' href='../encryption/'>Encryption</a>
-          <a id='' class=' left navLink' href='../tictactoe/'>TicTacToe</a>
-        </nav>
-      </div>
-    </div>
-    <main>
-      <div class='_2-3rd center'>
-        <div class='row deco card deco-form'>
-          <a href='/encryption/specs.html'>Check out how this works!</a>
-          <h2>Step 1 - Key Generation</h2>
-          <h3>Enter two primes!</h3>
-          <div class='row'>
-            <label for='p'>P:</label>
-            <input id='p' name='p' type='number'>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="/animation">Sorter</a>
+            <a class="nav-item nav-link active" href="/encryption">Encryptor</a>
+            <a class="nav-item nav-link" href="/performance">Server Performance</a>
+            <a class="nav-item nav-link" href="/color">Colors</a>
+            <a class="nav-item nav-link float-right" href="https://github.com/HGHimself/" target="_blank">Github</a>
           </div>
-          <div class='row'>
-            <label for='q'>Q:</label>
-            <input id='q' name='q' type='number'>
-          </div>
-          <div class='row'>
-            <button onclick='keygen()'>Generate Keys</button>
-          </div>
-          <div class='row'>
-            <div id='keys_landing' class='_half left'></div>
-            <div class='_half right text-center'>
+        </div>
+      </nav>
+      <main>
+        <div class='card card-body mb-2'>
+          <h3>Encryption Tool</h3>
+          <h5>Monday September 23, 2019</h5>
+          <h6><a href='/encryption/specs.html'>Behind The Scenes</a></h6>
+          <br>
+          <br>
+          <h4>Step 1: Key Generation</h4>
+          <h5>Enter two primes!</h5>
+          <br>
+          <div class='row card-body align-items-center'>
+            <div class='col-7'>
               <p>To generate the keys...</p>
               <p>Choose two distinct prime numbers p and q.</p>
               <p>Compute <code>n = pq</code>.</p>
@@ -108,60 +61,104 @@
               <p>Choose an integer e such that <code>1 &lt e &lt λ(n)</code> and <code>gcd(e, λ(n)) = 1</code>.</p>
               <p>Determine d as <code>d ≡ e−1 (mod λ(n))</code>; i.e., d is the modular multiplicative inverse of e modulo λ(n).</p>
             </div>
+            <div class='col-5 text-center'>
+              <div class='row align-items-center'>
+                <div class='col'>
+                  <label for='p' class='control-label'>P:</label>
+                </div>
+                <div class='col text-right'>
+                  <input id='p' class='form-control' name='p' type='number'>
+                </div>
+              </div>
+              <br>
+              <div class='row align-items-center'>
+                <div class='col'>
+                  <label for='q' class='control-label'>Q:</label>
+                </div>
+                <div class='col text-right'>
+                  <input id='q' class='form-control' name='q' type='number'>
+                </div>
+              </div>
+              <br>
+              <div class='row align-items-center'>
+                <div class='col'>
+                  &nbsp;
+                </div>
+                <div class='col text-right'>
+                  <button class='btn btn-lg btn-success' onclick='keygen()'>GENERATE KEYS</button>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='card-body text-right' id='keys_landing'></div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <br>
-      <div class='_2-3rd center'>
-        <div class='row deco card deco-form'>
-          <h2>Step 2 - Encryption</h2>
-          <h3>Enter your message!</h3>
-          <div class='row'>
-            <label for='m'>M:</label>
-            <input id='m' name='m' type='number'>
-          </div>
-          <div class='row'>
-            <button onclick='encrypt()'>Encrypt Message</button>
-          </div>
-          <div class='row'>
-            <div id='encrypt_landing' class='_half left'></div>
-            <div class='_half right text-center'>
+          <br>
+          <br>
+          <h4>Step 2: Encryption</h4>
+          <h5>Enter your message!</h5>
+          <br>
+          <div class='row card-body align-items-center'>
+            <div class='col-7'>
               <p>Using the public key <code>(e, n)</code>, one can encrypt messages that can only be deciphered by those who posess the private key.</p>
               <p>To encrypt a message, compute:</p>
               <p><code>c ≡ m^e (mod n)</code></p>
               <p>This is rather easy using modular exponentiation so simplify the large power.</p>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class='_2-3rd center'>
-        <div class='row deco card deco-form'>
-          <h2>Step 3 - Decryption</h2>
-          <h3>Decrypt the cypher!</h3>
-          <div class='row'>
-            <button onclick='decrypt()'>Decrypt Message</button>
-          </div>
-          <div class='row'>
-            <div id='decrypt_landing' class='_half left'></div>
-            <div class='_half right text-center'>
-              <p>To decrypt the message...</p>
-              <p>You can recover m from c by using the private key exponent d by computing</p>
-              <p><code>c^d ≡ (m^e)^d ≡ m (mod n)</code></p>
+            <div class='col-5 text-center'>
+                <div class='row align-items-center'>
+                  <div class='col'>
+                    <label for='m' class='control-label'>M:</label>
+                  </div>
+                  <div class='col text-right'>
+                    <input id='m' class='form-control' name='m' type='number'>
+                  </div>
+                </div>
+                <br>
+                <div class='row align-items-center'>
+                  <div class='col'>
+                    &nbsp;
+                  </div>
+                  <div class='col text-right'>
+                    <button class='btn btn-lg btn-success' onclick='encrypt()'>ENCRYPT MESSAGE</button>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='card-body text-right' id='encrypt_landing'></div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <br>
+            <h4>Step 3: Decryption</h4>
+            <h5>Decrypt the cypher!</h5>
+            <br>
+            <div class='row card-body align-items-center'>
+              <div class='col-7'>
+                <p>To decrypt the message...</p>
+                <p>You can recover m from c by using the private key exponent d by computing</p>
+                <p><code>c^d ≡ (m^e)^d ≡ m (mod n)</code></p>
+              </div>
+              <div class='col-5 text-center'>
+                <div class='row align-items-center'>
+                  <div class='col'>
+                    &nbsp;
+                  </div>
+                  <div class='col'>
+                    <button class='btn btn-lg btn-success' onclick='decrypt()'>DECRYPT MESSAGE</button>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='card-body text-right' id='decrypt_landing'></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </main>
-    <div class='center _2-3rd text-center'>
-      <div id="footer" class='deco'>
-        <footer>
-          <p class="footer-text">
-          <a href="/about.php">About</a> &#124;
-          <a href="/contact.php">Contact Us</a> &#124;
-          Copyright &copy;<time datetime="2019">2019</time>
-          </p>
-        </footer>
-      </div>
+      </main>
     </div>
   </body>
+  <script src="/assets/plugins/jquery/jquery.min.js"></script>
+  <script src="/assets/plugins/bootstrap-4.1.3/js/bootstrap.min.js"></script>
+  <script src="/encryption/encrypt.js"></script>
 </html>

@@ -97,6 +97,7 @@ end
 #   res.send_string(req.method, html)
 # end
 #
+
 server.get "/encryption/keygen/" do |req, res|
   e = Encryptor.new
   if !req.get?("p").nil? and !req.get?("q").nil?
@@ -105,17 +106,17 @@ server.get "/encryption/keygen/" do |req, res|
     if e.primality_test(p, 50)
       if e.primality_test(q, 50)
         e.key_generation(p, q)
-        html = "<h2>Done!</h2>"
-        html += "<h3>Public Key:</h3><p>e = #{e.e} and n = #{e.n}</p>"
-        html += "<h3>Private Key:</h3><p>d = #{e.d} and n = #{e.n}</p>"
+        html = "<h5>Done!</h5>"
+        html += "<h6>Public Key: e = #{e.e} and n = #{e.n}</h6>"
+        html += "<h6>Private Key: d = #{e.d} and n = #{e.n}</h6>"
       else
-        html = "<h2>Error!</h2><p>Q must be a prime number.</p>"
+        html = "<h5>Error! Q must be a prime number.</h5>"
       end
     else
-      html = "<h2>Error!</h2><p>P must be a prime number.</p>"
+      html = "<h5>Error! P must be a prime number.</h5>"
     end
   else
-    html = "<h2>Error!</h2><p>You must provide an input for P and Q</p>"
+    html = "<h5>Error! You must provide an input for P and Q</h5>"
   end
   res.send_string(req.method, html)
 end
@@ -128,11 +129,11 @@ server.get "/encryption/encrypt/" do |req, res|
     m = req.get?("m").to_i
     e.key_generation(p, q)
     c = e.encrypt(m)
-    html = "<h2>Done!</h2>"
-    html += "<h3>Original message:</h3><p>m = #{req.get?("m")}</p>"
-    html += "<h3>Encrypted message:</h3><p>c = #{c}</p>"
+    html = "<h5>Done!</h5>"
+    html += "<h6>Original message: m = #{req.get?("m")}</h6>"
+    html += "<h6>Encrypted message: c = #{c}</h6>"
   else
-    html = "<h2>Error!</h2><p>You must provide an input for P, Q, and M</p>"
+    html = "<h5>Error! You must provide an input for P, Q, and M</h5>"
   end
   res.send_string(req.method, html)
 end
@@ -146,11 +147,11 @@ server.get "/encryption/decrypt/" do |req, res|
     e.key_generation(p, q)
     c = e.encrypt(m)
     t = e.decrypt(c)
-    html = "<h2>Done!</h2>"
-    html += "<h3>Encrypted message:</h3><p>c = #{c}</p>"
-    html += "<h3>Original message:</h3><p>m = #{t}</p>"
+    html = "<h5>Done!</h5>"
+    html += "<h6>Encrypted message: c = #{c}</h6>"
+    html += "<h6>Original message: m = #{t}</h6>"
   else
-    html = "<h2>Error!</h2><p>You must provide an input for P, Q, and M</p>"
+    html = "<h5>Error! You must provide an input for P, Q, and M</h5>"
   end
   res.send_string(req.method, html)
 end
