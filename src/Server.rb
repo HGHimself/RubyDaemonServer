@@ -160,7 +160,6 @@ class Server
     print "\n"
   end
 
-
   # below functions add code blocks to be executed for a given
   # method and path. path can be regex :)
   #

@@ -2,9 +2,12 @@ require 'uri'
 
 class Request
 
+  # needs to be given the root directory information
+  # maybe not the best move??
+  #
+  # actually I like it because now we will be able to
+  # leverage it
   def initialize(rootdir)
-    # needs to be given the root directory information
-    # maybe not the best move??
     @rootdir = rootdir
     @headers = {}
     @body = ""
@@ -40,6 +43,7 @@ class Request
   def addr
     @addr
   end
+
   # access the GET param
   def get?(param)
     if !@get[param].nil?
